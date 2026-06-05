@@ -3,136 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carlos González — Emprendedor · Estratega de Marca · Creador</title>
-  <meta name="description" content="Carlos González. Fundador de Clairo.es y Studio 779. Estratega de marca, emprendedor serial y referente en ecommerce y diseño creativo en España.">
-  <meta property="og:title" content="Carlos González — Emprendedor & Estratega de Marca">
-  <meta property="og:description" content="Fundador de Clairo.es y Studio 779. Hablo de marca, negocio y creatividad.">
+  <title>Carlos González — Speaker · Lecturer · Entrepreneur</title>
+  <meta name="description" content="Connecting innovation, entrepreneurship and talent across Europe and Latin America. Speaker, Lecturer and Ecosystem Builder.">
+  <meta property="og:title" content="Carlos González — Speaker · Lecturer · Entrepreneur">
+  <meta property="og:description" content="Connecting innovation, entrepreneurship and talent across Europe and Latin America.">
   <meta property="og:type" content="website">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23232350'/><text x='50' y='68' font-family='serif' font-size='52' font-weight='700' fill='%23F59E0B' text-anchor='middle'>CG</text></svg>">
 
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231A1A2E'/><text x='50' y='68' font-family='Georgia,serif' font-size='44' font-weight='700' fill='%23F59E0B' text-anchor='middle'>CG</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
-    /* ─── TOKENS ─────────────────────────────────────────── */
     :root {
-      --ink:       #1A1A2E;
-      --ink-mid:   #4B4B6B;
-      --ink-dim:   #9898AA;
-      --bg:        #FAFAF8;
-      --bg-soft:   #F4F4FF;
-      --bg-warm:   #FFFBF2;
-      --indigo:    #4C55D4;
-      --indigo-d:  #3840B8;
-      --indigo-l:  #E8EAFF;
-      --amber:     #F59E0B;
-      --amber-l:   #FEF3C7;
-      --rule:      rgba(26,26,46,.08);
-      --rule-amber:rgba(245,158,11,.25);
-      --radius:    3px;
-      --t:         .22s cubic-bezier(.4,0,.2,1);
+      --ink:      #1A1A2E;
+      --ink-mid:  #4B4B6B;
+      --ink-dim:  #9898AA;
+      --bg:       #FAFAF8;
+      --bg-soft:  #F4F4FF;
+      --bg-warm:  #FFFBF2;
+      --indigo:   #4C55D4;
+      --indigo-d: #3840B8;
+      --indigo-l: #E8EAFF;
+      --amber:    #F59E0B;
+      --amber-l:  #FEF3C7;
+      --rule:     rgba(26,26,46,.09);
+      --t:        .22s cubic-bezier(.4,0,.2,1);
     }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; font-size: 16px; }
-
+    html { scroll-behavior: smooth; }
     body {
       font-family: 'Inter', system-ui, sans-serif;
-      background: var(--bg);
-      color: var(--ink);
-      -webkit-font-smoothing: antialiased;
-      overflow-x: hidden;
+      background: var(--bg); color: var(--ink);
+      -webkit-font-smoothing: antialiased; overflow-x: hidden;
     }
-
     a { color: inherit; text-decoration: none; }
     img { display: block; max-width: 100%; }
 
-    /* ─── UTILS ──────────────────────────────────────────── */
-    .wrap { max-width: 1220px; margin: 0 auto; padding: 0 2rem; }
+    /* ── UTILS ── */
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
     @media(min-width:768px){ .wrap{ padding: 0 3.5rem; } }
-
     .label {
       font-size: .65rem; letter-spacing: .22em; text-transform: uppercase;
-      font-weight: 600; color: var(--indigo);
+      font-weight: 700; color: var(--indigo);
     }
     .label-amber { color: var(--amber); }
-
-    .rule { border: none; border-top: 1px solid var(--rule); }
-
+    .label-white { color: rgba(255,255,255,.55); }
     .btn {
       display: inline-flex; align-items: center; gap: .5rem;
-      font-size: .8rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
-      padding: .85rem 2rem; border: none; cursor: pointer; transition: var(--t);
-      border-radius: var(--radius);
+      font-size: .75rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+      padding: .9rem 2.2rem; border: none; cursor: pointer; border-radius: 2px;
+      transition: var(--t);
     }
-    .btn-primary {
-      background: var(--indigo); color: #fff;
-    }
-    .btn-primary:hover { background: var(--indigo-d); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(76,85,212,.28); }
-    .btn-outline {
-      background: transparent; color: var(--ink); border: 1.5px solid var(--ink);
-    }
-    .btn-outline:hover { border-color: var(--indigo); color: var(--indigo); transform: translateY(-1px); }
-    .btn-amber {
-      background: var(--amber); color: var(--ink);
-    }
-    .btn-amber:hover { background: #d97706; transform: translateY(-1px); box-shadow: 0 8px 24px rgba(245,158,11,.3); }
+    .btn-primary { background: var(--indigo); color: #fff; }
+    .btn-primary:hover { background: var(--indigo-d); transform: translateY(-1px); box-shadow: 0 8px 28px rgba(76,85,212,.3); }
+    .btn-white { background: #fff; color: var(--ink); }
+    .btn-white:hover { background: var(--amber); transform: translateY(-1px); }
+    .btn-outline-white { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,.4); }
+    .btn-outline-white:hover { border-color: #fff; background: rgba(255,255,255,.1); }
+    .btn-amber { background: var(--amber); color: var(--ink); }
+    .btn-amber:hover { background: #d97706; transform: translateY(-1px); }
 
-    /* ─── REVEAL ANIMATION ───────────────────────────────── */
-    .reveal {
-      opacity: 0; transform: translateY(28px);
-      transition: opacity .65s ease, transform .65s ease;
-    }
+    /* ── REVEAL ── */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
     .reveal.visible { opacity: 1; transform: none; }
 
-    /* ─── NAV ────────────────────────────────────────────── */
+    /* ── LANGUAGE TOGGLE ── */
+    .lang-toggle {
+      display: flex; align-items: center;
+      background: var(--rule); border-radius: 20px; padding: 3px;
+      gap: 2px;
+    }
+    .lang-btn {
+      font-size: .65rem; font-weight: 700; letter-spacing: .1em;
+      padding: .3rem .7rem; border-radius: 16px; border: none; cursor: pointer;
+      background: transparent; color: var(--ink-dim);
+      transition: var(--t);
+    }
+    .lang-btn.active { background: var(--ink); color: #fff; }
+
+    /* ── NAV ── */
     .nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      background: rgba(250,250,248,.92);
-      backdrop-filter: blur(12px);
+      background: rgba(250,250,248,.93); backdrop-filter: blur(14px);
       border-bottom: 1px solid var(--rule);
       transition: box-shadow var(--t);
     }
-    .nav.scrolled { box-shadow: 0 2px 24px rgba(26,26,46,.06); }
+    .nav.scrolled { box-shadow: 0 2px 24px rgba(26,26,46,.07); }
     .nav-inner {
-      max-width: 1220px; margin: 0 auto; padding: 0 2rem;
-      height: 64px; display: flex; align-items: center; justify-content: space-between;
+      max-width: 1200px; margin: 0 auto; padding: 0 2rem;
+      height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem;
     }
     @media(min-width:768px){ .nav-inner{ padding: 0 3.5rem; } }
 
     .nav-logo {
-      display: flex; align-items: center; gap: .75rem;
+      display: flex; align-items: center; gap: .7rem; flex-shrink: 0;
     }
     .nav-logo-mark {
-      width: 38px; height: 38px; background: var(--ink); border-radius: 2px;
-      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+      width: 36px; height: 36px; background: var(--ink); border-radius: 2px;
+      display: flex; align-items: center; justify-content: center;
     }
-    .nav-logo-mark svg { width: 22px; height: 22px; }
-    .nav-logo-text {
+    .nav-logo-mark span {
       font-family: 'Playfair Display', serif; font-size: .95rem; font-weight: 700;
-      letter-spacing: -.01em; color: var(--ink); line-height: 1.1;
+      color: var(--amber); letter-spacing: -.03em;
     }
-    .nav-logo-text span { display: block; font-family: 'Inter', sans-serif; font-size: .6rem; font-weight: 500; letter-spacing: .15em; text-transform: uppercase; color: var(--ink-dim); font-style: normal; }
-
-    .nav-links { display: none; align-items: center; gap: 2.5rem; }
-    @media(min-width:900px){ .nav-links{ display: flex; } }
-
+    .nav-logo-name {
+      font-family: 'Playfair Display', serif; font-size: .95rem; font-weight: 700;
+      color: var(--ink); letter-spacing: -.01em;
+    }
+    .nav-links { display: none; align-items: center; gap: 2rem; }
+    @media(min-width:960px){ .nav-links{ display: flex; } }
     .nav-link {
-      font-size: .75rem; font-weight: 500; letter-spacing: .12em; text-transform: uppercase;
+      font-size: .72rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
       color: var(--ink-mid); transition: color var(--t);
     }
     .nav-link:hover { color: var(--indigo); }
-
-    .nav-cta { display: none; }
-    @media(min-width:700px){ .nav-cta{ display: inline-flex; } }
+    .nav-right { display: flex; align-items: center; gap: 1rem; }
 
     .mob-btn {
       background: none; border: none; cursor: pointer; padding: .4rem;
       display: flex; flex-direction: column; gap: 5px;
     }
-    .mob-btn span { display: block; width: 20px; height: 1.5px; background: var(--ink); border-radius: 2px; transition: var(--t); }
-    @media(min-width:900px){ .mob-btn{ display: none; } }
+    .mob-btn span { display: block; width: 20px; height: 1.5px; background: var(--ink); border-radius: 2px; }
+    @media(min-width:960px){ .mob-btn{ display: none; } }
 
     /* Mobile nav */
     .mob-nav {
@@ -147,501 +140,343 @@
     .mob-close {
       background: none; border: 1px solid var(--rule); width: 34px; height: 34px;
       cursor: pointer; font-size: .85rem; display: flex; align-items: center; justify-content: center;
-      color: var(--ink); border-radius: var(--radius);
+      color: var(--ink); border-radius: 2px;
     }
-    .mob-nav-links { flex: 1; display: flex; flex-direction: column; padding: 3rem 2rem; gap: 0; }
+    .mob-nav-links { flex: 1; display: flex; flex-direction: column; padding: 3rem 2rem; }
     .mob-nav-link {
-      font-family: 'Playfair Display', serif; font-size: 2.4rem; font-weight: 700;
+      font-family: 'Playfair Display', serif; font-size: 2.2rem; font-weight: 700;
       color: var(--ink-mid); padding: 1rem 0; border-bottom: 1px solid var(--rule);
       transition: color var(--t);
     }
     .mob-nav-link:hover { color: var(--indigo); }
-    .mob-nav-foot { padding: 2rem; }
+    .mob-nav-foot { padding: 2rem; display: flex; flex-direction: column; gap: 1rem; }
 
-    /* ─── HERO ────────────────────────────────────────────── */
+    /* ── HERO — Full screen photo ── */
     .hero {
-      min-height: 100svh; padding-top: 64px;
-      display: grid; grid-template-columns: 1fr;
-      position: relative; overflow: hidden;
+      position: relative; min-height: 100svh; display: flex; flex-direction: column;
+      justify-content: flex-end; overflow: hidden;
     }
-    @media(min-width:900px){
-      .hero { grid-template-columns: 1fr 1fr; }
+
+    /* PHOTO: foto-hero.jpg
+       Portrait o 3/4 horizontal. Foto de escenario, conferencia o retrato
+       dramático con buena iluminación. Funciona mejor en tonos oscuros
+       o con ropa oscura para que el texto blanco contraste bien.
+       Mínimo 1400×900px, se adapta al 100% del viewport. */
+    .hero-bg {
+      position: absolute; inset: 0; z-index: 0;
+      background: linear-gradient(160deg, #1a1a2e 0%, #2d2d5e 40%, #3840b8 100%);
+    }
+    .hero-bg img {
+      width: 100%; height: 100%; object-fit: cover; object-position: center 20%;
+      display: block;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0; z-index: 1;
+      background: linear-gradient(
+        to top,
+        rgba(10,10,20,.92) 0%,
+        rgba(10,10,20,.55) 45%,
+        rgba(10,10,20,.2) 100%
+      );
+    }
+    .hero-overlay-side {
+      position: absolute; inset: 0; z-index: 1;
+      background: linear-gradient(
+        to right,
+        rgba(10,10,20,.5) 0%,
+        rgba(10,10,20,0) 60%
+      );
     }
 
     .hero-content {
-      display: flex; flex-direction: column; justify-content: center;
-      padding: 5rem 2rem 4rem;
       position: relative; z-index: 2;
+      padding: 5rem 2rem 4rem; max-width: 900px;
     }
     @media(min-width:768px){ .hero-content{ padding: 6rem 3.5rem 5rem; } }
-    @media(min-width:900px){ .hero-content{ padding: 6rem 4rem 5rem 3.5rem; } }
 
-    .hero-eyebrow {
-      display: flex; align-items: center; gap: .75rem; margin-bottom: 2rem;
+    .hero-roles {
+      display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 2rem;
     }
-    .hero-dot {
-      width: 6px; height: 6px; background: var(--amber); border-radius: 50%;
-      animation: pulse 2.5s infinite;
+    .hero-role {
+      font-size: .65rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase;
+      color: rgba(255,255,255,.6);
+      border: 1px solid rgba(255,255,255,.2); padding: .35rem .8rem; border-radius: 2px;
     }
-    @keyframes pulse {
-      0%,100%{ opacity: 1; transform: scale(1); }
-      50%{ opacity: .5; transform: scale(1.4); }
-    }
+    .hero-role.amber { color: var(--amber); border-color: rgba(245,158,11,.4); }
 
     .hero-heading {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(2.8rem, 5vw, 4.4rem);
-      font-weight: 700; line-height: 1.08; letter-spacing: -.02em;
-      color: var(--ink); margin-bottom: 1.5rem;
+      font-size: clamp(3rem, 7vw, 6.5rem);
+      font-weight: 900; line-height: 1.0; letter-spacing: -.03em;
+      color: #fff; margin-bottom: 1.5rem;
     }
-    .hero-heading em {
-      font-style: italic; color: var(--indigo);
-    }
-    .hero-heading .underline-amber {
-      position: relative; display: inline-block;
-    }
-    .hero-heading .underline-amber::after {
-      content: ''; position: absolute; bottom: 2px; left: 0; right: 0;
-      height: 4px; background: var(--amber); border-radius: 2px;
-      transform: scaleX(0); transform-origin: left;
-      animation: underline-in 1s .6s forwards ease-out;
-    }
-    @keyframes underline-in { to { transform: scaleX(1); } }
+    .hero-heading em { font-style: italic; color: var(--amber); }
 
     .hero-sub {
-      font-size: 1.05rem; line-height: 1.7; color: var(--ink-mid);
-      max-width: 46ch; margin-bottom: 2.5rem;
+      font-size: clamp(1rem, 1.8vw, 1.25rem); font-weight: 400; line-height: 1.65;
+      color: rgba(255,255,255,.7); max-width: 56ch; margin-bottom: 2.5rem;
     }
 
     .hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 3.5rem; }
 
-    .hero-stats {
-      display: flex; gap: 2.5rem; padding-top: 2.5rem;
-      border-top: 1px solid var(--rule);
+    .hero-footer {
+      display: flex; align-items: center; gap: 2rem;
+      padding-top: 2rem; border-top: 1px solid rgba(255,255,255,.12);
+      flex-wrap: wrap;
     }
+    .hero-stat { }
     .hero-stat-num {
-      font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700;
-      color: var(--ink); line-height: 1;
+      font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 900;
+      color: #fff; line-height: 1;
     }
-    .hero-stat-num sup { font-size: 1rem; color: var(--indigo); }
-    .hero-stat-label { font-size: .7rem; color: var(--ink-dim); letter-spacing: .08em; margin-top: .3rem; }
+    .hero-stat-num sup { font-size: .9rem; color: var(--amber); }
+    .hero-stat-label { font-size: .65rem; letter-spacing: .1em; color: rgba(255,255,255,.45); margin-top: .25rem; }
 
-    .hero-visual {
-      position: relative; overflow: hidden;
-      min-height: 420px;
+    .hero-scroll {
+      position: absolute; bottom: 2rem; right: 2.5rem; z-index: 2;
+      display: flex; flex-direction: column; align-items: center; gap: .5rem;
     }
-    @media(max-width:899px){ .hero-visual{ order: -1; } }
+    .hero-scroll-line {
+      width: 1px; height: 48px; background: linear-gradient(to bottom, rgba(255,255,255,.4), transparent);
+      animation: scroll-line 2s infinite ease-in-out;
+    }
+    @keyframes scroll-line {
+      0%{ transform: scaleY(0); transform-origin: top; }
+      50%{ transform: scaleY(1); transform-origin: top; }
+      100%{ transform: scaleY(0); transform-origin: bottom; }
+    }
+    .hero-scroll-label { font-size: .55rem; letter-spacing: .25em; text-transform: uppercase; color: rgba(255,255,255,.3); writing-mode: vertical-rl; }
 
-    /* ── PHOTO PLACEHOLDER: Hero ──
-       Aquí va tu foto principal: vertical, confiada, fondo neutro o en escena de evento.
-       Recomendado: foto profesional mirando ligeramente hacia la cámara, 800×1100px mínimo.
-    ── */
-    .hero-photo {
-      width: 100%; height: 100%; min-height: 480px;
-      object-fit: cover; object-position: center top;
-      display: block;
+    /* ── MARQUEE STRIP ── */
+    .strip { background: var(--ink); padding: 1.25rem 0; overflow: hidden; }
+    .strip-track {
+      display: flex; gap: 3rem; white-space: nowrap;
+      animation: marquee 22s linear infinite;
     }
-    .hero-photo-placeholder {
-      width: 100%; height: 100%; min-height: 540px;
-      background: linear-gradient(145deg, var(--indigo-l) 0%, #C7CBF8 40%, var(--indigo) 100%);
-      display: flex; align-items: flex-end; justify-content: flex-start;
-      padding: 2rem;
+    .strip-track:hover { animation-play-state: paused; }
+    @keyframes marquee { from{ transform: translateX(0); } to{ transform: translateX(-50%); } }
+    .strip-item {
+      font-size: .7rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase;
+      color: rgba(255,255,255,.35); flex-shrink: 0;
     }
-    .hero-photo-tag {
-      font-size: .65rem; letter-spacing: .15em; text-transform: uppercase;
-      color: rgba(255,255,255,.6); border: 1px solid rgba(255,255,255,.2);
-      padding: .4rem .8rem; border-radius: 2px;
-    }
+    .strip-item.hi { color: var(--amber); }
 
-    .hero-shape {
-      position: absolute; bottom: -2px; left: -2px; right: -2px;
-      height: 80px;
-      background: var(--bg);
-      clip-path: ellipse(60% 100% at 50% 100%);
-    }
-    @media(min-width:900px){
-      .hero-shape { display: none; }
-    }
-
-    .hero-badge {
-      position: absolute; bottom: 2.5rem; left: 2rem;
-      background: #fff; border: 1px solid var(--rule);
-      padding: 1rem 1.25rem; border-radius: 6px;
-      box-shadow: 0 8px 32px rgba(26,26,46,.12);
-      display: flex; align-items: center; gap: .75rem;
-      animation: badge-in .8s .9s both ease-out;
-    }
-    @keyframes badge-in {
-      from { opacity: 0; transform: translateY(12px); }
-      to   { opacity: 1; transform: none; }
-    }
-    .hero-badge-icon { font-size: 1.4rem; }
-    .hero-badge-text { font-size: .78rem; font-weight: 600; color: var(--ink); line-height: 1.3; }
-    .hero-badge-text span { display: block; font-weight: 400; color: var(--ink-dim); font-size: .7rem; }
-
-    /* ─── STRIP — COMO EN ─────────────────────────────────── */
-    .strip {
-      background: var(--ink); color: rgba(255,255,255,.35);
-      padding: 1.5rem 0; overflow: hidden;
-    }
-    .strip-inner {
-      display: flex; align-items: center; gap: 3rem;
-      white-space: nowrap;
-      font-size: .68rem; letter-spacing: .2em; text-transform: uppercase; font-weight: 500;
-    }
-    .strip-sep { color: var(--amber); }
-    .strip-project { color: rgba(255,255,255,.7); font-weight: 600; }
-
-    /* ─── ABOUT ──────────────────────────────────────────── */
-    .about { padding: 7rem 0; background: var(--bg); }
-
-    .about-grid {
+    /* ── WHY / QUOTE SECTION ── */
+    .why { padding: 8rem 0; background: var(--bg); }
+    .why-grid {
       display: grid; grid-template-columns: 1fr;
       gap: 4rem; align-items: center;
     }
-    @media(min-width:900px){
-      .about-grid { grid-template-columns: 1fr 1fr; gap: 6rem; }
+    @media(min-width:900px){ .why-grid{ grid-template-columns: 5fr 7fr; gap: 7rem; } }
+
+    .why-eyebrow { margin-bottom: 1.5rem; }
+    .why-quote {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 700; line-height: 1.18; letter-spacing: -.02em; color: var(--ink);
+      margin-bottom: 1.5rem;
+    }
+    .why-quote em { font-style: italic; color: var(--indigo); }
+    .why-body { font-size: 1rem; line-height: 1.8; color: var(--ink-mid); }
+    .why-body p + p { margin-top: 1rem; }
+
+    /* PHOTO: foto-about.jpg
+       Foto editorial, puede ser en escenario, en evento, mirando a cámara.
+       Ratio 4:5. Con energía, no solo pose. */
+    .why-photo {
+      position: relative;
+    }
+    .why-photo img {
+      width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 3px;
+    }
+    .why-photo-ph {
+      width: 100%; aspect-ratio: 4/5; border-radius: 3px;
+      background: linear-gradient(145deg, #e8eaff 0%, #b8befd 60%, var(--indigo) 100%);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .why-photo-ph span {
+      font-family: 'Playfair Display', serif; font-size: 6rem; font-weight: 900;
+      color: var(--indigo); opacity: .1; letter-spacing: -.05em;
+    }
+    .why-accent {
+      position: absolute; top: -1.5rem; left: -1.5rem;
+      width: 100px; height: 100px; background: var(--amber-l); border-radius: 2px; z-index: -1;
+    }
+    .why-accent-2 {
+      position: absolute; bottom: -1.5rem; right: -1.5rem;
+      width: 70px; height: 70px; border: 2px solid var(--indigo-l); border-radius: 50%; z-index: -1;
     }
 
-    /* ── PHOTO PLACEHOLDER: About ──
-       Foto más relajada, puede ser en un taller, charla informal, o co-working.
-       Cuadrada o 3:4. Que se vea la energía, no solo la pose.
-    ── */
-    .about-img-wrap { position: relative; }
-    .about-img {
-      width: 100%; aspect-ratio: 4/5;
-      object-fit: cover; border-radius: 4px;
-    }
-    .about-img-placeholder {
-      width: 100%; aspect-ratio: 4/5;
-      background: linear-gradient(160deg, var(--bg-soft) 0%, var(--indigo-l) 60%, #C7CBF8 100%);
-      border-radius: 4px; display: flex; align-items: center; justify-content: center;
-    }
-    .about-img-placeholder .ph-text {
-      font-family: 'Playfair Display', serif; font-size: 5rem; font-weight: 700;
-      color: var(--indigo); opacity: .15;
-    }
-    .about-accent {
-      position: absolute; top: -1.5rem; right: -1.5rem;
-      width: 140px; height: 140px;
-      background: var(--amber-l); border-radius: 4px; z-index: -1;
-    }
-    .about-accent-2 {
-      position: absolute; bottom: -1.5rem; left: -1.5rem;
-      width: 90px; height: 90px;
-      background: var(--indigo-l); border-radius: 50%; z-index: -1;
-    }
+    /* ── EXPERIENCE / GLANCE ── */
+    .glance { padding: 6rem 0; background: var(--ink); }
+    .glance .section-title { color: #fff; }
+    .glance .label { color: var(--amber); }
 
-    .about-content { }
-    .about-intro {
-      font-family: 'Playfair Display', serif; font-size: 1.65rem; font-weight: 600;
-      line-height: 1.4; color: var(--ink); margin: 1.25rem 0 1.5rem;
+    .glance-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1px; background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.07); border-radius: 3px; overflow: hidden;
+      margin-top: 4rem;
     }
-    .about-intro em { font-style: italic; color: var(--indigo); }
-    .about-body { font-size: 1rem; line-height: 1.8; color: var(--ink-mid); margin-bottom: 2rem; }
-    .about-body p + p { margin-top: 1rem; }
-    .about-tags { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 2.5rem; }
-    .about-tag {
-      font-size: .7rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
-      background: var(--indigo-l); color: var(--indigo);
-      padding: .45rem 1rem; border-radius: 2px;
-    }
-    .about-tag.amber { background: var(--amber-l); color: #92400E; }
+    @media(min-width:640px){ .glance-grid{ grid-template-columns: 1fr 1fr; } }
+    @media(min-width:1024px){ .glance-grid{ grid-template-columns: repeat(3, 1fr); } }
 
-    .about-metrics {
-      display: grid; grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem; padding-top: 2rem; border-top: 1px solid var(--rule);
+    .glance-card {
+      background: var(--ink); padding: 2.25rem 2rem;
+      transition: background var(--t);
     }
-    .metric-num {
-      font-family: 'Playfair Display', serif; font-size: 2.2rem; font-weight: 700;
-      color: var(--ink); line-height: 1;
+    .glance-card:hover { background: #232350; }
+    .glance-icon { font-size: 1.5rem; margin-bottom: 1rem; }
+    .glance-num {
+      font-family: 'Playfair Display', serif; font-size: 2.4rem; font-weight: 900;
+      color: #fff; line-height: 1; margin-bottom: .4rem;
     }
-    .metric-num sup { font-size: .9rem; color: var(--indigo); }
-    .metric-label { font-size: .7rem; color: var(--ink-dim); letter-spacing: .06em; margin-top: .3rem; line-height: 1.4; }
+    .glance-num sup { font-size: 1rem; color: var(--amber); }
+    .glance-desc { font-size: .82rem; line-height: 1.6; color: rgba(255,255,255,.45); }
 
-    /* ─── PROYECTOS ───────────────────────────────────────── */
-    .projects { padding: 7rem 0; background: var(--bg-soft); }
+    /* ── TOPICS ── */
+    .topics { padding: 8rem 0; background: var(--bg-soft); }
 
-    .section-head { margin-bottom: 4rem; }
     .section-title {
-      font-family: 'Playfair Display', serif; font-size: clamp(2rem, 3.5vw, 2.8rem);
-      font-weight: 700; line-height: 1.15; letter-spacing: -.02em;
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 3.5vw, 2.8rem);
+      font-weight: 700; line-height: 1.12; letter-spacing: -.02em;
       color: var(--ink); margin: .75rem 0 1rem;
     }
     .section-sub { font-size: .95rem; color: var(--ink-mid); line-height: 1.7; max-width: 52ch; }
+    .section-head { margin-bottom: 4rem; }
 
-    .projects-grid {
+    .topics-grid {
       display: grid; grid-template-columns: 1fr;
-      gap: 2.5rem;
+      gap: 1.5rem;
     }
-    @media(min-width:768px){
-      .projects-grid { grid-template-columns: 1fr 1fr; }
-    }
+    @media(min-width:640px){ .topics-grid{ grid-template-columns: 1fr 1fr; } }
+    @media(min-width:1024px){ .topics-grid{ grid-template-columns: repeat(3, 1fr); } }
 
-    .project-card {
-      background: #fff; border-radius: 6px; overflow: hidden;
-      border: 1px solid var(--rule);
-      transition: transform var(--t), box-shadow var(--t);
+    .topic-card {
+      background: #fff; border: 1px solid var(--rule); border-radius: 3px;
+      padding: 2rem 2rem 2.25rem;
+      transition: transform var(--t), box-shadow var(--t), border-color var(--t);
     }
-    .project-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 16px 48px rgba(26,26,46,.1);
+    .topic-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(26,26,46,.09);
+      border-color: var(--indigo-l);
     }
+    .topic-card.amber:hover { border-color: var(--amber-l); }
+    .topic-icon { font-size: 1.6rem; margin-bottom: 1.25rem; }
+    .topic-title {
+      font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700;
+      color: var(--ink); margin-bottom: .75rem;
+    }
+    .topic-items { list-style: none; display: flex; flex-direction: column; gap: .35rem; }
+    .topic-items li {
+      font-size: .8rem; color: var(--ink-mid); line-height: 1.5;
+      padding-left: 1rem; position: relative;
+    }
+    .topic-items li::before {
+      content: '—'; position: absolute; left: 0; color: var(--indigo); font-size: .7rem;
+    }
+    .topic-card.amber .topic-items li::before { color: var(--amber); }
 
-    /* ── PHOTO PLACEHOLDER: Proyectos ──
-       Para Clairo.es: captura de pantalla del sitio web o lifestyle de producto.
-       Para Studio 779: imagen de un proyecto de interiorismo/diseño terminado.
-       Ratio 16:9 o 3:2 funciona bien aquí.
-    ── */
-    .project-img {
-      width: 100%; aspect-ratio: 16/9; object-fit: cover;
-    }
-    .project-img-placeholder {
-      width: 100%; aspect-ratio: 16/9;
-      display: flex; align-items: center; justify-content: center; position: relative;
-      overflow: hidden;
-    }
-    .project-img-placeholder.clairo {
-      background: linear-gradient(135deg, #EEF0FF 0%, #C5CAF8 100%);
-    }
-    .project-img-placeholder.studio {
-      background: linear-gradient(135deg, #FFF8E8 0%, #FDDFA0 100%);
-    }
-    .project-img-placeholder .proj-logo-text {
-      font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 700;
-      color: var(--ink); opacity: .12; letter-spacing: -.03em;
-    }
-    .project-img-placeholder .proj-tag {
-      position: absolute; top: 1rem; left: 1rem;
-      font-size: .6rem; letter-spacing: .2em; text-transform: uppercase; font-weight: 600;
-      background: rgba(255,255,255,.8); color: var(--ink-mid);
-      padding: .3rem .7rem; border-radius: 2px;
-    }
-
-    .project-body { padding: 1.75rem 2rem 2rem; }
-    .project-category { margin-bottom: .5rem; }
-    .project-name {
-      font-family: 'Playfair Display', serif; font-size: 1.45rem; font-weight: 700;
-      color: var(--ink); margin-bottom: .75rem; letter-spacing: -.01em;
-    }
-    .project-desc { font-size: .88rem; line-height: 1.75; color: var(--ink-mid); margin-bottom: 1.5rem; }
-    .project-links { display: flex; gap: .75rem; flex-wrap: wrap; }
-    .project-link {
-      font-size: .7rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
-      color: var(--indigo); display: flex; align-items: center; gap: .35rem;
-      transition: gap var(--t), color var(--t);
-    }
-    .project-link:hover { gap: .6rem; color: var(--indigo-d); }
-    .project-link svg { width: 12px; height: 12px; }
-
-    /* ─── SPEAKING / CHARLAS ─────────────────────────────── */
-    .speaking { padding: 7rem 0; background: var(--bg-warm); }
-
-    .speaking-grid {
+    /* ── FOR UNIVERSITIES / ORGS ── */
+    .audiences { padding: 7rem 0; background: var(--bg-warm); }
+    .audiences-grid {
       display: grid; grid-template-columns: 1fr;
-      gap: 4rem; align-items: start;
+      gap: 3rem; margin-top: 4rem;
     }
-    @media(min-width:900px){
-      .speaking-grid { grid-template-columns: 5fr 7fr; gap: 5rem; }
-    }
+    @media(min-width:768px){ .audiences-grid{ grid-template-columns: 1fr 1fr; gap: 4rem; } }
 
-    .speaking-content { }
-    .speaking-intro {
-      font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 600;
-      line-height: 1.45; color: var(--ink); margin: 1rem 0 1.25rem;
+    .audience-block { }
+    .audience-title {
+      font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700;
+      color: var(--ink); margin: .75rem 0 1rem;
     }
-    .speaking-intro em { font-style: italic; color: var(--amber); }
-    .speaking-body { font-size: .9rem; line-height: 1.8; color: var(--ink-mid); margin-bottom: 2rem; }
+    .audience-body { font-size: .9rem; line-height: 1.8; color: var(--ink-mid); margin-bottom: 1.5rem; }
+    .audience-list { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .audience-tag {
+      font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+      background: var(--indigo-l); color: var(--indigo);
+      padding: .45rem 1rem; border-radius: 2px;
+    }
+    .audience-tag.amber { background: var(--amber-l); color: #92400E; }
 
-    .speaking-topics { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2.5rem; }
-    .speaking-topic {
-      display: flex; align-items: flex-start; gap: 1rem;
-      padding: 1.1rem 1.25rem; background: #fff; border-radius: 4px;
-      border: 1px solid var(--rule); border-left: 3px solid var(--indigo);
+    /* ── BELIEF ── */
+    .belief { padding: 7rem 0; background: var(--bg); }
+    .belief-inner { max-width: 780px; }
+    .belief-quote {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 700; line-height: 1.2; letter-spacing: -.02em;
+      color: var(--ink); margin: .75rem 0 1.5rem;
     }
-    .speaking-topic-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: .05rem; }
-    .speaking-topic-title { font-size: .83rem; font-weight: 600; color: var(--ink); margin-bottom: .2rem; }
-    .speaking-topic-desc { font-size: .78rem; color: var(--ink-dim); line-height: 1.5; }
+    .belief-quote em { font-style: italic; color: var(--indigo); }
+    .belief-body { font-size: 1rem; line-height: 1.8; color: var(--ink-mid); margin-bottom: 2.5rem; }
 
-    /* ── PHOTO PLACEHOLDER: Speaking gallery ──
-       3 fotos de eventos:
-       · speaking-1: Tú en el escenario/mesa, amplia, que se vea el contexto del evento
-       · speaking-2: Close-up durante la ponencia o taller, expresión activa
-       · speaking-3: Foto con asistentes o behind the scenes
-    ── */
-    .speaking-gallery {
-      display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto;
-      gap: 1rem;
-    }
-    .speaking-photo {
-      border-radius: 4px; overflow: hidden; position: relative;
-    }
-    .speaking-photo img {
-      width: 100%; height: 100%; object-fit: cover; display: block;
-    }
-    .speaking-photo:first-child {
-      grid-column: 1 / -1;
-    }
-    .speaking-ph {
-      width: 100%; aspect-ratio: 4/3;
-      display: flex; align-items: flex-end; padding: 1rem;
-    }
-    .speaking-photo:first-child .speaking-ph {
-      aspect-ratio: 16/9;
-    }
-    .speaking-ph.ph1 { background: linear-gradient(160deg,#232360 0%,var(--indigo) 100%); }
-    .speaking-ph.ph2 { background: linear-gradient(160deg,#1A1A2E 0%,#4C55D4 100%); }
-    .speaking-ph.ph3 { background: linear-gradient(160deg,#2D2D5E 0%,#7B85E8 100%); }
-    .ph-caption {
-      font-size: .6rem; letter-spacing: .15em; text-transform: uppercase; color: rgba(255,255,255,.5);
-      border: 1px solid rgba(255,255,255,.2); padding: .3rem .65rem; border-radius: 2px;
-    }
-
-    /* ─── VALORES ─────────────────────────────────────────── */
-    .values { padding: 7rem 0; background: var(--ink); }
-    .values .section-title { color: #fff; }
-    .values .section-sub { color: rgba(255,255,255,.45); }
-    .values .label { color: var(--amber); }
-
-    .values-grid {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 1.5px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.07);
-      margin-top: 4rem; border-radius: 4px; overflow: hidden;
-    }
-    @media(min-width:768px){ .values-grid{ grid-template-columns: repeat(4,1fr); } }
-
-    .value-card {
-      background: var(--ink); padding: 2.5rem 2rem;
-      transition: background var(--t);
-    }
-    .value-card:hover { background: #232350; }
-    .value-icon { font-size: 1.8rem; margin-bottom: 1.25rem; }
-    .value-title {
-      font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700;
-      color: #fff; margin-bottom: .6rem;
-    }
-    .value-desc { font-size: .8rem; line-height: 1.7; color: rgba(255,255,255,.42); }
-
-    /* ─── MEDIA / APARICIONES ─────────────────────────────── */
-    .media-section { padding: 7rem 0; background: var(--bg); }
-
-    .media-cards {
-      display: grid; grid-template-columns: 1fr;
-      gap: 1.5rem; margin-top: 3.5rem;
-    }
-    @media(min-width:640px){ .media-cards{ grid-template-columns: 1fr 1fr; } }
-    @media(min-width:900px){ .media-cards{ grid-template-columns: repeat(3, 1fr); } }
-
-    /* ── PHOTO PLACEHOLDER: Media / Apariciones ──
-       Cada media-card puede tener:
-       · media-1: Foto de una entrevista / podcast
-       · media-2: Captura de un medio online donde salgas citado o entrevistado
-       · media-3: Foto en un evento de networking / panel
-    ── */
-    .media-card {
-      border: 1px solid var(--rule); border-radius: 4px; overflow: hidden;
-      transition: transform var(--t), box-shadow var(--t);
-    }
-    .media-card:hover { transform: translateY(-3px); box-shadow: 0 12px 36px rgba(26,26,46,.08); }
-    .media-card-img {
-      aspect-ratio: 3/2; position: relative;
-    }
-    .media-card-img img { width: 100%; height: 100%; object-fit: cover; }
-    .media-ph {
-      width: 100%; height: 100%;
-      display: flex; align-items: flex-end; padding: 1rem;
-    }
-    .media-ph.m1 { background: linear-gradient(145deg,#EEF0FF,#B8BEFD); }
-    .media-ph.m2 { background: linear-gradient(145deg,#FFF3E0,#FBBF24); }
-    .media-ph.m3 { background: linear-gradient(145deg,#F0F9FF,#7DD3FC); }
-    .media-card-body { padding: 1.25rem 1.5rem 1.5rem; }
-    .media-card-type { margin-bottom: .4rem; }
-    .media-card-title {
-      font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 600;
-      color: var(--ink); line-height: 1.4; margin-bottom: .5rem;
-    }
-    .media-card-meta { font-size: .72rem; color: var(--ink-dim); }
-
-    /* ─── CONTACTO ────────────────────────────────────────── */
-    .contact { padding: 7rem 0 5rem; background: var(--bg-soft); }
-
-    .contact-grid {
-      display: grid; grid-template-columns: 1fr;
-      gap: 4rem; align-items: start;
-    }
-    @media(min-width:900px){ .contact-grid{ grid-template-columns: 1fr 1fr; gap: 6rem; } }
+    /* ── CONTACT ── */
+    .contact { padding: 7rem 0; background: var(--indigo); }
+    .contact-inner { display: grid; grid-template-columns: 1fr; gap: 4rem; }
+    @media(min-width:900px){ .contact-inner{ grid-template-columns: 1fr 1fr; gap: 6rem; align-items: start; } }
 
     .contact-heading {
-      font-family: 'Playfair Display', serif; font-size: clamp(2rem, 3.5vw, 2.8rem);
-      font-weight: 700; line-height: 1.15; letter-spacing: -.02em;
-      color: var(--ink); margin: .75rem 0 1.25rem;
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 700; line-height: 1.1; letter-spacing: -.02em;
+      color: #fff; margin: .75rem 0 1.5rem;
     }
-    .contact-heading em { font-style: italic; color: var(--indigo); }
-    .contact-body { font-size: .95rem; line-height: 1.8; color: var(--ink-mid); margin-bottom: 2rem; }
+    .contact-heading em { font-style: italic; color: var(--amber); }
+    .contact-body { font-size: 1rem; line-height: 1.8; color: rgba(255,255,255,.65); margin-bottom: 2rem; }
 
     .contact-email {
       display: inline-flex; align-items: center; gap: .75rem;
-      font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 600;
-      color: var(--ink); border-bottom: 2px solid var(--amber); padding-bottom: .2rem;
-      transition: color var(--t);
-      margin-bottom: 2.5rem;
+      font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700;
+      color: #fff; border-bottom: 2px solid var(--amber); padding-bottom: .2rem;
+      margin-bottom: 2rem;
     }
-    .contact-email:hover { color: var(--indigo); }
 
-    .contact-socials { display: flex; flex-direction: column; gap: .75rem; }
+    .contact-socials { display: flex; flex-direction: column; gap: .65rem; }
     .contact-social {
       display: flex; align-items: center; gap: 1rem;
-      padding: 1rem 1.25rem; background: #fff; border: 1px solid var(--rule);
-      border-radius: 4px; font-size: .82rem; font-weight: 500; color: var(--ink);
-      transition: border-color var(--t), transform var(--t), box-shadow var(--t);
+      padding: .9rem 1.25rem; background: rgba(255,255,255,.1); border-radius: 3px;
+      font-size: .82rem; font-weight: 600; color: #fff;
+      border: 1px solid rgba(255,255,255,.15);
+      transition: background var(--t), transform var(--t);
     }
-    .contact-social:hover {
-      border-color: var(--indigo); transform: translateX(4px);
-      box-shadow: 0 4px 16px rgba(76,85,212,.1);
+    .contact-social:hover { background: rgba(255,255,255,.18); transform: translateX(4px); }
+    .social-icon {
+      width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;
+      border-radius: 2px; flex-shrink: 0; font-size: .8rem; font-weight: 800;
     }
-    .social-icon { width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 2px; flex-shrink: 0; font-size: .9rem; }
-    .si-ig { background: linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366); color:#fff; }
-    .si-li { background: #0A66C2; color: #fff; }
-    .si-tk { background: #000; color: #fff; }
-    .si-web { background: var(--indigo); color: #fff; }
-    .social-name { font-weight: 600; }
-    .social-handle { color: var(--ink-dim); font-size: .77rem; }
+    .si-li { background: #0A66C2; }
+    .si-ig { background: linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366); }
+    .si-tk { background: #000; }
+    .si-web { background: rgba(255,255,255,.15); }
+    .social-handle { color: rgba(255,255,255,.55); font-weight: 400; font-size: .75rem; }
 
-    .contact-form-side { }
     .contact-form {
-      background: #fff; border: 1px solid var(--rule); border-radius: 6px;
-      padding: 2.5rem; display: flex; flex-direction: column; gap: 1.25rem;
+      background: #fff; border-radius: 4px; padding: 2.5rem;
+      display: flex; flex-direction: column; gap: 1.2rem;
     }
     .cf-title {
-      font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700;
-      color: var(--ink); margin-bottom: .25rem;
+      font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 700;
+      color: var(--ink);
     }
-    .cf-sub { font-size: .82rem; color: var(--ink-dim); margin-bottom: .5rem; }
+    .cf-sub { font-size: .82rem; color: var(--ink-dim); }
     .cf-field { display: flex; flex-direction: column; gap: .4rem; }
-    .cf-label { font-size: .7rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-mid); }
-    .cf-input, .cf-textarea {
+    .cf-label { font-size: .68rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-mid); }
+    .cf-input, .cf-textarea, .cf-select {
       width: 100%; padding: .8rem 1rem;
-      border: 1.5px solid var(--rule); border-radius: var(--radius);
+      border: 1.5px solid var(--rule); border-radius: 2px;
       font-family: 'Inter', sans-serif; font-size: .88rem; color: var(--ink);
-      background: var(--bg); outline: none;
-      transition: border-color var(--t);
+      background: var(--bg); outline: none; transition: border-color var(--t);
     }
-    .cf-input:focus, .cf-textarea:focus { border-color: var(--indigo); }
+    .cf-input:focus, .cf-textarea:focus, .cf-select:focus { border-color: var(--indigo); }
     .cf-textarea { resize: vertical; min-height: 100px; }
-    .cf-select {
-      width: 100%; padding: .8rem 1rem;
-      border: 1.5px solid var(--rule); border-radius: var(--radius);
-      font-family: 'Inter', sans-serif; font-size: .88rem; color: var(--ink);
-      background: var(--bg); outline: none; appearance: none;
-      transition: border-color var(--t);
-    }
-    .cf-select:focus { border-color: var(--indigo); }
+    .cf-select { appearance: none; }
 
-    /* ─── FOOTER ──────────────────────────────────────────── */
-    .footer {
-      background: var(--ink); color: rgba(255,255,255,.35);
-      padding: 2.5rem 0;
-    }
+    /* ── FOOTER ── */
+    .footer { background: var(--ink); padding: 2.5rem 0; }
     .footer-inner {
       display: flex; flex-wrap: wrap; align-items: center;
       justify-content: space-between; gap: 1rem;
@@ -650,38 +485,52 @@
       font-family: 'Playfair Display', serif; font-size: .95rem; font-weight: 700;
       color: rgba(255,255,255,.7);
     }
-    .footer-copy { font-size: .72rem; letter-spacing: .06em; }
+    .footer-copy { font-size: .7rem; letter-spacing: .06em; color: rgba(255,255,255,.3); }
     .footer-links { display: flex; gap: 1.5rem; }
-    .footer-link { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.35); transition: color var(--t); }
+    .footer-link {
+      font-size: .7rem; letter-spacing: .1em; text-transform: uppercase;
+      color: rgba(255,255,255,.3); transition: color var(--t);
+    }
     .footer-link:hover { color: var(--amber); }
+
+    /* ── I18N hidden ── */
+    [data-lang="en"] { display: none; }
+    .lang-es [data-lang="en"] { display: none; }
+    .lang-en [data-lang="es"] { display: none; }
+    .lang-en [data-lang="en"] { display: revert; }
   </style>
 </head>
-<body>
+<body class="lang-es">
 
-  <!-- ── NAV ─────────────────────────────────────────────── -->
+  <!-- ── NAV ── -->
   <header class="nav" id="nav">
     <div class="nav-inner">
-      <a href="#" class="nav-logo" aria-label="Carlos González">
-        <div class="nav-logo-mark">
-          <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <text x="2" y="17" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#F59E0B">CG</text>
-          </svg>
-        </div>
-        <div class="nav-logo-text">
-          Carlos González
-          <span>Emprendedor · Estratega</span>
-        </div>
+      <a href="#" class="nav-logo">
+        <div class="nav-logo-mark"><span>CG</span></div>
+        <div class="nav-logo-name">Carlos González</div>
       </a>
 
-      <nav class="nav-links" aria-label="Principal">
-        <a href="#about" class="nav-link">Sobre mí</a>
-        <a href="#proyectos" class="nav-link">Proyectos</a>
-        <a href="#charlas" class="nav-link">Charlas</a>
-        <a href="#contacto" class="nav-link">Contacto</a>
+      <nav class="nav-links">
+        <a href="#why" class="nav-link" data-lang="es">Por qué yo</a>
+        <a href="#why" class="nav-link" data-lang="en">Why me</a>
+        <a href="#topics" class="nav-link" data-lang="es">Temas</a>
+        <a href="#topics" class="nav-link" data-lang="en">Topics</a>
+        <a href="#audiences" class="nav-link" data-lang="es">Universidades & Empresas</a>
+        <a href="#audiences" class="nav-link" data-lang="en">Universities & Orgs</a>
+        <a href="#contact" class="nav-link" data-lang="es">Contacto</a>
+        <a href="#contact" class="nav-link" data-lang="en">Contact</a>
       </nav>
 
-      <a href="mailto:carlos.gonzalez@clairo.es" class="btn btn-primary nav-cta">Hablemos</a>
-      <button class="mob-btn" id="mobBtn" aria-label="Menú">
+      <div class="nav-right">
+        <div class="lang-toggle">
+          <button class="lang-btn active" id="langEs">ES</button>
+          <button class="lang-btn" id="langEn">EN</button>
+        </div>
+        <a href="#contact" class="btn btn-primary" style="display:none;" data-lang="es">Hablemos</a>
+        <a href="#contact" class="btn btn-primary" style="display:none;" data-lang="en">Let's talk</a>
+      </div>
+
+      <button class="mob-btn" id="mobBtn" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -690,553 +539,501 @@
   <!-- Mobile nav -->
   <div class="mob-nav" id="mobNav">
     <div class="mob-nav-top">
-      <div class="nav-logo-text" style="font-family:'Playfair Display',serif;font-weight:700;">Carlos González</div>
-      <button class="mob-close" id="mobClose" aria-label="Cerrar">✕</button>
+      <div style="font-family:'Playfair Display',serif;font-weight:700;font-size:.95rem;">Carlos González</div>
+      <button class="mob-close" id="mobClose">✕</button>
     </div>
     <div class="mob-nav-links">
-      <a href="#about" class="mob-nav-link">Sobre mí</a>
-      <a href="#proyectos" class="mob-nav-link">Proyectos</a>
-      <a href="#charlas" class="mob-nav-link">Charlas</a>
-      <a href="#contacto" class="mob-nav-link">Contacto</a>
+      <a href="#why"       class="mob-nav-link" data-lang="es">Por qué yo</a>
+      <a href="#why"       class="mob-nav-link" data-lang="en">Why me</a>
+      <a href="#topics"    class="mob-nav-link" data-lang="es">Temas</a>
+      <a href="#topics"    class="mob-nav-link" data-lang="en">Topics</a>
+      <a href="#audiences" class="mob-nav-link" data-lang="es">Para universidades</a>
+      <a href="#audiences" class="mob-nav-link" data-lang="en">For universities</a>
+      <a href="#contact"   class="mob-nav-link" data-lang="es">Contacto</a>
+      <a href="#contact"   class="mob-nav-link" data-lang="en">Contact</a>
     </div>
     <div class="mob-nav-foot">
-      <a href="mailto:carlos.gonzalez@clairo.es" class="btn btn-primary" style="width:100%;justify-content:center;">Hablemos →</a>
+      <a href="#contact" class="btn btn-primary" style="justify-content:center;" data-lang="es">Hablemos →</a>
+      <a href="#contact" class="btn btn-primary" style="justify-content:center;" data-lang="en">Let's talk →</a>
     </div>
   </div>
 
-  <!-- ── HERO ─────────────────────────────────────────────── -->
+  <!-- ── HERO ── -->
   <section class="hero" id="hero">
-    <div class="hero-content">
-      <div class="hero-eyebrow reveal">
-        <div class="hero-dot"></div>
-        <span class="label">Fundador · Estratega · Creador</span>
+    <div class="hero-bg">
+      <!-- FOTO HERO: foto-hero.jpg
+           Foto de escenario o retrato editorial. Mínimo 1400×900px.
+           Tonos oscuros o ropa oscura funcionan mejor con el overlay.
+           Para activar: <img src="foto-hero.jpg" alt="Carlos González"> -->
+      <img src="foto-hero.jpg" alt="Carlos González"
+           onerror="this.style.display='none'">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-overlay-side"></div>
+
+    <div class="hero-content wrap">
+      <div class="hero-roles reveal">
+        <span class="hero-role amber" data-lang="es">Speaker</span>
+        <span class="hero-role amber" data-lang="en">Speaker</span>
+        <span class="hero-role">Lecturer</span>
+        <span class="hero-role" data-lang="es">Emprendedor</span>
+        <span class="hero-role" data-lang="en">Entrepreneur</span>
+        <span class="hero-role">Ecosystem Builder</span>
       </div>
 
       <h1 class="hero-heading reveal">
-        Construyo marcas<br>
-        que <em>no pasan</em><br>
-        <span class="underline-amber">desapercibidas.</span>
+        <span data-lang="es">Conectando<br>innovación y<br><em>talento</em>.</span>
+        <span data-lang="en">Connecting<br>innovation &<br><em>talent</em>.</span>
       </h1>
 
       <p class="hero-sub reveal">
-        Fundador de <strong>Clairo.es</strong> y <strong>Studio 779</strong>. Llevo años en la intersección del ecommerce, el diseño y la economía creativa — y lo cuento sin filtro en escenarios, talleres y redes.
+        <span data-lang="es">Ayudo a universidades, organizaciones y ecosistemas de innovación a desarrollar talento emprendedor, pensamiento creativo y habilidades prácticas de innovación en Europa y Latinoamérica.</span>
+        <span data-lang="en">I help universities, organizations and innovation ecosystems develop entrepreneurial talent, creative thinking and practical innovation skills across Europe and Latin America.</span>
       </p>
 
       <div class="hero-actions reveal">
-        <a href="#proyectos" class="btn btn-primary">Ver proyectos →</a>
-        <a href="#charlas" class="btn btn-outline">Contratar charla</a>
+        <a href="#contact" class="btn btn-white" data-lang="es">Solicitar charla →</a>
+        <a href="#contact" class="btn btn-white" data-lang="en">Book a talk →</a>
+        <a href="#why" class="btn btn-outline-white" data-lang="es">Conocer más</a>
+        <a href="#why" class="btn btn-outline-white" data-lang="en">Learn more</a>
       </div>
 
-      <div class="hero-stats reveal">
-        <div>
-          <div class="hero-stat-num">2<sup>+</sup></div>
-          <div class="hero-stat-label">Marcas<br>fundadas</div>
+      <div class="hero-footer reveal">
+        <div class="hero-stat">
+          <div class="hero-stat-num">5</div>
+          <div class="hero-stat-label" data-lang="es">Países vividos</div>
+          <div class="hero-stat-label" data-lang="en">Countries</div>
         </div>
-        <div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">30<sup>+</sup></div>
+          <div class="hero-stat-label" data-lang="es">Charlas impartidas</div>
+          <div class="hero-stat-label" data-lang="en">Talks delivered</div>
+        </div>
+        <div class="hero-stat">
           <div class="hero-stat-num">50<sup>+</sup></div>
-          <div class="hero-stat-label">Charlas y<br>talleres</div>
+          <div class="hero-stat-label" data-lang="es">Eventos organizados</div>
+          <div class="hero-stat-label" data-lang="en">Events organized</div>
         </div>
-        <div>
-          <div class="hero-stat-num">10K<sup>+</sup></div>
-          <div class="hero-stat-label">Comunidad<br>online</div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">2</div>
+          <div class="hero-stat-label" data-lang="es">MBAs en tecnología</div>
+          <div class="hero-stat-label" data-lang="en">MBAs in technology</div>
         </div>
       </div>
     </div>
 
-    <div class="hero-visual">
-      <!--
-        ═══════════════════════════════════════════════
-        IMAGEN HERO — QUÉ PONER AQUÍ:
-        Foto vertical (portrait), mínimo 800×1100px.
-        Preferible: tú mirando hacia la cámara con
-        confianza, ropa oscura sobre fondo claro o
-        neutro. Sin flash duro, luz natural si puede ser.
-        Puede ser en un evento o en un espacio de trabajo
-        con personalidad (setup, oficina minimalista).
-
-        Para activar: elimina el div .hero-photo-placeholder
-        y añade:
-        <img src="TU_FOTO.jpg" alt="Carlos González" class="hero-photo">
-        ═══════════════════════════════════════════════
-      -->
-      <div class="hero-photo-placeholder">
-        <span class="hero-photo-tag">📷 Tu foto aquí · portrait vertical</span>
-      </div>
-
-      <div class="hero-badge">
-        <div class="hero-badge-icon">🚀</div>
-        <div class="hero-badge-text">
-          Disponible para charlas
-          <span>Empresas · Universidades · Eventos</span>
-        </div>
-      </div>
-
-      <div class="hero-shape"></div>
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      <span class="hero-scroll-label">scroll</span>
     </div>
   </section>
 
-  <!-- ── STRIP ─────────────────────────────────────────────── -->
+  <!-- ── STRIP ── -->
   <div class="strip">
-    <div class="wrap">
-      <div class="strip-inner">
-        <span>Fundador de</span>
-        <span class="strip-sep">✦</span>
-        <span class="strip-project">Clairo.es</span>
-        <span class="strip-sep">·</span>
-        <span class="strip-project">Studio 779</span>
-        <span class="strip-sep">✦</span>
-        <span>Ecommerce · Diseño · Marca personal</span>
-        <span class="strip-sep">✦</span>
-        <span class="strip-project">Clairo.es</span>
-        <span class="strip-sep">·</span>
-        <span class="strip-project">Studio 779</span>
-        <span class="strip-sep">✦</span>
-        <span>Ecommerce · Diseño · Marca personal</span>
-      </div>
+    <div class="strip-track">
+      <span class="strip-item hi">Speaker</span>
+      <span class="strip-item">·</span>
+      <span class="strip-item">Entrepreneurship</span>
+      <span class="strip-item">·</span>
+      <span class="strip-item hi">Innovation</span>
+      <span class="strip-item">·</span>
+      <span class="strip-item">Creativity</span>
+      <span class="strip-item">·</span>
+      <span class="strip-item hi">AI & Future of Work</span>
+      <span class="strip-item">·</span>
+      <span class="strip-item">Leadership</span>
+      <span class="strip-item">·</span>
+      <span class="strip-item hi">Global Ecosystems</span>
+      <span class="strip-item">·</span>
+      <span class="strip-item">Clairo · Studio 779</span>
+      <span class="strip-item">·</span>
+      <!-- duplicate for seamless loop -->
+      <span class="strip-item hi">Speaker</span>
+      <span class="strip-item">·</span>
+      <span class="strip-item">Entrepreneurship</span>
+      <span class="strip-item">·</span>
+      <span class="strip-item hi">Innovation</span>
+      <span class="strip-item">·</span>
+      <span class="strip-item">Creativity</span>
+      <span class="strip-item">·</span>
+      <span class="strip-item hi">AI & Future of Work</span>
+      <span class="strip-item">·</span>
+      <span class="strip-item">Leadership</span>
+      <span class="strip-item">·</span>
+      <span class="strip-item hi">Global Ecosystems</span>
+      <span class="strip-item">·</span>
+      <span class="strip-item">Clairo · Studio 779</span>
+      <span class="strip-item">·</span>
     </div>
   </div>
 
-  <!-- ── ABOUT ─────────────────────────────────────────────── -->
-  <section class="about" id="about">
+  <!-- ── WHY ME ── -->
+  <section class="why" id="why">
     <div class="wrap">
-      <div class="about-grid">
-        <div class="about-img-wrap reveal">
-          <!--
-            ═══════════════════════════════════════════════
-            IMAGEN ABOUT — QUÉ PONER AQUÍ:
-            Foto más cercana y auténtica que la del hero.
-            Ideal: tú en un taller, en tu espacio de trabajo,
-            o en una conversación en un evento. Ratio 4:5.
-            Que transmita energía y cercanía, no solo pose.
-
-            Para activar: elimina el div .about-img-placeholder
-            y añade:
-            <img src="TU_FOTO_ABOUT.jpg" alt="Carlos González" class="about-img">
-            ═══════════════════════════════════════════════
-          -->
-          <div class="about-img-placeholder">
-            <span class="ph-text">CG</span>
+      <div class="why-grid">
+        <div class="why-photo reveal">
+          <!-- FOTO ABOUT: foto-about.jpg — Retrato editorial, escenario o evento. Ratio 4:5. -->
+          <img src="foto-about.jpg" alt="Carlos González"
+               style="width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:3px;"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="why-photo-ph" style="display:none;">
+            <span>CG</span>
           </div>
-          <div class="about-accent"></div>
-          <div class="about-accent-2"></div>
+          <div class="why-accent"></div>
+          <div class="why-accent-2"></div>
         </div>
 
-        <div class="about-content">
-          <p class="label reveal">Sobre mí</p>
-          <h2 class="about-intro reveal">
-            Emprendí joven, aprendí<br>
-            <em>haciendo</em> y no paré.
-          </h2>
-          <div class="about-body reveal">
-            <p>
-              Soy Carlos González, fundador de Clairo.es y Studio 779. Llevo años construyendo marcas desde cero — con presupuesto justo, mucha creatividad y la obsesión de entender qué mueve realmente a las personas a comprar, seguir y recomendar.
-            </p>
-            <p>
-              Hablo en conferencias, doy talleres a equipos y creo contenido sobre ecommerce, diseño y el lado real del emprendimiento. No vendo humo: comparto lo que me ha funcionado (y lo que no).
-            </p>
-          </div>
-          <div class="about-tags reveal">
-            <span class="about-tag">Ecommerce</span>
-            <span class="about-tag">Marca personal</span>
-            <span class="about-tag amber">Diseño creativo</span>
-            <span class="about-tag">Estrategia digital</span>
-            <span class="about-tag amber">Contenido</span>
-          </div>
-
-          <div class="about-metrics reveal">
-            <div>
-              <div class="metric-num">2<sup>+</sup></div>
-              <div class="metric-label">Marcas propias construidas</div>
-            </div>
-            <div>
-              <div class="metric-num">50<sup>+</sup></div>
-              <div class="metric-label">Charlas y talleres impartidos</div>
-            </div>
-            <div>
-              <div class="metric-num">10K<sup>+</sup></div>
-              <div class="metric-label">Seguidores en comunidad</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── PROYECTOS ─────────────────────────────────────────── -->
-  <section class="projects" id="proyectos">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="label reveal">Proyectos</p>
-        <h2 class="section-title reveal">Lo que he construido</h2>
-        <p class="section-sub reveal">Dos marcas distintas, el mismo ADN: creatividad aplicada con cabeza de negocio.</p>
-      </div>
-
-      <div class="projects-grid">
-        <!-- Clairo.es -->
-        <div class="project-card reveal">
-          <!--
-            ═══════════════════════════════════════════════
-            IMAGEN PROYECTO CLAIRO — QUÉ PONER AQUÍ:
-            Captura editorial de producto / lifestyle de
-            Clairo.es. O screenshot del sitio web con
-            una composición cuidada. Ratio 16:9 o 3:2.
-            Colores claros o coherentes con la paleta de Clairo.
-
-            Para activar: elimina el div .project-img-placeholder
-            y añade: <img src="clairo-preview.jpg" class="project-img" alt="Clairo.es">
-            ═══════════════════════════════════════════════
-          -->
-          <div class="project-img-placeholder clairo">
-            <span class="proj-tag">ecommerce</span>
-            <span class="proj-logo-text">Clairo</span>
-          </div>
-          <div class="project-body">
-            <p class="label project-category">Ecommerce · Marca</p>
-            <h3 class="project-name">Clairo.es</h3>
-            <p class="project-desc">
-              Marca de ecommerce que fundé y construí desde cero. Un proyecto que va más allá del producto: comunidad, identidad y una forma propia de conectar con el cliente.
-            </p>
-            <div class="project-links">
-              <a href="https://www.clairo.es" target="_blank" rel="noopener" class="project-link">
-                Visitar web
-                <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 6h10M7 2l4 4-4 4"/></svg>
-              </a>
-              <a href="https://instagram.com/clairo_ecommerce" target="_blank" rel="noopener" class="project-link">
-                Instagram
-                <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 6h10M7 2l4 4-4 4"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Studio 779 -->
-        <div class="project-card reveal">
-          <!--
-            ═══════════════════════════════════════════════
-            IMAGEN PROYECTO STUDIO 779 — QUÉ PONER AQUÍ:
-            Foto de un proyecto de diseño terminado:
-            un home office, un setup creativo o un espacio
-            diseñado por Studio 779. Muestra el resultado
-            final, no el proceso. Ratio 16:9 o 3:2.
-
-            Para activar: elimina el div .project-img-placeholder
-            y añade: <img src="studio779-preview.jpg" class="project-img" alt="Studio 779">
-            ═══════════════════════════════════════════════
-          -->
-          <div class="project-img-placeholder studio">
-            <span class="proj-tag">diseño · espacios</span>
-            <span class="proj-logo-text" style="color:#92400E;">Studio 779</span>
-          </div>
-          <div class="project-body">
-            <p class="label-amber label project-category">Diseño · Espacios creativos</p>
-            <h3 class="project-name">Studio 779</h3>
-            <p class="project-desc">
-              Estudio de diseño especializado en espacios para el rendimiento creativo: home offices, setups de contenido y entornos para creadores y profesionales digitales.
-            </p>
-            <div class="project-links">
-              <a href="https://studio779.design" target="_blank" rel="noopener" class="project-link">
-                Visitar web
-                <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 6h10M7 2l4 4-4 4"/></svg>
-              </a>
-              <a href="https://www.instagram.com/studio_779/" target="_blank" rel="noopener" class="project-link">
-                Instagram
-                <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 6h10M7 2l4 4-4 4"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── SPEAKING ───────────────────────────────────────────── -->
-  <section class="speaking" id="charlas">
-    <div class="wrap">
-      <div class="speaking-grid">
-        <div class="speaking-content">
-          <p class="label-amber label reveal">Charlas y talleres</p>
-          <h2 class="speaking-intro reveal">
-            Ideas que mueven<br>
-            <em>a la acción</em>,<br>
-            no solo a aplaudir.
-          </h2>
-          <p class="speaking-body reveal">
-            Hablo en empresas, universidades, conferencias de negocio y eventos de creatividad. Sin PowerPoints de relleno: una hora contigo vale si te vas con algo que puedes aplicar mañana.
-          </p>
-
-          <div class="speaking-topics reveal">
-            <div class="speaking-topic">
-              <div class="speaking-topic-icon">🛒</div>
-              <div>
-                <div class="speaking-topic-title">Ecommerce sin humo</div>
-                <div class="speaking-topic-desc">Lo que nadie te dice sobre vender online: márgenes reales, adquisición y marca.</div>
-              </div>
-            </div>
-            <div class="speaking-topic" style="border-left-color:var(--amber);">
-              <div class="speaking-topic-icon">🎯</div>
-              <div>
-                <div class="speaking-topic-title">Marca personal que vende</div>
-                <div class="speaking-topic-desc">Cómo construir autoridad y generar negocio con tu nombre en redes y fuera de ellas.</div>
-              </div>
-            </div>
-            <div class="speaking-topic">
-              <div class="speaking-topic-icon">⚡</div>
-              <div>
-                <div class="speaking-topic-title">Creatividad aplicada al negocio</div>
-                <div class="speaking-topic-desc">Diseño, contenido y estrategia como ventaja competitiva real.</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="reveal">
-            <a href="mailto:carlos.gonzalez@clairo.es?subject=Solicitud%20de%20charla" class="btn btn-amber">Solicitar charla →</a>
-          </div>
-        </div>
-
-        <div class="speaking-gallery reveal">
-          <!--
-            ═══════════════════════════════════════════════
-            IMÁGENES CHARLAS — QUÉ PONER AQUÍ:
-
-            speaking-1 (grande, arriba, 16:9):
-            Tú en el escenario con el público de fondo,
-            o en una mesa redonda de panel. Foto amplia,
-            contexto de evento. Muestra la escala.
-
-            speaking-2 (pequeña, abajo-izq, 4:3):
-            Close-up tuyo en plena charla, expresión activa,
-            manos o micrófono. Energía, no pose.
-
-            speaking-3 (pequeña, abajo-dcha, 4:3):
-            Foto con asistentes después del evento, firma de
-            libros, o momento de networking. Humaniza.
-
-            Para activar cada foto:
-            Elimina el div .speaking-ph y añade:
-            <img src="charla-1.jpg" alt="...">
-            ═══════════════════════════════════════════════
-          -->
-          <div class="speaking-photo">
-            <div class="speaking-ph ph1">
-              <span class="ph-caption">📷 Foto escenario · panorámica · 16:9</span>
-            </div>
-          </div>
-          <div class="speaking-photo">
-            <div class="speaking-ph ph2">
-              <span class="ph-caption">📷 Close-up charla · 4:3</span>
-            </div>
-          </div>
-          <div class="speaking-photo">
-            <div class="speaking-ph ph3">
-              <span class="ph-caption">📷 Con asistentes · 4:3</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── VALORES ───────────────────────────────────────────── -->
-  <section class="values">
-    <div class="wrap">
-      <p class="label reveal">Cómo trabajo</p>
-      <h2 class="section-title reveal" style="color:#fff;">El ADN detrás<br>de todo lo que hago.</h2>
-
-      <div class="values-grid">
-        <div class="value-card reveal">
-          <div class="value-icon">🔭</div>
-          <div class="value-title">Visión larga</div>
-          <p class="value-desc">No construyo para el trimestre. Construyo marcas que duren y comunidades que crezcan con propósito.</p>
-        </div>
-        <div class="value-card reveal">
-          <div class="value-icon">⚡</div>
-          <div class="value-title">Ejecución rápida</div>
-          <p class="value-desc">Las ideas valen el 10 %, la ejecución el 90 %. Prefiero lanzar, iterar y aprender que esperar la perfección.</p>
-        </div>
-        <div class="value-card reveal">
-          <div class="value-icon">🎨</div>
-          <div class="value-title">Diseño con propósito</div>
-          <p class="value-desc">El diseño no es decoración: es estrategia. Todo lo que construyo tiene una razón visual y narrativa detrás.</p>
-        </div>
-        <div class="value-card reveal">
-          <div class="value-icon">🌐</div>
-          <div class="value-title">Comunidad primero</div>
-          <p class="value-desc">Las mejores marcas tienen tribu. Creo desde adentro hacia afuera: primero la gente, luego el producto.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── MEDIA / APARICIONES ────────────────────────────────── -->
-  <section class="media-section" id="media">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="label reveal">Apariciones y prensa</p>
-        <h2 class="section-title reveal">En los medios</h2>
-        <p class="section-sub reveal">Entrevistas, podcasts y eventos donde hablo de ecommerce, marca y emprendimiento.</p>
-      </div>
-
-      <div class="media-cards">
-        <!--
-          ═══════════════════════════════════════════════
-          IMÁGENES MEDIA — QUÉ PONER AQUÍ:
-
-          media-card 1: Foto de una entrevista o podcast.
-          Puede ser captura de un vídeo o foto del set.
-
-          media-card 2: Captura de un artículo/medio online
-          donde salgas mencionado o seas el protagonista.
-          Screenshot editado con la URL visible.
-
-          media-card 3: Foto en un panel, feria o evento
-          de networking donde hayas participado como experto.
-
-          Para activar: elimina el div .media-ph y añade:
-          <img src="media-X.jpg" alt="...">
-          ═══════════════════════════════════════════════
-        -->
-
-        <div class="media-card reveal">
-          <div class="media-card-img">
-            <div class="media-ph m1">
-              <span style="font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(26,26,46,.4);">📷 Entrevista / Podcast</span>
-            </div>
-          </div>
-          <div class="media-card-body">
-            <p class="label media-card-type">Podcast</p>
-            <h3 class="media-card-title">Nombre del podcast o programa</h3>
-            <p class="media-card-meta">Medio · Año</p>
-          </div>
-        </div>
-
-        <div class="media-card reveal">
-          <div class="media-card-img">
-            <div class="media-ph m2">
-              <span style="font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(26,26,46,.4);">📷 Artículo / Medio digital</span>
-            </div>
-          </div>
-          <div class="media-card-body">
-            <p class="label-amber label media-card-type">Prensa</p>
-            <h3 class="media-card-title">Titular del artículo o mención</h3>
-            <p class="media-card-meta">Medio · Año</p>
-          </div>
-        </div>
-
-        <div class="media-card reveal">
-          <div class="media-card-img">
-            <div class="media-ph m3">
-              <span style="font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(26,26,46,.4);">📷 Panel / Evento</span>
-            </div>
-          </div>
-          <div class="media-card-body">
-            <p class="label media-card-type">Evento</p>
-            <h3 class="media-card-title">Nombre del evento o conferencia</h3>
-            <p class="media-card-meta">Ciudad · Año</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── CONTACTO ──────────────────────────────────────────── -->
-  <section class="contact" id="contacto">
-    <div class="wrap">
-      <div class="contact-grid">
         <div>
-          <p class="label reveal">Contacto</p>
-          <h2 class="contact-heading reveal">
-            ¿Tienes un proyecto<br>o quieres que<br><em>hable en tu evento?</em>
+          <div class="why-eyebrow">
+            <p class="label reveal" data-lang="es">Por qué las organizaciones me invitan</p>
+            <p class="label reveal" data-lang="en">Why organizations invite me</p>
+          </div>
+
+          <h2 class="why-quote reveal">
+            <span data-lang="es">No enseño emprendimiento<br>desde un libro. Lo enseño<br><em>desde la experiencia.</em></span>
+            <span data-lang="en">I don't teach entrepreneurship<br>from a textbook. I teach it<br><em>from experience.</em></span>
           </h2>
-          <p class="contact-body reveal">
-            Colaboraciones, charlas, consultoría o simplemente una conversación interesante. Escríbeme y te respondo en menos de 48h.
-          </p>
+
+          <div class="why-body reveal">
+            <p data-lang="es">He trabajado en ventas, marketing, producto, branding, liderazgo y desarrollo de negocio. He liderado equipos, lanzado productos, construido comunidades, organizado eventos, mentorizado emprendedores y explorado ecosistemas de innovación en múltiples países.</p>
+            <p data-lang="en">I have worked across sales, marketing, product, branding, leadership and business development. I have led teams, launched products, built communities, organized events, mentored entrepreneurs and explored innovation ecosystems across multiple countries.</p>
+            <p style="margin-top:1rem;" data-lang="es">Todo lo que enseño viene de proyectos reales, decisiones reales y lecciones aprendidas de verdad.</p>
+            <p style="margin-top:1rem;" data-lang="en">Everything I teach comes from real projects, real decisions and real lessons learned.</p>
+          </div>
+
+          <div style="margin-top:2rem;" class="reveal">
+            <a href="#contact" class="btn btn-primary" data-lang="es">Solicitar charla →</a>
+            <a href="#contact" class="btn btn-primary" data-lang="en">Book a talk →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE AT A GLANCE ── -->
+  <section class="glance" id="glance">
+    <div class="wrap">
+      <p class="label reveal" data-lang="es">Trayectoria de un vistazo</p>
+      <p class="label reveal" data-lang="en">My experience at a glance</p>
+      <h2 class="section-title reveal" style="color:#fff;margin-top:.75rem;" data-lang="es">Números que<br>cuentan la historia.</h2>
+      <h2 class="section-title reveal" style="color:#fff;margin-top:.75rem;" data-lang="en">Numbers that<br>tell the story.</h2>
+
+      <div class="glance-grid">
+        <div class="glance-card reveal">
+          <div class="glance-icon">🌎</div>
+          <div class="glance-num">5</div>
+          <div class="glance-desc" data-lang="es">Países vividos, estudiados o trabajados: México, Estados Unidos, Canadá, Países Bajos y España.</div>
+          <div class="glance-desc" data-lang="en">Countries lived, studied or worked in: Mexico, United States, Canada, Netherlands and Spain.</div>
+        </div>
+        <div class="glance-card reveal">
+          <div class="glance-icon">🎓</div>
+          <div class="glance-num">2</div>
+          <div class="glance-desc" data-lang="es">MBAs enfocados en tecnología e innovación.</div>
+          <div class="glance-desc" data-lang="en">MBAs focused on technology and innovation.</div>
+        </div>
+        <div class="glance-card reveal">
+          <div class="glance-icon">📚</div>
+          <div class="glance-num">15<sup>+</sup></div>
+          <div class="glance-desc" data-lang="es">Certificaciones en emprendimiento, liderazgo, UX, innovación, marketing y negocio.</div>
+          <div class="glance-desc" data-lang="en">Certifications in entrepreneurship, leadership, UX, innovation, marketing and business.</div>
+        </div>
+        <div class="glance-card reveal">
+          <div class="glance-icon">🎤</div>
+          <div class="glance-num">30<sup>+</sup></div>
+          <div class="glance-desc" data-lang="es">Conferencias y talleres impartidos.</div>
+          <div class="glance-desc" data-lang="en">Conferences and workshops delivered.</div>
+        </div>
+        <div class="glance-card reveal">
+          <div class="glance-icon">👥</div>
+          <div class="glance-num">50<sup>+</sup></div>
+          <div class="glance-desc" data-lang="es">Eventos organizados: programas de innovación, congresos, comunidades y delegaciones empresariales.</div>
+          <div class="glance-desc" data-lang="en">Events organized: innovation programs, congresses, community experiences and business delegations.</div>
+        </div>
+        <div class="glance-card reveal">
+          <div class="glance-icon">💼</div>
+          <div class="glance-num">CMO</div>
+          <div class="glance-desc" data-lang="es">Ex Chief Marketing Officer y miembro del consejo directivo de una de las empresas de software más reconocidas de México.</div>
+          <div class="glance-desc" data-lang="en">Former Chief Marketing Officer and Board Member of one of Mexico's most recognized software companies.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TOPICS ── -->
+  <section class="topics" id="topics">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="label reveal" data-lang="es">Temas en los que hablo</p>
+        <p class="label reveal" data-lang="en">Topics I speak about</p>
+        <h2 class="section-title reveal" data-lang="es">Ideas que generan<br>acción real.</h2>
+        <h2 class="section-title reveal" data-lang="en">Ideas that generate<br>real action.</h2>
+      </div>
+
+      <div class="topics-grid">
+        <!-- 1 -->
+        <div class="topic-card reveal">
+          <div class="topic-icon">🚀</div>
+          <div class="topic-title" data-lang="es">Emprendimiento & Startups</div>
+          <div class="topic-title" data-lang="en">Entrepreneurship & Startups</div>
+          <ul class="topic-items">
+            <li data-lang="es">Construir proyectos con recursos limitados</li>
+            <li data-lang="en">Building projects with limited resources</li>
+            <li data-lang="es">Customer Discovery real</li>
+            <li data-lang="en">Customer Discovery</li>
+            <li data-lang="es">MVPs que realmente validan</li>
+            <li data-lang="en">MVPs that actually validate</li>
+            <li data-lang="es">La realidad detrás del emprendimiento</li>
+            <li data-lang="en">The reality behind entrepreneurship</li>
+            <li data-lang="es">Mentalidad de fundador</li>
+            <li data-lang="en">Founder mindset</li>
+          </ul>
+        </div>
+        <!-- 2 -->
+        <div class="topic-card amber reveal">
+          <div class="topic-icon">🎨</div>
+          <div class="topic-title" data-lang="es">Creatividad & Innovación</div>
+          <div class="topic-title" data-lang="en">Creativity & Innovation</div>
+          <ul class="topic-items">
+            <li data-lang="es">La creatividad como ventaja competitiva</li>
+            <li data-lang="en">Creativity as a competitive advantage</li>
+            <li data-lang="es">Cómo construir ideas con significado</li>
+            <li data-lang="en">Building meaningful ideas</li>
+            <li data-lang="es">Innovación más allá de los buzzwords</li>
+            <li data-lang="en">Innovation beyond buzzwords</li>
+            <li data-lang="es">Cómo los ecosistemas crean innovación</li>
+            <li data-lang="en">How ecosystems create innovation</li>
+          </ul>
+        </div>
+        <!-- 3 -->
+        <div class="topic-card reveal">
+          <div class="topic-icon">🧭</div>
+          <div class="topic-title" data-lang="es">Liderazgo & Desarrollo personal</div>
+          <div class="topic-title" data-lang="en">Leadership & Personal Growth</div>
+          <ul class="topic-items">
+            <li data-lang="es">Liderar a través de la inspiración</li>
+            <li data-lang="en">Leading through inspiration</li>
+            <li data-lang="es">Equipos resilientes</li>
+            <li data-lang="en">Building resilient teams</li>
+            <li data-lang="es">Carreras con propósito</li>
+            <li data-lang="en">Purpose-driven careers</li>
+            <li data-lang="es">Navegar la incertidumbre</li>
+            <li data-lang="en">Navigating uncertainty and change</li>
+          </ul>
+        </div>
+        <!-- 4 -->
+        <div class="topic-card amber reveal">
+          <div class="topic-icon">🤖</div>
+          <div class="topic-title" data-lang="es">IA & El futuro del trabajo</div>
+          <div class="topic-title" data-lang="en">AI & The Future of Work</div>
+          <ul class="topic-items">
+            <li data-lang="es">IA práctica para profesionales</li>
+            <li data-lang="en">Practical AI for professionals</li>
+            <li data-lang="es">IA para emprendedores</li>
+            <li data-lang="en">AI for entrepreneurs</li>
+            <li data-lang="es">Habilidades humanas en la era de la IA</li>
+            <li data-lang="en">Human skills in the AI era</li>
+            <li data-lang="es">Organizaciones AI-native</li>
+            <li data-lang="en">Building AI-native organizations</li>
+          </ul>
+        </div>
+        <!-- 5 -->
+        <div class="topic-card reveal" style="grid-column: 1/-1; max-width: 600px;">
+          <div class="topic-icon">🌐</div>
+          <div class="topic-title" data-lang="es">Ecosistemas globales de innovación</div>
+          <div class="topic-title" data-lang="en">Global Innovation Ecosystems</div>
+          <ul class="topic-items" style="columns:2;gap:1.5rem;">
+            <li data-lang="es">Israel, Estonia, España y EE.UU.: qué podemos aprender</li>
+            <li data-lang="en">What we can learn from Israel, Estonia, Spain and the US</li>
+            <li data-lang="es">Ecosistemas que están moldeando el futuro</li>
+            <li data-lang="en">Startup ecosystems shaping the future</li>
+            <li data-lang="es">Conectar Europa y Latinoamérica a través de la innovación</li>
+            <li data-lang="en">Connecting Europe and Latin America through innovation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── AUDIENCES ── -->
+  <section class="audiences" id="audiences">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="label reveal" data-lang="es">¿Con quién trabajo?</p>
+        <p class="label reveal" data-lang="en">Who I work with</p>
+        <h2 class="section-title reveal" data-lang="es">Diseñado para<br>inspirar acción,<br>no solo ideas.</h2>
+        <h2 class="section-title reveal" data-lang="en">Designed to inspire<br>action,<br>not just ideas.</h2>
+      </div>
+
+      <div class="audiences-grid">
+        <div class="audience-block reveal">
+          <p class="label" data-lang="es">Para Universidades</p>
+          <p class="label" data-lang="en">For Universities</p>
+          <h3 class="audience-title" data-lang="es">Escuelas de negocio &<br>Instituciones educativas</h3>
+          <h3 class="audience-title" data-lang="en">Business Schools &<br>Educational Institutions</h3>
+          <p class="audience-body" data-lang="es">Colaboro con universidades, escuelas de negocios e instituciones educativas para traer perspectivas globales y experiencia práctica al aula. Mis sesiones combinan experiencia real, visión internacional y aprendizaje interactivo.</p>
+          <p class="audience-body" data-lang="en">I collaborate with universities, business schools and educational institutions through sessions that combine practical experience, global perspectives and interactive learning.</p>
+          <div class="audience-list">
+            <span class="audience-tag" data-lang="es">Conferencias académicas</span>
+            <span class="audience-tag" data-lang="en">Guest lectures</span>
+            <span class="audience-tag" data-lang="es">Cursos académicos</span>
+            <span class="audience-tag" data-lang="en">Academic courses</span>
+            <span class="audience-tag" data-lang="es">Programas de emprendimiento</span>
+            <span class="audience-tag" data-lang="en">Entrepreneurship programs</span>
+            <span class="audience-tag" data-lang="es">Talleres de innovación</span>
+            <span class="audience-tag" data-lang="en">Innovation workshops</span>
+            <span class="audience-tag" data-lang="es">MBA & Executive Education</span>
+            <span class="audience-tag" data-lang="en">MBA & Executive Education</span>
+            <span class="audience-tag" data-lang="es">Desarrollo de carrera</span>
+            <span class="audience-tag" data-lang="en">Career development talks</span>
+          </div>
+        </div>
+
+        <div class="audience-block reveal">
+          <p class="label-amber label" data-lang="es">Para Organizaciones & Eventos</p>
+          <p class="label-amber label" data-lang="en">For Organizations & Events</p>
+          <h3 class="audience-title" data-lang="es">Empresas, asociaciones<br>& programas de innovación</h3>
+          <h3 class="audience-title" data-lang="en">Companies, associations<br>& innovation programs</h3>
+          <p class="audience-body" data-lang="es">Trabajo con empresas, asociaciones, conferencias y programas de innovación para llevar perspectivas internacionales y aprendizajes reales a sus equipos y audiencias.</p>
+          <p class="audience-body" data-lang="en">I work with companies, associations, conferences and innovation programs to bring international perspectives and real learnings to their teams and audiences.</p>
+          <div class="audience-list">
+            <span class="audience-tag amber" data-lang="es">Keynotes</span>
+            <span class="audience-tag amber" data-lang="en">Keynote speeches</span>
+            <span class="audience-tag amber" data-lang="es">Talleres corporativos</span>
+            <span class="audience-tag amber" data-lang="en">Corporate workshops</span>
+            <span class="audience-tag amber" data-lang="es">Programas de innovación</span>
+            <span class="audience-tag amber" data-lang="en">Innovation programs</span>
+            <span class="audience-tag amber" data-lang="es">Sesiones de liderazgo</span>
+            <span class="audience-tag amber" data-lang="en">Leadership sessions</span>
+            <span class="audience-tag amber" data-lang="es">Moderación y paneles</span>
+            <span class="audience-tag amber" data-lang="en">Moderation & panels</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BELIEF ── -->
+  <section class="belief" id="belief">
+    <div class="wrap">
+      <div class="belief-inner">
+        <p class="label reveal" data-lang="es">Lo que creo</p>
+        <p class="label reveal" data-lang="en">What I believe</p>
+        <h2 class="belief-quote reveal">
+          <span data-lang="es">El talento está<br>en todas partes.<br><em>Las oportunidades, no.</em></span>
+          <span data-lang="en">Talent is everywhere.<br><em>Opportunities are not.</em></span>
+        </h2>
+        <p class="belief-body reveal" data-lang="es">Lo que no está igualmente distribuido es el acceso a oportunidades, redes y conocimiento. Por eso dedico mi trabajo a conectar personas, ideas y ecosistemas que ayuden a otros a construir proyectos con propósito, creatividad y ambición global.</p>
+        <p class="belief-body reveal" data-lang="en">What is not equally distributed is access to opportunities, networks and knowledge. That is why I dedicate my work to connecting people, ideas and ecosystems that help others build projects with purpose, creativity and global ambition.</p>
+
+        <div class="reveal" style="display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="https://www.clairo.es" target="_blank" rel="noopener" class="btn btn-primary" data-lang="es">Ver Clairo.es →</a>
+          <a href="https://www.clairo.es" target="_blank" rel="noopener" class="btn btn-primary" data-lang="en">Visit Clairo.es →</a>
+          <a href="https://studio779.design" target="_blank" rel="noopener" class="btn btn-amber">Studio 779 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="contact-inner">
+        <div>
+          <p class="label-white label reveal" data-lang="es">Construyamos algo significativo</p>
+          <p class="label-white label reveal" data-lang="en">Let's build something meaningful</p>
+          <h2 class="contact-heading reveal">
+            <span data-lang="es">¿Hablamos<br>de tu <em>próximo</em><br>evento?</span>
+            <span data-lang="en">Let's talk<br>about your <em>next</em><br>event.</span>
+          </h2>
+          <p class="contact-body reveal" data-lang="es">Tanto si eres una universidad buscando un ponente, una organización planificando un evento, o un ecosistema que busca perspectivas internacionales, me encantaría contribuir.</p>
+          <p class="contact-body reveal" data-lang="en">Whether you are a university looking for a lecturer, an organization planning an event, or an ecosystem seeking international perspectives, I would love to contribute.</p>
 
           <a href="mailto:carlos.gonzalez@clairo.es" class="contact-email reveal">
             carlos.gonzalez@clairo.es
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8h12M9 3l5 5-5 5"/></svg>
           </a>
 
           <div class="contact-socials reveal">
             <a href="https://www.linkedin.com/in/carlos-glz" target="_blank" rel="noopener" class="contact-social">
               <div class="social-icon si-li">in</div>
               <div>
-                <div class="social-name">LinkedIn</div>
+                <div>LinkedIn</div>
                 <div class="social-handle">carlos-glz</div>
               </div>
             </a>
             <a href="https://instagram.com/clairo_ecommerce" target="_blank" rel="noopener" class="contact-social">
               <div class="social-icon si-ig">📷</div>
               <div>
-                <div class="social-name">Instagram · Clairo</div>
+                <div>Instagram · Clairo</div>
                 <div class="social-handle">@clairo_ecommerce</div>
               </div>
             </a>
             <a href="https://www.instagram.com/studio_779/" target="_blank" rel="noopener" class="contact-social">
               <div class="social-icon si-ig">📷</div>
               <div>
-                <div class="social-name">Instagram · Studio 779</div>
+                <div>Instagram · Studio 779</div>
                 <div class="social-handle">@studio_779</div>
-              </div>
-            </a>
-            <a href="https://tiktok.com/@clairo_ecommerce" target="_blank" rel="noopener" class="contact-social">
-              <div class="social-icon si-tk">▶</div>
-              <div>
-                <div class="social-name">TikTok · Clairo</div>
-                <div class="social-handle">@clairo_ecommerce</div>
-              </div>
-            </a>
-            <a href="https://www.tiktok.com/@studio.779" target="_blank" rel="noopener" class="contact-social">
-              <div class="social-icon si-tk">▶</div>
-              <div>
-                <div class="social-name">TikTok · Studio 779</div>
-                <div class="social-handle">@studio.779</div>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="contact-form-side reveal">
+        <div class="reveal">
           <form class="contact-form" name="carlos-contacto" netlify>
             <div>
-              <h3 class="cf-title">Escríbeme directamente</h3>
-              <p class="cf-sub">Sin formularios eternos. Solo lo necesario.</p>
+              <h3 class="cf-title" data-lang="es">Escríbeme</h3>
+              <h3 class="cf-title" data-lang="en">Get in touch</h3>
+              <p class="cf-sub" data-lang="es">Respondo en menos de 48 horas.</p>
+              <p class="cf-sub" data-lang="en">I reply within 48 hours.</p>
             </div>
             <div class="cf-field">
-              <label class="cf-label" for="nombre">Nombre</label>
-              <input class="cf-input" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+              <label class="cf-label" for="nombre" data-lang="es">Nombre</label>
+              <label class="cf-label" for="nombre" data-lang="en">Name</label>
+              <input class="cf-input" type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="cf-field">
+              <label class="cf-label" for="org" data-lang="es">Organización</label>
+              <label class="cf-label" for="org" data-lang="en">Organization</label>
+              <input class="cf-input" type="text" id="org" name="org">
             </div>
             <div class="cf-field">
               <label class="cf-label" for="email">Email</label>
-              <input class="cf-input" type="email" id="email" name="email" placeholder="tu@email.com" required>
+              <input class="cf-input" type="email" id="email" name="email" required>
             </div>
             <div class="cf-field">
-              <label class="cf-label" for="motivo">¿En qué puedo ayudarte?</label>
-              <select class="cf-select" id="motivo" name="motivo">
-                <option value="">Selecciona...</option>
-                <option value="charla">Contratar una charla / taller</option>
-                <option value="collab">Colaboración o partnership</option>
-                <option value="consultoria">Consultoría</option>
-                <option value="prensa">Prensa / entrevista</option>
-                <option value="otro">Otro</option>
+              <label class="cf-label" for="tipo" data-lang="es">Tipo de colaboración</label>
+              <label class="cf-label" for="tipo" data-lang="en">Type of collaboration</label>
+              <select class="cf-select" id="tipo" name="tipo">
+                <option data-lang="es">Charla / Keynote</option>
+                <option data-lang="en">Talk / Keynote</option>
+                <option data-lang="es">Taller corporativo</option>
+                <option data-lang="en">Corporate workshop</option>
+                <option data-lang="es">Clase universitaria</option>
+                <option data-lang="en">University lecture</option>
+                <option data-lang="es">Moderación / Panel</option>
+                <option data-lang="en">Moderation / Panel</option>
+                <option data-lang="es">Otro</option>
+                <option data-lang="en">Other</option>
               </select>
             </div>
             <div class="cf-field">
-              <label class="cf-label" for="mensaje">Mensaje</label>
-              <textarea class="cf-textarea" id="mensaje" name="mensaje" placeholder="Cuéntame..." required></textarea>
+              <label class="cf-label" for="msg" data-lang="es">Mensaje</label>
+              <label class="cf-label" for="msg" data-lang="en">Message</label>
+              <textarea class="cf-textarea" id="msg" name="mensaje" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Enviar mensaje →</button>
+            <button type="submit" class="btn btn-amber" style="width:100%;justify-content:center;" data-lang="es">Enviar →</button>
+            <button type="submit" class="btn btn-amber" style="width:100%;justify-content:center;" data-lang="en">Send →</button>
           </form>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <!-- ── FOOTER ── -->
   <footer class="footer">
     <div class="wrap">
       <div class="footer-inner">
         <div class="footer-logo">Carlos González</div>
-        <p class="footer-copy">© 2025 · Fundador de Clairo.es y Studio 779</p>
+        <p class="footer-copy">© 2025 · carlosglz.io</p>
         <nav class="footer-links">
           <a href="https://www.clairo.es" target="_blank" rel="noopener" class="footer-link">Clairo.es</a>
           <a href="https://studio779.design" target="_blank" rel="noopener" class="footer-link">Studio 779</a>
@@ -1247,40 +1044,49 @@
   </footer>
 
   <script>
-    // Nav scroll shadow
+    // Nav shadow on scroll
     const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 20);
     }, { passive: true });
 
     // Mobile nav
-    const mobBtn  = document.getElementById('mobBtn');
-    const mobNav  = document.getElementById('mobNav');
-    const mobClose= document.getElementById('mobClose');
-    const mobLinks= mobNav.querySelectorAll('.mob-nav-link');
+    const mobBtn   = document.getElementById('mobBtn');
+    const mobNav   = document.getElementById('mobNav');
+    const mobClose = document.getElementById('mobClose');
+    const open  = () => { mobNav.classList.add('open'); document.body.style.overflow = 'hidden'; };
+    const close = () => { mobNav.classList.remove('open'); document.body.style.overflow = ''; };
+    mobBtn.addEventListener('click', open);
+    mobClose.addEventListener('click', close);
+    mobNav.querySelectorAll('.mob-nav-link').forEach(l => l.addEventListener('click', close));
 
-    const openMob  = () => { mobNav.classList.add('open'); document.body.style.overflow='hidden'; };
-    const closeMob = () => { mobNav.classList.remove('open'); document.body.style.overflow=''; };
-
-    mobBtn.addEventListener('click', openMob);
-    mobClose.addEventListener('click', closeMob);
-    mobLinks.forEach(l => l.addEventListener('click', closeMob));
+    // Language toggle
+    const langEs = document.getElementById('langEs');
+    const langEn = document.getElementById('langEn');
+    function setLang(lang) {
+      document.body.className = 'lang-' + lang;
+      langEs.classList.toggle('active', lang === 'es');
+      langEn.classList.toggle('active', lang === 'en');
+      document.documentElement.lang = lang;
+      localStorage.setItem('lang', lang);
+    }
+    langEs.addEventListener('click', () => setLang('es'));
+    langEn.addEventListener('click', () => setLang('en'));
+    // Restore saved lang
+    const saved = localStorage.getItem('lang');
+    if (saved) setLang(saved);
 
     // Reveal on scroll
-    const reveals = document.querySelectorAll('.reveal');
     const io = new IntersectionObserver((entries) => {
-      entries.forEach((e, i) => {
-        if (e.isIntersecting) {
-          // Stagger siblings
-          const siblings = [...e.target.parentElement.querySelectorAll('.reveal:not(.visible)')];
-          const idx = siblings.indexOf(e.target);
-          setTimeout(() => e.target.classList.add('visible'), idx * 80);
-          io.unobserve(e.target);
-        }
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        const siblings = [...e.target.parentElement.querySelectorAll('.reveal:not(.visible)')];
+        const idx = siblings.indexOf(e.target);
+        setTimeout(() => e.target.classList.add('visible'), Math.min(idx, 3) * 100);
+        io.unobserve(e.target);
       });
-    }, { threshold: 0.12 });
-    reveals.forEach(r => io.observe(r));
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(r => io.observe(r));
   </script>
-
 </body>
 </html>
