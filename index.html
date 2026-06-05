@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carlos González — Speaker · Lecturer · Entrepreneur</title>
+  <title>Carlos González — Speaker · Docente · Emprendedor</title>
   <meta name="description" content="Exploro ecosistemas de innovación y transformo aprendizajes en oportunidades.">
   <meta property="og:title" content="Carlos González">
   <meta property="og:description" content="Exploro ecosistemas de innovación y transformo aprendizajes en oportunidades.">
@@ -23,10 +23,10 @@
       --accent-l:  #F2EAD8;
       --bg:        #F7F5F1;
       --bg-soft:   #EFECE6;
-      --bg-warm:   #FAF8F4;
       --white:     #FFFFFF;
       --dark:      #0C1829;
       --dark-mid:  #162236;
+      --dark-hi:   #1D2E44;
       --rule:      rgba(12,24,41,.07);
       --rule-m:    rgba(12,24,41,.13);
       --t:         .22s cubic-bezier(.4,0,.2,1);
@@ -50,31 +50,24 @@
     /* ── TYPE ── */
     .label {
       font-family: 'Inter', sans-serif;
-      font-size: .6rem; letter-spacing: .3em; text-transform: uppercase;
+      font-size: .58rem; letter-spacing: .28em; text-transform: uppercase;
       font-weight: 500; color: var(--ink-dim);
     }
-    .label-light { color: rgba(255,255,255,.38); }
-    .label-accent { color: var(--accent); }
+    .label-light { color: rgba(255,255,255,.32); }
 
     /* ── BUTTONS ── */
     .btn {
       display: inline-flex; align-items: center; gap: .55rem;
       font-family: 'Inter', sans-serif;
-      font-size: .68rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase;
+      font-size: .67rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase;
       padding: 1rem 2.4rem; border: none; cursor: pointer; border-radius: 1px;
       transition: var(--t);
     }
-    .btn-dark    { background: var(--ink); color: #fff; }
+    .btn-dark { background: var(--ink); color: #fff; }
     .btn-dark:hover { background: var(--dark-mid); transform: translateY(-1px); box-shadow: 0 10px 32px rgba(12,24,41,.2); }
-    .btn-outline { background: transparent; color: var(--ink); border: 1px solid var(--rule-m); }
-    .btn-outline:hover { border-color: var(--ink); transform: translateY(-1px); }
-    .btn-outline-light { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.25); }
-    .btn-outline-light:hover { border-color: #fff; background: rgba(255,255,255,.07); }
-    .btn-accent { background: var(--accent); color: #fff; }
-    .btn-accent:hover { background: #a07d47; transform: translateY(-1px); box-shadow: 0 10px 32px rgba(184,148,90,.28); }
 
     /* ── REVEAL ── */
-    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal { opacity: 0; transform: translateY(16px); transition: opacity .62s ease, transform .62s ease; }
     .reveal.visible { opacity: 1; transform: none; }
 
     /* ── LANG TOGGLE ── */
@@ -84,7 +77,7 @@
     }
     .lang-btn {
       font-family: 'Inter', sans-serif;
-      font-size: .58rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+      font-size: .57rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
       padding: .3rem .75rem; border-radius: 16px; border: none; cursor: pointer;
       background: transparent; color: var(--ink-dim); transition: var(--t);
     }
@@ -93,11 +86,11 @@
     /* ── NAV ── */
     .nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      background: rgba(247,245,241,.95); backdrop-filter: blur(16px);
+      background: rgba(247,245,241,.96); backdrop-filter: blur(18px);
       border-bottom: 1px solid var(--rule);
       transition: box-shadow var(--t);
     }
-    .nav.scrolled { box-shadow: 0 2px 28px rgba(12,24,41,.06); }
+    .nav.scrolled { box-shadow: 0 2px 28px rgba(12,24,41,.07); }
     .nav-inner {
       max-width: 1200px; margin: 0 auto; padding: 0 2rem;
       height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem;
@@ -115,16 +108,14 @@
       font-family: 'Space Grotesk', sans-serif;
       font-size: .88rem; font-weight: 600; color: var(--ink); letter-spacing: -.02em;
     }
-
     .nav-links { display: none; align-items: center; gap: 2.2rem; }
     @media(min-width:960px){ .nav-links{ display: flex; } }
     .nav-link {
       font-family: 'Inter', sans-serif;
-      font-size: .62rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase;
+      font-size: .61rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase;
       color: var(--ink-mid); transition: color var(--t);
     }
     .nav-link:hover { color: var(--ink); }
-
     .nav-right { display: flex; align-items: center; gap: 1rem; flex-shrink: 0; }
     .nav-cta { display: none; }
     @media(min-width:640px){ .nav-cta{ display: inline-flex; } }
@@ -158,7 +149,7 @@
       transition: color var(--t); letter-spacing: -.03em;
     }
     .mob-nav-link:hover { color: var(--ink); }
-    .mob-nav-foot { padding: 2rem; display: flex; flex-direction: column; gap: 1rem; }
+    .mob-nav-foot { padding: 2rem; }
 
     /* ── HERO ── */
     .hero {
@@ -176,40 +167,41 @@
       position: absolute; inset: 0; z-index: 1;
       background: linear-gradient(
         to top,
-        rgba(8,14,22,.96) 0%,
-        rgba(8,14,22,.52) 42%,
-        rgba(8,14,22,.22) 100%
+        rgba(8,14,22,.97) 0%,
+        rgba(8,14,22,.55) 44%,
+        rgba(8,14,22,.2) 100%
       );
     }
     .hero-overlay-r {
       position: absolute; inset: 0; z-index: 1;
-      background: linear-gradient(to right, rgba(8,14,22,.4) 0%, transparent 70%);
+      background: linear-gradient(to right, rgba(8,14,22,.38) 0%, transparent 68%);
     }
-
     .hero-content {
       position: relative; z-index: 2;
-      padding: 5rem 2rem 5.5rem; max-width: 960px;
+      padding: 5rem 2rem 5.5rem;
     }
     @media(min-width:768px){ .hero-content{ padding: 6rem 3.5rem 6rem; } }
 
-    .hero-roles { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 2.5rem; }
+    .hero-roles { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 2.8rem; }
     .hero-role {
       font-family: 'Inter', sans-serif;
-      font-size: .56rem; font-weight: 500; letter-spacing: .25em; text-transform: uppercase;
-      color: rgba(255,255,255,.42);
-      border: 1px solid rgba(255,255,255,.12); padding: .32rem .8rem; border-radius: 1px;
+      font-size: .55rem; font-weight: 500; letter-spacing: .24em; text-transform: uppercase;
+      color: rgba(255,255,255,.38);
+      border: 1px solid rgba(255,255,255,.1); padding: .32rem .82rem; border-radius: 1px;
     }
-    .hero-role.hi {
-      color: rgba(255,255,255,.78);
-      border-color: rgba(255,255,255,.28);
-    }
+    .hero-role.hi { color: rgba(255,255,255,.75); border-color: rgba(255,255,255,.25); }
 
-    .hero-heading {
+    .hero-name {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: clamp(2.6rem, 6.5vw, 5.8rem);
+      font-size: clamp(1.15rem, 2.5vw, 1.75rem);
+      font-weight: 400; letter-spacing: -.01em; color: rgba(255,255,255,.55);
+      margin-bottom: 1rem; line-height: 1;
+    }
+    .hero-tagline {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.4rem, 5.8vw, 5.2rem);
       font-weight: 600; line-height: 1.07; letter-spacing: -.04em;
-      color: #fff; margin-bottom: 0;
-      max-width: 18ch;
+      color: #fff; max-width: 22ch;
     }
 
     .hero-scroll {
@@ -217,9 +209,9 @@
       display: flex; flex-direction: column; align-items: center; gap: .5rem;
     }
     .hero-scroll-line {
-      width: 1px; height: 48px;
-      background: linear-gradient(to bottom, rgba(255,255,255,.3), transparent);
-      animation: sline 2.2s infinite ease-in-out;
+      width: 1px; height: 52px;
+      background: linear-gradient(to bottom, rgba(255,255,255,.28), transparent);
+      animation: sline 2.4s infinite ease-in-out;
     }
     @keyframes sline {
       0%{ transform: scaleY(0); transform-origin: top; }
@@ -228,8 +220,8 @@
     }
     .hero-scroll-label {
       font-family: 'Inter', sans-serif;
-      font-size: .48rem; letter-spacing: .3em; text-transform: uppercase;
-      color: rgba(255,255,255,.2); writing-mode: vertical-rl;
+      font-size: .46rem; letter-spacing: .32em; text-transform: uppercase;
+      color: rgba(255,255,255,.18); writing-mode: vertical-rl;
     }
 
     /* ── WHO ── */
@@ -240,8 +232,10 @@
     @media(min-width:900px){ .who-grid{ grid-template-columns: 5fr 7fr; gap: 8rem; } }
 
     .who-photo { position: relative; }
-    .who-photo img {
-      width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 1px; display: block;
+    .who-photo-img {
+      width: 100%; aspect-ratio: 4/5; object-fit: cover;
+      object-position: center top;
+      border-radius: 1px; display: block;
     }
     .who-photo-ph {
       width: 100%; aspect-ratio: 4/5; border-radius: 1px;
@@ -250,254 +244,283 @@
     }
     .who-photo-ph span {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: 6rem; font-weight: 700; color: var(--ink); opacity: .06; letter-spacing: -.05em;
+      font-size: 6rem; font-weight: 700; color: var(--ink); opacity: .06;
     }
-    .who-photo-line {
-      position: absolute; top: -2rem; left: -1.5rem;
-      width: 1px; height: calc(100% + 2rem);
-      background: var(--rule-m); z-index: -1;
+    .who-photo-rule {
+      position: absolute; top: -2.5rem; left: -1.5rem;
+      width: 1px; height: calc(100% + 2.5rem);
+      background: linear-gradient(to bottom, transparent 0%, var(--rule-m) 20%, var(--rule-m) 80%, transparent 100%);
+      z-index: -1;
     }
 
-    .who-content {}
     .who-heading {
       font-family: 'Space Grotesk', sans-serif;
       font-size: clamp(2.2rem, 4vw, 3.4rem);
-      font-weight: 600; line-height: 1.08; letter-spacing: -.04em;
+      font-weight: 600; line-height: 1.06; letter-spacing: -.04em;
       color: var(--ink); margin: .75rem 0 2.5rem;
     }
     .who-body {
-      font-size: .94rem; line-height: 1.88; color: var(--ink-mid);
+      font-family: 'Inter', sans-serif;
+      font-size: .93rem; line-height: 1.9; color: var(--ink-mid);
     }
-    .who-body p + p { margin-top: 1.25rem; }
+    .who-body p + p { margin-top: 1.3rem; }
+
+    .who-stats {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1px; background: var(--rule-m);
+      border: 1px solid var(--rule-m); border-radius: 1px; overflow: hidden;
+      margin-top: 3rem;
+    }
+    .who-stat {
+      background: var(--white); padding: 1.6rem 1.25rem;
+    }
+    .who-stat-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2rem; font-weight: 700; color: var(--ink);
+      line-height: 1; letter-spacing: -.05em; margin-bottom: .35rem;
+    }
+    .who-stat-num sup {
+      font-size: .75rem; color: var(--ink-dim); font-weight: 500;
+    }
+    .who-stat-label {
+      font-family: 'Inter', sans-serif;
+      font-size: .6rem; color: var(--ink-dim); letter-spacing: .1em;
+      text-transform: uppercase; font-weight: 500; line-height: 1.45;
+    }
 
     /* ── TOPICS ── */
-    .topics { padding: 8rem 0; background: var(--dark); }
-    .topics .label { color: rgba(255,255,255,.3); }
+    .topics { padding: 9rem 0; background: var(--dark); }
+    .topics-header { margin-bottom: 5rem; }
+    .topics-header .label { color: rgba(255,255,255,.28); }
     .topics-heading {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: clamp(2rem, 3.5vw, 3rem);
-      font-weight: 600; line-height: 1.1; letter-spacing: -.04em;
-      color: #fff; margin: .75rem 0 3.5rem; max-width: 18ch;
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      font-weight: 600; line-height: 1.07; letter-spacing: -.045em;
+      color: #fff; margin: .75rem 0 0; max-width: 20ch;
     }
 
-    .topics-layout {
-      display: grid; grid-template-columns: 1fr;
-      gap: 1px; background: rgba(255,255,255,.06);
+    .topics-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
     }
-    @media(min-width:760px){ .topics-layout{ grid-template-columns: 1fr 1fr; } }
-    @media(min-width:1060px){ .topics-layout{ grid-template-columns: 1fr 1fr 1fr; } }
+    @media(min-width:680px){ .topics-grid{ grid-template-columns: 1fr 1fr; } }
+    @media(min-width:1020px){ .topics-grid{ grid-template-columns: 1fr 1fr 1fr; } }
 
     .topic-card {
-      background: var(--dark); padding: 2.5rem 2.25rem 2.75rem;
+      padding: 3rem 2.5rem;
+      border-top: 1px solid rgba(255,255,255,.06);
+      position: relative;
       transition: background var(--t);
     }
-    .topic-card:hover { background: var(--dark-mid); }
+    @media(min-width:680px){
+      .topic-card { border-left: 1px solid rgba(255,255,255,.06); }
+      .topic-card:nth-child(odd) { border-left: none; }
+    }
+    @media(min-width:1020px){
+      .topic-card:nth-child(odd) { border-left: 1px solid rgba(255,255,255,.06); }
+      .topic-card:nth-child(3n+1) { border-left: none; }
+    }
+    .topic-card:hover { background: rgba(255,255,255,.03); }
+
     .topic-num {
-      font-family: 'Inter', sans-serif;
-      font-size: .55rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase;
-      color: rgba(255,255,255,.2); margin-bottom: 1.5rem; display: block;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 3.5rem; font-weight: 700; line-height: 1;
+      letter-spacing: -.05em;
+      color: rgba(255,255,255,.05);
+      position: absolute; top: 2rem; right: 2rem;
+      user-select: none;
+    }
+    .topic-icon {
+      width: 32px; height: 2px; background: rgba(255,255,255,.15);
+      margin-bottom: 2rem; border-radius: 1px;
     }
     .topic-title {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: .98rem; font-weight: 600; color: #fff;
-      margin-bottom: 1.1rem; letter-spacing: -.02em; line-height: 1.3;
+      font-size: 1.05rem; font-weight: 600; color: #fff;
+      margin-bottom: 1.25rem; letter-spacing: -.025em; line-height: 1.25;
     }
-    .topic-items { list-style: none; display: flex; flex-direction: column; gap: .5rem; }
+    .topic-items { list-style: none; display: flex; flex-direction: column; gap: .55rem; }
     .topic-items li {
       font-family: 'Inter', sans-serif;
-      font-size: .78rem; color: rgba(255,255,255,.42); line-height: 1.55;
-      padding-left: 1.1rem; position: relative;
+      font-size: .78rem; color: rgba(255,255,255,.38); line-height: 1.6;
+      padding-left: 1rem; position: relative;
     }
     .topic-items li::before {
-      content: ''; position: absolute; left: 0; top: .6em;
-      width: 4px; height: 1px; background: rgba(255,255,255,.25);
+      content: ''; position: absolute; left: 0; top: .65em;
+      width: 5px; height: 1px; background: rgba(255,255,255,.2);
     }
 
-    .topic-image-slot {
-      background: var(--dark-mid); position: relative; overflow: hidden;
-      min-height: 280px; display: flex; align-items: flex-end;
-    }
-    @media(min-width:760px){ .topic-image-slot{ min-height: auto; } }
-    .topic-image-slot img {
-      position: absolute; inset: 0; width: 100%; height: 100%;
-      object-fit: cover; opacity: .55;
-    }
-    .topic-image-slot-caption {
-      position: relative; z-index: 1;
-      padding: 2rem 2.25rem;
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: .78rem; font-weight: 500; color: rgba(255,255,255,.5); letter-spacing: .05em;
-      border-top: 1px solid rgba(255,255,255,.08);
-    }
-
-    .topic-wide {
-      background: var(--dark); padding: 2.5rem 2.25rem 2.75rem;
+    .topic-card-wide {
+      padding: 3rem 2.5rem;
+      border-top: 1px solid rgba(255,255,255,.06);
       grid-column: 1 / -1;
       transition: background var(--t);
     }
-    .topic-wide:hover { background: var(--dark-mid); }
-    .topic-wide .topic-items { columns: 1; gap: 1.5rem; }
-    @media(min-width:640px){ .topic-wide .topic-items{ columns: 2; } }
-    @media(min-width:960px){ .topic-wide .topic-items{ columns: 3; } }
-
-    /* ── AUDIENCES ── */
-    .audiences { padding: 8rem 0; background: var(--bg-soft); }
-
-    .aud-grid {
-      display: grid; grid-template-columns: 1fr; gap: 1px;
-      background: var(--rule-m); border: 1px solid var(--rule-m);
-      border-radius: 1px; overflow: hidden; margin-top: 3.5rem;
+    .topic-card-wide:hover { background: rgba(255,255,255,.03); }
+    .topic-card-wide .topic-items {
+      margin-top: 1.25rem;
+      display: grid; grid-template-columns: 1fr;
+      gap: .55rem;
     }
-    @media(min-width:768px){ .aud-grid{ grid-template-columns: 1fr 1fr; } }
-
-    .aud-card {
-      background: var(--white); padding: 3rem 2.5rem;
-      transition: background var(--t);
-    }
-    .aud-card:hover { background: var(--bg); }
-    .aud-card-label { margin-bottom: .8rem; }
-    .aud-card-title {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 1.15rem; font-weight: 600; color: var(--ink);
-      margin-bottom: 1.1rem; line-height: 1.25; letter-spacing: -.025em;
-    }
-    .aud-card-body {
-      font-family: 'Inter', sans-serif;
-      font-size: .82rem; line-height: 1.8; color: var(--ink-mid); margin-bottom: 2rem;
-    }
-    .aud-tags { display: flex; flex-wrap: wrap; gap: .45rem; }
-    .aud-tag {
-      font-family: 'Inter', sans-serif;
-      font-size: .62rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase;
-      border: 1px solid var(--rule-m); color: var(--ink-mid);
-      padding: .38rem .85rem; border-radius: 1px; transition: var(--t);
-    }
-    .aud-tag:hover { border-color: var(--ink); color: var(--ink); }
+    @media(min-width:540px){ .topic-card-wide .topic-items{ grid-template-columns: 1fr 1fr; } }
+    @media(min-width:900px){ .topic-card-wide .topic-items{ grid-template-columns: repeat(3, 1fr); } }
 
     /* ── COLLABS ── */
-    .collabs { padding: 8rem 0; background: var(--dark); }
-    .collabs .label { color: rgba(255,255,255,.3); }
+    .collabs { padding: 9rem 0; background: var(--bg); }
+    .collabs-header { margin-bottom: 4rem; }
     .collabs-heading {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: clamp(1.8rem, 3vw, 2.6rem);
-      font-weight: 600; line-height: 1.1; letter-spacing: -.04em;
-      color: #fff; margin: .75rem 0 3.5rem;
+      font-size: clamp(1.9rem, 3vw, 2.8rem);
+      font-weight: 600; line-height: 1.08; letter-spacing: -.04em;
+      color: var(--ink); margin: .75rem 0 0;
     }
 
-    .collabs-logos {
+    .collabs-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 1px;
-      background: rgba(255,255,255,.06);
+      background: var(--rule-m);
+      border: 1px solid var(--rule-m);
     }
-    @media(min-width:540px){ .collabs-logos{ grid-template-columns: repeat(3, 1fr); } }
-    @media(min-width:800px){ .collabs-logos{ grid-template-columns: repeat(4, 1fr); } }
-    @media(min-width:1050px){ .collabs-logos{ grid-template-columns: repeat(5, 1fr); } }
+    @media(min-width:600px){ .collabs-grid{ grid-template-columns: repeat(3, 1fr); } }
+    @media(min-width:900px){ .collabs-grid{ grid-template-columns: repeat(4, 1fr); } }
 
-    .collab-logo-cell {
-      background: var(--dark); padding: 2.5rem 2rem;
+    .collab-cell {
+      background: var(--white);
+      position: relative; overflow: hidden;
+      min-height: 130px;
       display: flex; align-items: center; justify-content: center;
-      min-height: 110px;
+      padding: 2.25rem 1.75rem;
+      cursor: default;
       transition: background var(--t);
     }
-    .collab-logo-cell:hover { background: var(--dark-mid); }
-    .collab-logo-cell img {
-      max-height: 36px; max-width: 120px;
+    .collab-cell:hover { background: var(--dark); }
+
+    .collab-front {
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: .75rem;
+      transition: opacity var(--t), transform var(--t);
+      text-align: center;
+    }
+    .collab-cell:hover .collab-front { opacity: 0; transform: translateY(-6px); }
+
+    .collab-front img {
+      max-height: 32px; max-width: 110px;
       width: auto; height: auto;
-      object-fit: contain; filter: brightness(1) invert(0);
-      opacity: .65; transition: opacity var(--t);
+      object-fit: contain; display: block;
     }
-    .collab-logo-cell:hover img { opacity: 1; }
-    .collab-logo-text {
+    .collab-front img.logo-light {
+      filter: none;
+    }
+    .collab-front img.logo-dark {
+      filter: brightness(0);
+    }
+    /* Builders Network gets larger treatment */
+    .collab-cell.collab-featured .collab-front img {
+      max-height: 44px; max-width: 140px;
+    }
+
+    .collab-name-text {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: .78rem; font-weight: 600; color: rgba(255,255,255,.45);
-      letter-spacing: -.01em; text-align: center; line-height: 1.3;
-      transition: color var(--t);
+      font-size: .8rem; font-weight: 600; color: var(--ink-mid);
+      letter-spacing: -.01em; line-height: 1.3; text-align: center;
     }
-    .collab-logo-cell:hover .collab-logo-text { color: rgba(255,255,255,.8); }
+
+    .collab-hover {
+      position: absolute; inset: 0;
+      background: var(--dark);
+      display: flex; flex-direction: column; justify-content: center;
+      padding: 1.75rem;
+      opacity: 0; transform: translateY(8px);
+      transition: opacity var(--t), transform var(--t);
+      pointer-events: none;
+    }
+    .collab-cell:hover .collab-hover { opacity: 1; transform: none; pointer-events: auto; }
+
+    .collab-hover-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: .8rem; font-weight: 600; color: #fff;
+      letter-spacing: -.01em; margin-bottom: .65rem; line-height: 1.3;
+    }
+    .collab-hover-body {
+      font-family: 'Inter', sans-serif;
+      font-size: .72rem; line-height: 1.65; color: rgba(255,255,255,.5);
+    }
 
     /* ── CONTACT ── */
-    .contact { padding: 10rem 0; background: var(--bg); }
-    .contact-inner {
-      max-width: 720px;
-    }
+    .contact { padding: 10rem 0; background: var(--dark); }
+    .contact-inner { max-width: 700px; }
     .contact-heading {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: clamp(2.4rem, 5vw, 4.2rem);
-      font-weight: 600; line-height: 1.06; letter-spacing: -.05em;
-      color: var(--ink); margin: .75rem 0 1.75rem;
+      font-size: clamp(2.4rem, 5.5vw, 4.5rem);
+      font-weight: 600; line-height: 1.05; letter-spacing: -.05em;
+      color: #fff; margin: .75rem 0 1.75rem;
     }
     .contact-body {
       font-family: 'Inter', sans-serif;
-      font-size: 1.05rem; line-height: 1.8; color: var(--ink-mid);
-      margin-bottom: 3rem; max-width: 50ch;
+      font-size: 1rem; line-height: 1.82; color: rgba(255,255,255,.48);
+      margin-bottom: 3rem; max-width: 48ch;
     }
+    .contact-email-link {
+      font-family: 'Inter', sans-serif;
+      font-size: .82rem; color: rgba(255,255,255,.35);
+      letter-spacing: .03em; display: inline-block; margin-top: 1.75rem;
+      border-bottom: 1px solid rgba(255,255,255,.12); padding-bottom: .18rem;
+      transition: color var(--t), border-color var(--t);
+    }
+    .contact-email-link:hover { color: rgba(255,255,255,.75); border-color: rgba(255,255,255,.35); }
 
     /* ── FOOTER ── */
-    .footer { background: var(--dark); padding: 4rem 0 3rem; }
+    .footer { background: var(--dark); border-top: 1px solid rgba(255,255,255,.06); padding: 4rem 0 3rem; }
     .footer-top {
       display: grid; grid-template-columns: 1fr;
       gap: 3rem; padding-bottom: 3rem;
-      border-bottom: 1px solid rgba(255,255,255,.07);
+      border-bottom: 1px solid rgba(255,255,255,.06);
     }
     @media(min-width:768px){ .footer-top{ grid-template-columns: 2fr 1fr 1fr; gap: 4rem; } }
 
-    .footer-brand {}
     .footer-logo-name {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: 1.1rem; font-weight: 600; color: #fff; letter-spacing: -.025em;
+      font-size: 1.05rem; font-weight: 600; color: #fff; letter-spacing: -.025em;
       margin-bottom: .6rem;
     }
     .footer-tagline {
       font-family: 'Inter', sans-serif;
-      font-size: .78rem; color: rgba(255,255,255,.35); line-height: 1.6; max-width: 28ch;
+      font-size: .76rem; color: rgba(255,255,255,.3); line-height: 1.65; max-width: 28ch;
     }
-
     .footer-col-title {
       font-family: 'Inter', sans-serif;
-      font-size: .58rem; font-weight: 600; letter-spacing: .25em; text-transform: uppercase;
-      color: rgba(255,255,255,.3); margin-bottom: 1.25rem;
+      font-size: .56rem; font-weight: 600; letter-spacing: .26em; text-transform: uppercase;
+      color: rgba(255,255,255,.28); margin-bottom: 1.3rem;
     }
     .footer-col-links { display: flex; flex-direction: column; gap: .65rem; }
     .footer-col-link {
       font-family: 'Inter', sans-serif;
-      font-size: .8rem; color: rgba(255,255,255,.45);
+      font-size: .79rem; color: rgba(255,255,255,.42);
       transition: color var(--t); display: flex; align-items: center; gap: .65rem;
     }
-    .footer-col-link:hover { color: rgba(255,255,255,.85); }
+    .footer-col-link:hover { color: rgba(255,255,255,.82); }
     .footer-col-link img {
-      width: 16px; height: 16px; object-fit: contain;
-      filter: brightness(0) invert(1); opacity: .45;
+      width: 15px; height: 15px; object-fit: contain;
+      filter: brightness(0) invert(1); opacity: .38;
       transition: opacity var(--t); flex-shrink: 0;
     }
-    .footer-col-link:hover img { opacity: .85; }
-
+    .footer-col-link:hover img { opacity: .75; }
     .footer-bottom {
       display: flex; flex-wrap: wrap; align-items: center;
       justify-content: space-between; gap: 1rem; padding-top: 2rem;
     }
     .footer-copy {
       font-family: 'Inter', sans-serif;
-      font-size: .65rem; letter-spacing: .07em; color: rgba(255,255,255,.22);
+      font-size: .63rem; letter-spacing: .07em; color: rgba(255,255,255,.2);
     }
-    .footer-email {
+    .footer-email-sm {
       font-family: 'Inter', sans-serif;
-      font-size: .7rem; color: rgba(255,255,255,.32); letter-spacing: .04em;
+      font-size: .68rem; color: rgba(255,255,255,.28); letter-spacing: .04em;
       transition: color var(--t);
     }
-    .footer-email:hover { color: rgba(255,255,255,.7); }
-
-    /* ── SECTION SHARED ── */
-    .section-title {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: clamp(1.9rem, 3.2vw, 2.7rem);
-      font-weight: 600; line-height: 1.1; letter-spacing: -.04em;
-      color: var(--ink); margin: .75rem 0 1rem;
-    }
-    .section-sub {
-      font-family: 'Inter', sans-serif;
-      font-size: .9rem; color: var(--ink-mid); line-height: 1.78; max-width: 52ch;
-    }
+    .footer-email-sm:hover { color: rgba(255,255,255,.65); }
 
     /* ── I18N ── */
     [data-lang="en"] { display: none; }
@@ -516,12 +539,10 @@
       </a>
 
       <nav class="nav-links">
-        <a href="#who"     class="nav-link" data-lang="es">Quién soy</a>
+        <a href="#who"     class="nav-link" data-lang="es">Qui&#233;n soy</a>
         <a href="#who"     class="nav-link" data-lang="en">About</a>
         <a href="#topics"  class="nav-link" data-lang="es">Temas</a>
         <a href="#topics"  class="nav-link" data-lang="en">Topics</a>
-        <a href="#for-who" class="nav-link" data-lang="es">Para quién</a>
-        <a href="#for-who" class="nav-link" data-lang="en">Who I work with</a>
         <a href="#collabs" class="nav-link" data-lang="es">Colaboraciones</a>
         <a href="#collabs" class="nav-link" data-lang="en">Collaborations</a>
         <a href="#contact" class="nav-link" data-lang="es">Contacto</a>
@@ -552,12 +573,10 @@
       <button class="mob-close" id="mobClose">&#x2715;</button>
     </div>
     <div class="mob-nav-links">
-      <a href="#who"     class="mob-nav-link" data-lang="es">Quién soy</a>
+      <a href="#who"     class="mob-nav-link" data-lang="es">Qui&#233;n soy</a>
       <a href="#who"     class="mob-nav-link" data-lang="en">About</a>
       <a href="#topics"  class="mob-nav-link" data-lang="es">Temas</a>
       <a href="#topics"  class="mob-nav-link" data-lang="en">Topics</a>
-      <a href="#for-who" class="mob-nav-link" data-lang="es">Para quién</a>
-      <a href="#for-who" class="mob-nav-link" data-lang="en">Who I work with</a>
       <a href="#collabs" class="mob-nav-link" data-lang="es">Colaboraciones</a>
       <a href="#collabs" class="mob-nav-link" data-lang="en">Collaborations</a>
       <a href="#contact" class="mob-nav-link" data-lang="es">Contacto</a>
@@ -565,9 +584,9 @@
     </div>
     <div class="mob-nav-foot">
       <a href="https://calendar.app.google/zpNPySHREwgpucff7" target="_blank" rel="noopener"
-         class="btn btn-dark" style="justify-content:center;" data-lang="es">Agenda una llamada</a>
+         class="btn btn-dark" style="justify-content:center;width:100%;" data-lang="es">Agenda una llamada</a>
       <a href="https://calendar.app.google/zpNPySHREwgpucff7" target="_blank" rel="noopener"
-         class="btn btn-dark" style="justify-content:center;" data-lang="en">Book a call</a>
+         class="btn btn-dark" style="justify-content:center;width:100%;margin-top:.75rem;" data-lang="en">Book a call</a>
     </div>
   </div>
 
@@ -582,16 +601,19 @@
     <div class="hero-content wrap">
       <div class="hero-roles reveal">
         <span class="hero-role hi">Speaker</span>
-        <span class="hero-role">Lecturer</span>
+        <span class="hero-role hi" data-lang="es">Docente</span>
+        <span class="hero-role hi" data-lang="en">Lecturer</span>
         <span class="hero-role" data-lang="es">Emprendedor</span>
         <span class="hero-role" data-lang="en">Entrepreneur</span>
-        <span class="hero-role">Ecosystem Builder</span>
+        <span class="hero-role">Ecosystem Developer</span>
       </div>
 
-      <h1 class="hero-heading reveal">
-        <span data-lang="es">Exploro ecosistemas de innovación y transformo aprendizajes en oportunidades.</span>
+      <h1 class="hero-name reveal">Carlos Gonz&#225;lez</h1>
+
+      <h2 class="hero-tagline reveal">
+        <span data-lang="es">Exploro ecosistemas de innovaci&#243;n y transformo aprendizajes en oportunidades.</span>
         <span data-lang="en">I explore innovation ecosystems and transform learnings into opportunities.</span>
-      </h1>
+      </h2>
     </div>
 
     <div class="hero-scroll">
@@ -606,39 +628,57 @@
       <div class="who-grid">
 
         <div class="who-photo reveal">
-          <img src="foto-about.jpg" alt="Carlos González"
+          <img class="who-photo-img" src="quien_soy.jpg" alt="Carlos González"
                onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
           <div class="who-photo-ph"><span>CG</span></div>
-          <div class="who-photo-line"></div>
+          <div class="who-photo-rule"></div>
         </div>
 
         <div class="who-content">
           <p class="label reveal" data-lang="es">Sobre m&#237;</p>
           <p class="label reveal" data-lang="en">About me</p>
 
-          <h1 class="who-heading reveal" data-lang="es">&#191;Qui&#233;n soy?</h1>
-          <h1 class="who-heading reveal" data-lang="en">Who I am</h1>
+          <h2 class="who-heading reveal" data-lang="es">&#191;Qui&#233;n soy?</h2>
+          <h2 class="who-heading reveal" data-lang="en">Who I am</h2>
 
           <div class="who-body reveal">
-            <p data-lang="es">Dedico mi tiempo a conectar y desarrollar personas, ideas y ecosistemas que ayuden a otros a construir proyectos con prop&#243;sito, creatividad y visi&#243;n global.</p>
+            <p data-lang="es">Dedico mi trabajo a conectar personas, ideas y ecosistemas que ayuden a construir proyectos con prop&#243;sito, creatividad y visi&#243;n global.</p>
 
-            <p data-lang="es">Exploro c&#243;mo se desarrollan la innovaci&#243;n, el emprendimiento y el talento en distintos lugares del mundo para transformar esos aprendizajes en experiencias, conocimiento y oportunidades que generen impacto, especialmente entre Europa y Latinoam&#233;rica.</p>
+            <p data-lang="es">Exploro c&#243;mo se desarrollan la innovaci&#243;n, el emprendimiento y el talento en distintos lugares del mundo para transformar esos aprendizajes en experiencias, conocimiento y oportunidades, especialmente entre Europa y Latinoam&#233;rica.</p>
 
-            <p data-lang="es">A lo largo de mi trayectoria he trabajado en ventas, marketing, producto, branding y desarrollo de negocio. He formado parte de consejos de administraci&#243;n, liderado equipos multidisciplinarios, lanzado productos, construido comunidades, organizado eventos y explorado ecosistemas de innovaci&#243;n en pa&#237;ses como Estados Unidos, Israel, Espa&#241;a, Estonia, M&#233;xico, Canad&#225; y Pa&#237;ses Bajos.</p>
+            <p data-lang="es">A lo largo de mi trayectoria he trabajado en ventas, marketing, producto, branding y desarrollo de negocio. He liderado equipos, lanzado productos, construido comunidades, organizado eventos y explorado ecosistemas de innovaci&#243;n en pa&#237;ses como Estados Unidos, Israel, Espa&#241;a, Estonia, M&#233;xico, Canad&#225; y Pa&#237;ses Bajos.</p>
 
-            <p data-lang="es">Todo lo que comparto nace de la experiencia pr&#225;ctica: proyectos propios, decisiones complejas, errores, aprendizajes y conversaciones con personas que est&#225;n construyendo el futuro desde diferentes industrias, culturas y geograf&#237;as.</p>
+            <p data-lang="es">Todo lo que comparto nace de la pr&#225;ctica: proyectos propios, aprendizajes reales y conversaciones con personas que est&#225;n construyendo el futuro desde diferentes industrias y geograf&#237;as.</p>
 
-            <p data-lang="es">Actualmente desarrollo mis propios emprendimientos y colaboro con universidades, organizaciones, startups e instituciones interesadas en impulsar talento emprendedor, pensamiento creativo y capacidades de innovaci&#243;n desde una perspectiva internacional.</p>
+            <p data-lang="es">Actualmente desarrollo mis propios emprendimientos y colaboro con universidades, organizaciones, startups e instituciones interesadas en impulsar talento emprendedor, creatividad e innovaci&#243;n con una perspectiva internacional.</p>
 
-            <p data-lang="en">I dedicate my time to connecting and developing people, ideas and ecosystems that help others build projects with purpose, creativity and global vision.</p>
+            <p data-lang="en">I dedicate my work to connecting people, ideas and ecosystems that help build projects with purpose, creativity and global vision.</p>
 
-            <p data-lang="en">I explore how innovation, entrepreneurship and talent develop in different parts of the world to transform those learnings into experiences, knowledge and opportunities that generate impact, especially between Europe and Latin America.</p>
+            <p data-lang="en">I explore how innovation, entrepreneurship and talent develop across the world to transform those learnings into experiences, knowledge and opportunities, especially between Europe and Latin America.</p>
 
-            <p data-lang="en">Throughout my career I have worked in sales, marketing, product, branding and business development. I have sat on boards, led multidisciplinary teams, launched products, built communities, organized events and explored innovation ecosystems in countries such as the United States, Israel, Spain, Estonia, Mexico, Canada and the Netherlands.</p>
+            <p data-lang="en">Throughout my career I have worked in sales, marketing, product, branding and business development. I have led teams, launched products, built communities, organized events and explored innovation ecosystems in countries such as the United States, Israel, Spain, Estonia, Mexico, Canada and the Netherlands.</p>
 
-            <p data-lang="en">Everything I share comes from practical experience: my own projects, complex decisions, mistakes, learnings and conversations with people who are building the future across different industries, cultures and geographies.</p>
+            <p data-lang="en">Everything I share comes from practice: my own projects, real learnings and conversations with people building the future across different industries and geographies.</p>
 
-            <p data-lang="en">I currently develop my own ventures and collaborate with universities, organizations, startups and institutions interested in fostering entrepreneurial talent, creative thinking and innovation capabilities from an international perspective.</p>
+            <p data-lang="en">I currently develop my own ventures and collaborate with universities, organizations, startups and institutions interested in fostering entrepreneurial talent, creativity and innovation from an international perspective.</p>
+          </div>
+
+          <div class="who-stats reveal">
+            <div class="who-stat">
+              <div class="who-stat-num">9</div>
+              <div class="who-stat-label" data-lang="es">Pa&#237;ses<br>explorados</div>
+              <div class="who-stat-label" data-lang="en">Countries<br>explored</div>
+            </div>
+            <div class="who-stat">
+              <div class="who-stat-num">2</div>
+              <div class="who-stat-label" data-lang="es">MBAs en<br>tecnolog&#237;a</div>
+              <div class="who-stat-label" data-lang="en">MBAs in<br>technology</div>
+            </div>
+            <div class="who-stat">
+              <div class="who-stat-num">15<sup>+</sup></div>
+              <div class="who-stat-label" data-lang="es">Certificaciones<br>profesionales</div>
+              <div class="who-stat-label" data-lang="en">Professional<br>certifications</div>
+            </div>
           </div>
         </div>
 
@@ -649,15 +689,18 @@
   <!-- TOPICS -->
   <section class="topics" id="topics">
     <div class="wrap">
-      <p class="label reveal" data-lang="es">Temas en los que hablo</p>
-      <p class="label reveal" data-lang="en">Topics I speak about</p>
-      <h2 class="topics-heading reveal" data-lang="es">Ideas que generan acci&#243;n.</h2>
-      <h2 class="topics-heading reveal" data-lang="en">Ideas that generate action.</h2>
+      <div class="topics-header reveal">
+        <p class="label" data-lang="es">Temas en los que hablo</p>
+        <p class="label" data-lang="en">Topics I speak about</p>
+        <h2 class="topics-heading" data-lang="es">Ideas que generan acci&#243;n.</h2>
+        <h2 class="topics-heading" data-lang="en">Ideas that generate action.</h2>
+      </div>
 
-      <div class="topics-layout">
+      <div class="topics-grid">
 
         <div class="topic-card reveal">
-          <span class="topic-num">01</span>
+          <span class="topic-num" aria-hidden="true">01</span>
+          <div class="topic-icon"></div>
           <div class="topic-title" data-lang="es">Emprendimiento &amp; Startups</div>
           <div class="topic-title" data-lang="en">Entrepreneurship &amp; Startups</div>
           <ul class="topic-items">
@@ -673,7 +716,8 @@
         </div>
 
         <div class="topic-card reveal">
-          <span class="topic-num">02</span>
+          <span class="topic-num" aria-hidden="true">02</span>
+          <div class="topic-icon"></div>
           <div class="topic-title" data-lang="es">Creatividad &amp; Innovaci&#243;n</div>
           <div class="topic-title" data-lang="en">Creativity &amp; Innovation</div>
           <ul class="topic-items">
@@ -683,25 +727,21 @@
             <li data-lang="en">Innovation beyond buzzwords</li>
             <li data-lang="es">C&#243;mo los ecosistemas crean innovaci&#243;n</li>
             <li data-lang="en">How ecosystems create innovation</li>
+            <li data-lang="es">Construir ideas con significado</li>
+            <li data-lang="en">Building meaningful ideas</li>
           </ul>
         </div>
 
-        <!-- Image slot for visual balance -->
-        <div class="topic-image-slot reveal" style="grid-row: span 2;">
-          <img src="foto-about.jpg" alt="Carlos González en evento">
-          <div class="topic-image-slot-caption">
-            <span data-lang="es">Ecosistemas de innovaci&#243;n globales</span>
-            <span data-lang="en">Global innovation ecosystems</span>
-          </div>
-        </div>
-
         <div class="topic-card reveal">
-          <span class="topic-num">03</span>
+          <span class="topic-num" aria-hidden="true">03</span>
+          <div class="topic-icon"></div>
           <div class="topic-title" data-lang="es">Liderazgo &amp; Desarrollo personal</div>
           <div class="topic-title" data-lang="en">Leadership &amp; Personal Growth</div>
           <ul class="topic-items">
             <li data-lang="es">Liderar a trav&#233;s de la inspiraci&#243;n</li>
             <li data-lang="en">Leading through inspiration</li>
+            <li data-lang="es">Equipos resilientes</li>
+            <li data-lang="en">Building resilient teams</li>
             <li data-lang="es">Carreras con prop&#243;sito</li>
             <li data-lang="en">Purpose-driven careers</li>
             <li data-lang="es">Navegar la incertidumbre</li>
@@ -710,12 +750,15 @@
         </div>
 
         <div class="topic-card reveal">
-          <span class="topic-num">04</span>
+          <span class="topic-num" aria-hidden="true">04</span>
+          <div class="topic-icon"></div>
           <div class="topic-title" data-lang="es">IA &amp; Futuro del trabajo</div>
           <div class="topic-title" data-lang="en">AI &amp; The Future of Work</div>
           <ul class="topic-items">
             <li data-lang="es">IA pr&#225;ctica para profesionales</li>
             <li data-lang="en">Practical AI for professionals</li>
+            <li data-lang="es">IA para emprendedores</li>
+            <li data-lang="en">AI for entrepreneurs</li>
             <li data-lang="es">Habilidades humanas en la era de la IA</li>
             <li data-lang="en">Human skills in the AI era</li>
             <li data-lang="es">Organizaciones AI-native</li>
@@ -723,8 +766,9 @@
           </ul>
         </div>
 
-        <div class="topic-wide reveal">
-          <span class="topic-num">05</span>
+        <div class="topic-card-wide reveal">
+          <span class="topic-num" aria-hidden="true">05</span>
+          <div class="topic-icon"></div>
           <div class="topic-title" data-lang="es">Ecosistemas globales de innovaci&#243;n</div>
           <div class="topic-title" data-lang="en">Global Innovation Ecosystems</div>
           <ul class="topic-items">
@@ -741,115 +785,104 @@
     </div>
   </section>
 
-  <!-- FOR WHOM -->
-  <section class="audiences" id="for-who">
-    <div class="wrap">
-      <p class="label reveal" data-lang="es">&#191;Con qui&#233;n trabajo?</p>
-      <p class="label reveal" data-lang="en">Who I work with</p>
-      <h2 class="section-title reveal" data-lang="es" style="margin-top:.75rem;">Para quienes<br>quieren construir.</h2>
-      <h2 class="section-title reveal" data-lang="en" style="margin-top:.75rem;">For those who<br>want to build.</h2>
-
-      <div class="aud-grid">
-        <div class="aud-card reveal">
-          <div>
-            <p class="label aud-card-label" data-lang="es">Universidades</p>
-            <p class="label aud-card-label" data-lang="en">Universities</p>
-            <h3 class="aud-card-title" data-lang="es">Escuelas de negocio e instituciones educativas</h3>
-            <h3 class="aud-card-title" data-lang="en">Business Schools &amp; Educational Institutions</h3>
-            <p class="aud-card-body" data-lang="es">Colaboro con universidades y escuelas de negocios para traer perspectivas globales y experiencia pr&#225;ctica al aula. Mis sesiones combinan experiencia propia, visi&#243;n internacional y aprendizaje interactivo.</p>
-            <p class="aud-card-body" data-lang="en">I collaborate with universities and business schools to bring global perspectives and hands-on experience to the classroom. My sessions combine firsthand experience, international vision and interactive learning.</p>
-          </div>
-          <div class="aud-tags">
-            <span class="aud-tag" data-lang="es">Guest lectures</span>
-            <span class="aud-tag" data-lang="en">Guest lectures</span>
-            <span class="aud-tag" data-lang="es">Programas de emprendimiento</span>
-            <span class="aud-tag" data-lang="en">Entrepreneurship programs</span>
-            <span class="aud-tag" data-lang="es">Talleres de innovaci&#243;n</span>
-            <span class="aud-tag" data-lang="en">Innovation workshops</span>
-            <span class="aud-tag">MBA &amp; Executive Education</span>
-          </div>
-        </div>
-
-        <div class="aud-card reveal">
-          <div>
-            <p class="label aud-card-label" data-lang="es">Organizaciones</p>
-            <p class="label aud-card-label" data-lang="en">Organizations</p>
-            <h3 class="aud-card-title" data-lang="es">Empresas, asociaciones y programas de innovaci&#243;n</h3>
-            <h3 class="aud-card-title" data-lang="en">Companies, associations &amp; innovation programs</h3>
-            <p class="aud-card-body" data-lang="es">Trabajo con empresas, asociaciones, conferencias y programas de innovaci&#243;n para llevar perspectivas internacionales y aprendizajes aplicables a sus equipos y audiencias.</p>
-            <p class="aud-card-body" data-lang="en">I work with companies, associations, conferences and innovation programs to bring international perspectives and applicable learnings to their teams and audiences.</p>
-          </div>
-          <div class="aud-tags">
-            <span class="aud-tag">Keynotes</span>
-            <span class="aud-tag" data-lang="es">Talleres corporativos</span>
-            <span class="aud-tag" data-lang="en">Corporate workshops</span>
-            <span class="aud-tag" data-lang="es">Moderaci&#243;n y paneles</span>
-            <span class="aud-tag" data-lang="en">Moderation &amp; panels</span>
-            <span class="aud-tag" data-lang="es">Sesiones de liderazgo</span>
-            <span class="aud-tag" data-lang="en">Leadership sessions</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- COLLABORATIONS -->
   <section class="collabs" id="collabs">
     <div class="wrap">
-      <p class="label reveal" data-lang="es">Han confiado en m&#237;</p>
-      <p class="label reveal" data-lang="en">Organizations I have worked with</p>
-      <h2 class="collabs-heading reveal" data-lang="es">Colaboraciones</h2>
-      <h2 class="collabs-heading reveal" data-lang="en">Collaborations</h2>
+      <div class="collabs-header reveal">
+        <p class="label" data-lang="es">Experiencia</p>
+        <p class="label" data-lang="en">Experience</p>
+        <h2 class="collabs-heading" data-lang="es">Con qui&#233;n he colaborado</h2>
+        <h2 class="collabs-heading" data-lang="en">Who I have worked with</h2>
+      </div>
 
-      <div class="collabs-logos reveal">
+      <div class="collabs-grid reveal">
 
-        <!-- Logos with image files -->
-        <div class="collab-logo-cell">
-          <img src="iLAB_Blanco.png" alt="iLAB">
-        </div>
-        <div class="collab-logo-cell">
-          <img src="MIL_Blanco.png" alt="MIL">
-        </div>
-        <div class="collab-logo-cell">
-          <img src="4YFN_LOGO_BLANCO.png" alt="4YFN">
-        </div>
-        <div class="collab-logo-cell">
-          <img src="MWC-2023-Logo-White.png" alt="MWC">
-        </div>
-        <div class="collab-logo-cell">
-          <img src="South_Summit_Logo_Blanco.png" alt="South Summit">
-        </div>
-        <div class="collab-logo-cell">
-          <img src="Latitude59_Logo_Blanco.png" alt="Latitude59">
-        </div>
-        <div class="collab-logo-cell">
-          <img src="Logo-Wayra-blanco.png" alt="Wayra">
-        </div>
-        <div class="collab-logo-cell">
-          <img src="Logo_Builders_Network.svg" alt="Builders Network">
-        </div>
-        <div class="collab-logo-cell">
-          <img src="Logo_Mad_innovation_blanco.png" alt="Madrid Innovation">
-        </div>
-        <div class="collab-logo-cell">
-          <img src="talent-land-logo.png" alt="Talent Land" style="filter:brightness(0) invert(1);">
+        <!-- iLAB / LAB Madrid Innovation -->
+        <div class="collab-cell">
+          <div class="collab-front">
+            <img src="iLAB_Blanco.png" alt="LAB" class="logo-dark">
+          </div>
+          <div class="collab-hover">
+            <div class="collab-hover-title">LAB (Madrid Innovation)</div>
+            <div class="collab-hover-body">Impartici&#243;n de masterclasses, workshops y organizaci&#243;n de eventos enfocados en innovaci&#243;n, emprendimiento, inteligencia artificial y eCommerce para emprendedores y profesionales.</div>
+          </div>
         </div>
 
-        <!-- Text-only for organizations without uploaded logos -->
-        <div class="collab-logo-cell">
-          <span class="collab-logo-text">Universidad<br>Nebrija</span>
+        <!-- MIL -->
+        <div class="collab-cell">
+          <div class="collab-front">
+            <img src="MIL_Blanco.png" alt="MIL" class="logo-dark">
+          </div>
+          <div class="collab-hover">
+            <div class="collab-hover-title">Madrid International Lab (MIL)</div>
+            <div class="collab-hover-body">Participaci&#243;n como ponente y facilitador de sesiones formativas orientadas a emprendimiento, innovaci&#243;n y desarrollo de negocio.</div>
+          </div>
         </div>
-        <div class="collab-logo-cell">
-          <span class="collab-logo-text">Universidad<br>Carlos III</span>
+
+        <!-- Builders Network — featured, wider -->
+        <div class="collab-cell collab-featured">
+          <div class="collab-front">
+            <img src="Logo_Builders_Network.svg" alt="Builders Network" class="logo-dark">
+          </div>
+          <div class="collab-hover">
+            <div class="collab-hover-title">Builders Network</div>
+            <div class="collab-hover-body">Fundador de una comunidad que conecta emprendedores, profesionales y creadores que desarrollan proyectos con prop&#243;sito, facilitando conversaciones, aprendizaje y networking de valor.</div>
+          </div>
         </div>
-        <div class="collab-logo-cell">
-          <span class="collab-logo-text">IE<br>University</span>
+
+        <!-- Universidad Nebrija -->
+        <div class="collab-cell">
+          <div class="collab-front">
+            <img src="Logo_Universidad_nebrija.png" alt="Universidad Nebrija" class="logo-dark">
+          </div>
+          <div class="collab-hover">
+            <div class="collab-hover-title">Universidad Nebrija</div>
+            <div class="collab-hover-body">Ponente invitado en programas de emprendimiento, compartiendo experiencias sobre innovaci&#243;n, validaci&#243;n de proyectos, ecosistemas internacionales y construcci&#243;n de startups.</div>
+          </div>
         </div>
-        <div class="collab-logo-cell">
-          <span class="collab-logo-text">Microsip</span>
+
+        <!-- IE University -->
+        <div class="collab-cell">
+          <div class="collab-front">
+            <img src="logo-ie.svg" alt="IE University" class="logo-dark">
+          </div>
+          <div class="collab-hover">
+            <div class="collab-hover-title">IE University</div>
+            <div class="collab-hover-body">Mentor en hackatones y programas de emprendimiento, acompa&#241;ando a estudiantes en el desarrollo, validaci&#243;n y presentaci&#243;n de modelos de negocio innovadores.</div>
+          </div>
         </div>
-        <div class="collab-logo-cell">
-          <span class="collab-logo-text">Talent Land<br>España</span>
+
+        <!-- Talent Land -->
+        <div class="collab-cell">
+          <div class="collab-front">
+            <img src="talent-land-logo.png" alt="Talent Land" class="logo-dark">
+          </div>
+          <div class="collab-hover">
+            <div class="collab-hover-title">Talent Land</div>
+            <div class="collab-hover-body">Speaker y facilitador de workshops sobre emprendimiento, eCommerce, innovaci&#243;n e inteligencia artificial aplicada a negocios digitales.</div>
+          </div>
+        </div>
+
+        <!-- Universidad Carlos III (UCM logo) -->
+        <div class="collab-cell">
+          <div class="collab-front">
+            <img src="Logo_UCM.png" alt="Universidad Carlos III" class="logo-dark">
+          </div>
+          <div class="collab-hover">
+            <div class="collab-hover-title">Universidad Carlos III de Madrid</div>
+            <div class="collab-hover-body">Mentor en programas de emprendimiento y hackatones, apoyando a estudiantes en procesos de ideaci&#243;n, validaci&#243;n y desarrollo de proyectos.</div>
+          </div>
+        </div>
+
+        <!-- Microsip -->
+        <div class="collab-cell">
+          <div class="collab-front">
+            <img src="logo_microsip.png" alt="Microsip" class="logo-dark">
+          </div>
+          <div class="collab-hover">
+            <div class="collab-hover-title">Microsip Software</div>
+            <div class="collab-hover-body">Ex Chief Marketing Officer (CMO). Lider&#233; estrategias de marketing, branding, producto y comunidad. Organic&#233; congresos, eventos empresariales y programas de formaci&#243;n, participando frecuentemente como speaker y representante de la organizaci&#243;n.</div>
+          </div>
         </div>
 
       </div>
@@ -860,8 +893,8 @@
   <section class="contact" id="contact">
     <div class="wrap">
       <div class="contact-inner">
-        <p class="label reveal" data-lang="es">Contacto</p>
-        <p class="label reveal" data-lang="en">Contact</p>
+        <p class="label reveal" style="color:rgba(255,255,255,.28);" data-lang="es">Contacto</p>
+        <p class="label reveal" style="color:rgba(255,255,255,.28);" data-lang="en">Contact</p>
 
         <h2 class="contact-heading reveal" data-lang="es">&#191;Te gustar&#237;a<br>colaborar?</h2>
         <h2 class="contact-heading reveal" data-lang="en">Would you like<br>to collaborate?</h2>
@@ -871,19 +904,12 @@
 
         <div class="reveal">
           <a href="https://calendar.app.google/zpNPySHREwgpucff7" target="_blank" rel="noopener"
-             class="btn btn-dark" data-lang="es">Agenda una llamada conmigo</a>
+             class="btn btn-dark" style="background:#fff;color:var(--ink);" data-lang="es">Agenda una llamada conmigo</a>
           <a href="https://calendar.app.google/zpNPySHREwgpucff7" target="_blank" rel="noopener"
-             class="btn btn-dark" data-lang="en">Book a call with me</a>
+             class="btn btn-dark" style="background:#fff;color:var(--ink);" data-lang="en">Book a call with me</a>
         </div>
 
-        <div style="margin-top:2rem;" class="reveal">
-          <a href="mailto:carlos.gonzalez@clairo.es"
-             style="font-family:'Inter',sans-serif;font-size:.82rem;color:var(--ink-mid);letter-spacing:.02em;border-bottom:1px solid var(--rule-m);padding-bottom:.15rem;transition:color var(--t),border-color var(--t);"
-             onmouseover="this.style.color='var(--ink)';this.style.borderColor='var(--ink)';"
-             onmouseout="this.style.color='var(--ink-mid)';this.style.borderColor='var(--rule-m)';">
-            carlos.gonzalez@clairo.es
-          </a>
-        </div>
+        <a href="mailto:carlos.gonzalez@clairo.es" class="contact-email-link reveal">carlos.gonzalez@clairo.es</a>
       </div>
     </div>
   </section>
@@ -893,7 +919,7 @@
     <div class="wrap">
       <div class="footer-top">
 
-        <div class="footer-brand">
+        <div>
           <div class="footer-logo-name">Carlos Gonz&#225;lez</div>
           <p class="footer-tagline" data-lang="es">Exploro ecosistemas de innovaci&#243;n y transformo aprendizajes en oportunidades.</p>
           <p class="footer-tagline" data-lang="en">Exploring innovation ecosystems and transforming learnings into opportunities.</p>
@@ -940,19 +966,17 @@
 
       <div class="footer-bottom">
         <p class="footer-copy">&#169; 2025 &middot; carlosglz.io</p>
-        <a href="mailto:carlos.gonzalez@clairo.es" class="footer-email">carlos.gonzalez@clairo.es</a>
+        <a href="mailto:carlos.gonzalez@clairo.es" class="footer-email-sm">carlos.gonzalez@clairo.es</a>
       </div>
     </div>
   </footer>
 
   <script>
-    // Nav shadow
     const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 20);
     }, { passive: true });
 
-    // Mobile nav
     const mobBtn   = document.getElementById('mobBtn');
     const mobNav   = document.getElementById('mobNav');
     const mobClose = document.getElementById('mobClose');
@@ -962,7 +986,6 @@
     mobClose.addEventListener('click', closeNav);
     mobNav.querySelectorAll('.mob-nav-link').forEach(l => l.addEventListener('click', closeNav));
 
-    // Language toggle
     const langEs = document.getElementById('langEs');
     const langEn = document.getElementById('langEn');
     function setLang(lang) {
@@ -977,7 +1000,6 @@
     const saved = localStorage.getItem('cg-lang');
     if (saved) setLang(saved);
 
-    // Reveal on scroll
     const io = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (!e.isIntersecting) return;
