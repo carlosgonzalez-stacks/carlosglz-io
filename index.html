@@ -238,8 +238,8 @@
     }
 
     /* ── WHO ── */
-    .who { padding: 8rem 0; background: var(--bg); }
-    @media(max-width:640px){ .who{ padding: 5rem 0; } }
+    .who { padding: 6rem 0; background: var(--bg); }
+    @media(max-width:640px){ .who{ padding: 4rem 0; } }
     .who-grid { display: grid; grid-template-columns: 1fr; gap: 3.5rem; align-items: start; }
     @media(min-width:900px){ .who-grid{ grid-template-columns: 5fr 7fr; gap: 7rem; } }
 
@@ -284,8 +284,8 @@
     }
 
     /* ── HOW I HELP ── */
-    .how { padding: 8rem 0; background: var(--bg-soft); }
-    @media(max-width:640px){ .how{ padding: 5rem 0; } }
+    .how { padding: 6rem 0; background: var(--bg-soft); }
+    @media(max-width:640px){ .how{ padding: 4rem 0; } }
     .how-header { margin-bottom: 4rem; }
     .how-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
     @media(min-width:780px){ .how-grid{ grid-template-columns: repeat(2, 1fr); } }
@@ -333,50 +333,61 @@
     }
 
     /* ── FORMATS ── */
-    .formats { padding: 7rem 0 0; background: var(--bg); }
+    .formats { padding: 6rem 0 0; background: var(--bg); }
     @media(max-width:640px){ .formats{ padding: 4rem 0 0; } }
-    .formats-header { padding-bottom: 3.5rem; }
+    .formats-header { padding-bottom: 3rem; }
     .formats-grid {
-      display: grid; grid-template-columns: 1fr; gap: 0;
+      display: grid; grid-template-columns: 1fr; gap: 3px;
+      background: var(--bg);
     }
     @media(min-width:540px){ .formats-grid{ grid-template-columns: repeat(2, 1fr); } }
     @media(min-width:900px){ .formats-grid{ grid-template-columns: repeat(3, 1fr); } }
 
     .format-card {
-      position: relative; overflow: hidden; min-height: 280px;
+      position: relative; overflow: hidden;
+      min-height: 320px;
       display: flex; flex-direction: column; justify-content: flex-end;
-      background: var(--dark);
+      background: var(--dark-mid);
     }
+    @media(max-width:539px){ .format-card{ min-height: 260px; } }
     .format-card-bg {
       position: absolute; inset: 0;
-      background-size: cover; background-position: center;
-      opacity: .45;
+      background-size: cover; background-position: center top;
+      opacity: .55;
       transition: opacity var(--t), transform var(--t);
     }
-    .format-card:hover .format-card-bg { opacity: .62; transform: scale(1.04); }
+    .format-card:hover .format-card-bg { opacity: .72; transform: scale(1.03); }
     .format-card-overlay {
       position: absolute; inset: 0;
-      background: linear-gradient(to top, rgba(6,11,18,.92) 0%, rgba(6,11,18,.3) 60%, rgba(6,11,18,.1) 100%);
+      background: linear-gradient(to top,
+        rgba(6,11,18,.95) 0%,
+        rgba(6,11,18,.55) 45%,
+        rgba(6,11,18,.08) 100%);
     }
     .format-card-content {
       position: relative; z-index: 2;
-      padding: 2rem 1.75rem;
+      padding: 1.75rem 2rem 2rem;
     }
     .format-card-icon {
-      width: 22px; height: 2px; background: var(--accent); border-radius: 1px;
-      margin-bottom: 1rem;
+      width: 20px; height: 2px; background: var(--accent); border-radius: 1px;
+      margin-bottom: .85rem;
     }
     .format-card-text {
-      font-family: 'Space Grotesk', sans-serif; font-size: 1.05rem; font-weight: 600;
-      color: #fff; letter-spacing: -.02em; line-height: 1.25;
+      font-family: 'Space Grotesk', sans-serif; font-size: 1rem; font-weight: 600;
+      color: #fff; letter-spacing: -.02em; line-height: 1.3;
     }
-    /* Last card (Experiencias y delegaciones) spans full width at tablet+ */
-    @media(min-width:540px) and (max-width:899px){ .format-card:last-child{ grid-column: span 2; min-height: 240px; } }
-    @media(min-width:900px){ .format-card:last-child{ grid-column: span 3; min-height: 240px; } }
+    /* Last card full-width */
+    @media(min-width:540px) and (max-width:899px){
+      .format-card:last-child{ grid-column: span 2; min-height: 260px; }
+    }
+    @media(min-width:900px){
+      .format-card:last-child{ grid-column: span 3; min-height: 260px; }
+      .format-card:last-child .format-card-content{ max-width: 400px; }
+    }
 
     /* ── ORGS ── */
-    .orgs { padding: 8rem 0; background: var(--bg-soft); }
-    @media(max-width:640px){ .orgs{ padding: 5rem 0; } }
+    .orgs { padding: 6rem 0; background: var(--bg-soft); }
+    @media(max-width:640px){ .orgs{ padding: 4rem 0; } }
     .orgs-header { margin-bottom: 4rem; }
 
     .org-category { margin-bottom: 2.5rem; }
@@ -419,12 +430,12 @@
     .org-cell:hover .org-front { opacity: 0; transform: translateY(-5px); }
 
     .org-front img {
-      max-height: 52px; max-width: 180px;
+      max-height: 39px; max-width: 135px;
       width: auto; height: auto; object-fit: contain;
       filter: brightness(0); opacity: .6;
       transition: filter var(--t), opacity var(--t);
     }
-    .org-cell.org-featured .org-front img { max-height: 64px; max-width: 200px; }
+    .org-cell.org-featured .org-front img { max-height: 48px; max-width: 150px; }
 
     .org-name-text {
       font-family: 'Space Grotesk', sans-serif; font-size: .82rem; font-weight: 600;
@@ -444,8 +455,8 @@
     }
 
     /* ── CTA ── */
-    .cta-section { padding: 9rem 0; background: var(--dark); }
-    @media(max-width:640px){ .cta-section{ padding: 6rem 0; } }
+    .cta-section { padding: 7rem 0; background: var(--dark); }
+    @media(max-width:640px){ .cta-section{ padding: 5rem 0; } }
     .cta-inner { max-width: 680px; }
     .cta-heading {
       font-family: 'Space Grotesk', sans-serif;
