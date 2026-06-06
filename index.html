@@ -449,6 +449,10 @@
     .org-row-7 { grid-template-columns: repeat(2, 1fr); }
     @media(min-width:560px){ .org-row-7{ grid-template-columns: repeat(4, 1fr); } }
     @media(min-width:1080px){ .org-row-7{ grid-template-columns: repeat(7, 1fr); } }
+    /* 8-item rows */
+    .org-row-8 { grid-template-columns: repeat(2, 1fr); }
+    @media(min-width:560px){ .org-row-8{ grid-template-columns: repeat(4, 1fr); } }
+    @media(min-width:1080px){ .org-row-8{ grid-template-columns: repeat(8, 1fr); } }
 
     .org-cell {
       background: var(--white); position: relative; overflow: hidden;
@@ -471,6 +475,7 @@
     }
     .org-cell.org-featured .org-front img { max-height: 48px; max-width: 150px; }
     .org-cell.org-wayra .org-front img { max-height: 52px; max-width: 180px; }
+    .org-cell.org-puerta .org-front img { max-height: 52px; max-width: 180px; }
 
     .org-name-text {
       font-family: 'Space Grotesk', sans-serif; font-size: .82rem; font-weight: 600;
@@ -935,7 +940,7 @@
       <div class="org-category reveal">
         <div class="org-category-label" data-lang="es">Ecosistemas &amp; Eventos</div>
         <div class="org-category-label" data-lang="en">Ecosystems &amp; Events</div>
-        <div class="org-row org-row-7">
+        <div class="org-row org-row-8">
           <div class="org-cell">
             <div class="org-front"><img src="iLAB_Blanco.png" alt="LAB Madrid Innovation"></div>
             <div class="org-hover"><div class="org-hover-name">LAB Madrid Innovation</div></div>
@@ -948,7 +953,7 @@
             <div class="org-front"><img src="Logo_Mad_innovation_blanco.png" alt="Madrid Innovation Rosario"></div>
             <div class="org-hover"><div class="org-hover-name">Madrid Innovation Rosario</div></div>
           </div>
-          <div class="org-cell">
+          <div class="org-cell org-puerta">
             <div class="org-front"><img src="Logo_puerta_innovacion.png" alt="Puerta Innovación"></div>
             <div class="org-hover"><div class="org-hover-name">Puerta Innovaci&#243;n</div></div>
           </div>
@@ -963,6 +968,10 @@
           <div class="org-cell">
             <div class="org-front"><img src="talent-land-logo.png" alt="Talent Land"></div>
             <div class="org-hover"><div class="org-hover-name">Talent Land</div></div>
+          </div>
+          <div class="org-cell">
+            <div class="org-front"><img src="Fundacion_orange_logo.png" alt="Fundación Orange"></div>
+            <div class="org-hover"><div class="org-hover-name">Fundaci&#243;n Orange</div></div>
           </div>
         </div>
       </div>
@@ -1007,11 +1016,11 @@
         </div>
       </div>
 
-      <!-- Empresas — 5 items -->
+      <!-- Empresas — 6 items -->
       <div class="org-category reveal">
         <div class="org-category-label" data-lang="es">Empresas</div>
         <div class="org-category-label" data-lang="en">Companies</div>
-        <div class="org-row org-row-5">
+        <div class="org-row org-row-6">
           <div class="org-cell">
             <div class="org-front"><img src="logo_microsip.png" alt="Microsip"></div>
             <div class="org-hover"><div class="org-hover-name">Microsip Software</div></div>
@@ -1031,6 +1040,10 @@
           <div class="org-cell">
             <div class="org-front"><img src="Logo-pets-stays.png" alt="PetsStays"></div>
             <div class="org-hover"><div class="org-hover-name">PetsStays</div></div>
+          </div>
+          <div class="org-cell">
+            <div class="org-front"><span class="org-name-text">Maiz Maya</span></div>
+            <div class="org-hover"><div class="org-hover-name">Maiz Maya</div></div>
           </div>
         </div>
       </div>
