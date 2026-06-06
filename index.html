@@ -4,32 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carlos González — Speaker · Docente · Emprendedor</title>
-  <meta name="description" content="Exploro ecosistemas de innovación y transformo aprendizajes en oportunidades.">
+  <meta name="description" content="Speaker, docente y emprendedor especializado en innovación, IA y emprendimiento.">
   <meta property="og:title" content="Carlos González">
-  <meta property="og:description" content="Exploro ecosistemas de innovación y transformo aprendizajes en oportunidades.">
+  <meta property="og:description" content="Speaker, docente y emprendedor especializado en innovación, IA y emprendimiento.">
   <meta property="og:type" content="website">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230C1829'/><text x='50' y='67' font-family='system-ui,sans-serif' font-size='38' font-weight='700' fill='%23fff' text-anchor='middle'>CG</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --ink:       #0C1829;
-      --ink-mid:   #3D5166;
-      --ink-dim:   #7A8D9F;
-      --ink-faint: #B0BEC8;
-      --accent:    #B8945A;
-      --accent-l:  #F2EAD8;
-      --bg:        #F7F5F1;
-      --bg-soft:   #EFECE6;
-      --white:     #FFFFFF;
-      --dark:      #0C1829;
-      --dark-mid:  #162236;
-      --dark-hi:   #1D2E44;
-      --rule:      rgba(12,24,41,.07);
-      --rule-m:    rgba(12,24,41,.13);
-      --t:         .22s cubic-bezier(.4,0,.2,1);
+      --ink:      #0C1829;
+      --ink-mid:  #3D5166;
+      --ink-dim:  #7A8D9F;
+      --accent:   #B8945A;
+      --bg:       #F7F5F1;
+      --bg-soft:  #EFECE6;
+      --white:    #FFFFFF;
+      --dark:     #0C1829;
+      --dark-mid: #162236;
+      --dark-hi:  #1D2E44;
+      --rule:     rgba(12,24,41,.07);
+      --rule-m:   rgba(12,24,41,.13);
+      --t:        .22s cubic-bezier(.4,0,.2,1);
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -38,33 +36,52 @@
       font-family: 'Inter', system-ui, sans-serif;
       background: var(--bg); color: var(--ink);
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
       overflow-x: hidden;
     }
     a { color: inherit; text-decoration: none; }
     img { display: block; max-width: 100%; }
 
-    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-    @media(min-width:768px){ .wrap{ padding: 0 3.5rem; } }
+    /* ── LAYOUT ── */
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+    @media(min-width:640px){ .wrap{ padding: 0 2.5rem; } }
+    @media(min-width:1024px){ .wrap{ padding: 0 3.5rem; } }
 
     /* ── TYPE ── */
     .label {
       font-family: 'Inter', sans-serif;
       font-size: .58rem; letter-spacing: .28em; text-transform: uppercase;
-      font-weight: 500; color: var(--ink-dim);
+      font-weight: 500; color: var(--ink-dim); display: block;
     }
-    .label-light { color: rgba(255,255,255,.32); }
+    .label-light { color: rgba(255,255,255,.3); }
+
+    .section-label { margin-bottom: 1rem; }
+
+    .section-heading {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.9rem, 3.5vw, 2.9rem);
+      font-weight: 600; line-height: 1.07; letter-spacing: -.04em;
+      color: var(--ink);
+    }
+    .section-heading-light { color: #fff; }
+    .section-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: .92rem; line-height: 1.8; color: var(--ink-mid);
+      margin-top: .9rem; max-width: 56ch;
+    }
+    .section-sub-light { color: rgba(255,255,255,.5); }
 
     /* ── BUTTONS ── */
     .btn {
-      display: inline-flex; align-items: center; gap: .55rem;
+      display: inline-flex; align-items: center; gap: .6rem;
       font-family: 'Inter', sans-serif;
       font-size: .67rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase;
       padding: 1rem 2.4rem; border: none; cursor: pointer; border-radius: 1px;
-      transition: var(--t);
+      transition: var(--t); white-space: nowrap;
     }
     .btn-dark { background: var(--ink); color: #fff; }
-    .btn-dark:hover { background: var(--dark-mid); transform: translateY(-1px); box-shadow: 0 10px 32px rgba(12,24,41,.2); }
+    .btn-dark:hover { background: var(--dark-mid); transform: translateY(-1px); box-shadow: 0 10px 32px rgba(12,24,41,.22); }
+    .btn-white { background: #fff; color: var(--ink); }
+    .btn-white:hover { background: var(--bg); transform: translateY(-1px); }
 
     /* ── REVEAL ── */
     .reveal { opacity: 0; transform: translateY(16px); transition: opacity .62s ease, transform .62s ease; }
@@ -92,27 +109,28 @@
     }
     .nav.scrolled { box-shadow: 0 2px 28px rgba(12,24,41,.07); }
     .nav-inner {
-      max-width: 1200px; margin: 0 auto; padding: 0 2rem;
-      height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem;
+      max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;
+      height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 1rem;
     }
-    @media(min-width:768px){ .nav-inner{ padding: 0 3.5rem; } }
+    @media(min-width:640px){ .nav-inner{ padding: 0 2.5rem; } }
+    @media(min-width:1024px){ .nav-inner{ padding: 0 3.5rem; } }
 
-    .nav-logo { display: flex; align-items: center; gap: .8rem; flex-shrink: 0; }
+    .nav-logo { display: flex; align-items: center; gap: .75rem; flex-shrink: 0; }
     .nav-logo-mark {
       width: 32px; height: 32px; background: var(--ink); border-radius: 1px;
       display: flex; align-items: center; justify-content: center;
       font-family: 'Space Grotesk', sans-serif;
-      font-size: .72rem; font-weight: 700; color: #fff; letter-spacing: -.02em;
+      font-size: .72rem; font-weight: 700; color: #fff;
     }
     .nav-logo-name {
       font-family: 'Space Grotesk', sans-serif;
       font-size: .88rem; font-weight: 600; color: var(--ink); letter-spacing: -.02em;
     }
-    .nav-links { display: none; align-items: center; gap: 2.2rem; }
+    .nav-links { display: none; align-items: center; gap: 2rem; }
     @media(min-width:960px){ .nav-links{ display: flex; } }
     .nav-link {
       font-family: 'Inter', sans-serif;
-      font-size: .61rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase;
+      font-size: .61rem; font-weight: 500; letter-spacing: .13em; text-transform: uppercase;
       color: var(--ink-mid); transition: color var(--t);
     }
     .nav-link:hover { color: var(--ink); }
@@ -134,22 +152,22 @@
     .mob-nav.open { display: flex; }
     .mob-nav-top {
       height: 64px; border-bottom: 1px solid var(--rule);
-      display: flex; align-items: center; justify-content: space-between; padding: 0 2rem;
+      display: flex; align-items: center; justify-content: space-between; padding: 0 1.5rem;
     }
     .mob-close {
       background: none; border: 1px solid var(--rule); width: 34px; height: 34px;
       cursor: pointer; font-size: .85rem; display: flex; align-items: center; justify-content: center;
       color: var(--ink); border-radius: 1px;
     }
-    .mob-nav-links { flex: 1; display: flex; flex-direction: column; padding: 3rem 2rem; }
+    .mob-nav-links { flex: 1; display: flex; flex-direction: column; padding: 2.5rem 1.5rem; overflow-y: auto; }
     .mob-nav-link {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: 2.2rem; font-weight: 600;
-      color: var(--ink-mid); padding: 1rem 0; border-bottom: 1px solid var(--rule);
+      font-size: 1.9rem; font-weight: 600;
+      color: var(--ink-mid); padding: .85rem 0; border-bottom: 1px solid var(--rule);
       transition: color var(--t); letter-spacing: -.03em;
     }
     .mob-nav-link:hover { color: var(--ink); }
-    .mob-nav-foot { padding: 2rem; }
+    .mob-nav-foot { padding: 1.5rem; border-top: 1px solid var(--rule); }
 
     /* ── HERO ── */
     .hero {
@@ -161,62 +179,65 @@
       background: linear-gradient(160deg, #0C1829 0%, #162236 55%, #1B2E45 100%);
     }
     .hero-bg img {
-      width: 100%; height: 100%; object-fit: cover; object-position: center 20%; display: block;
+      width: 100%; height: 100%; object-fit: cover; object-position: center 20%;
     }
     .hero-overlay {
       position: absolute; inset: 0; z-index: 1;
-      background: linear-gradient(
-        to top,
-        rgba(8,14,22,.97) 0%,
-        rgba(8,14,22,.55) 44%,
-        rgba(8,14,22,.2) 100%
-      );
+      background: linear-gradient(to top, rgba(8,14,22,.97) 0%, rgba(8,14,22,.58) 46%, rgba(8,14,22,.22) 100%);
     }
     .hero-overlay-r {
       position: absolute; inset: 0; z-index: 1;
-      background: linear-gradient(to right, rgba(8,14,22,.38) 0%, transparent 68%);
+      background: linear-gradient(to right, rgba(8,14,22,.42) 0%, transparent 70%);
     }
     .hero-content {
       position: relative; z-index: 2;
-      padding: 5rem 2rem 5.5rem;
+      padding: 5rem 1.5rem 5rem;
     }
-    @media(min-width:768px){ .hero-content{ padding: 6rem 3.5rem 6rem; } }
+    @media(min-width:640px){ .hero-content{ padding: 5.5rem 2.5rem 5.5rem; } }
+    @media(min-width:1024px){ .hero-content{ padding: 6rem 3.5rem 6.5rem; } }
 
-    .hero-roles { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 2.8rem; }
+    .hero-roles { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 2.5rem; }
     .hero-role {
       font-family: 'Inter', sans-serif;
-      font-size: .55rem; font-weight: 500; letter-spacing: .24em; text-transform: uppercase;
-      color: rgba(255,255,255,.38);
-      border: 1px solid rgba(255,255,255,.1); padding: .32rem .82rem; border-radius: 1px;
+      font-size: .55rem; font-weight: 500; letter-spacing: .22em; text-transform: uppercase;
+      color: rgba(255,255,255,.38); border: 1px solid rgba(255,255,255,.1);
+      padding: .32rem .82rem; border-radius: 1px;
     }
-    .hero-role.hi { color: rgba(255,255,255,.75); border-color: rgba(255,255,255,.25); }
+    .hero-role.hi { color: rgba(255,255,255,.78); border-color: rgba(255,255,255,.28); }
 
     .hero-name {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: clamp(1.15rem, 2.5vw, 1.75rem);
-      font-weight: 400; letter-spacing: -.01em; color: rgba(255,255,255,.55);
-      margin-bottom: 1rem; line-height: 1;
+      font-size: clamp(1rem, 2.2vw, 1.5rem);
+      font-weight: 400; letter-spacing: .01em;
+      color: rgba(255,255,255,.45); margin-bottom: 1rem;
     }
     .hero-tagline {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: clamp(2.4rem, 5.8vw, 5.2rem);
+      font-size: clamp(2.2rem, 5.2vw, 4.6rem);
       font-weight: 600; line-height: 1.07; letter-spacing: -.04em;
-      color: #fff; max-width: 22ch;
+      color: #fff; max-width: 22ch; margin-bottom: 1.8rem;
+    }
+    .hero-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(.88rem, 1.4vw, 1rem);
+      line-height: 1.75; color: rgba(255,255,255,.5);
+      max-width: 52ch; margin-bottom: 2.75rem;
     }
 
     .hero-scroll {
-      position: absolute; bottom: 2rem; right: 2.5rem; z-index: 2;
+      position: absolute; bottom: 2rem; right: 2rem; z-index: 2;
       display: flex; flex-direction: column; align-items: center; gap: .5rem;
     }
+    @media(max-width:480px){ .hero-scroll{ display: none; } }
     .hero-scroll-line {
-      width: 1px; height: 52px;
+      width: 1px; height: 48px;
       background: linear-gradient(to bottom, rgba(255,255,255,.28), transparent);
       animation: sline 2.4s infinite ease-in-out;
     }
     @keyframes sline {
-      0%{ transform: scaleY(0); transform-origin: top; }
+      0%,100%{ transform: scaleY(0); transform-origin: top; }
       50%{ transform: scaleY(1); transform-origin: top; }
-      100%{ transform: scaleY(0); transform-origin: bottom; }
+      75%{ transform: scaleY(0); transform-origin: bottom; }
     }
     .hero-scroll-label {
       font-family: 'Inter', sans-serif;
@@ -225,302 +246,380 @@
     }
 
     /* ── WHO ── */
-    .who { padding: 9rem 0; background: var(--bg); }
+    .who { padding: 8rem 0; background: var(--bg); }
+    @media(max-width:640px){ .who{ padding: 5rem 0; } }
     .who-grid {
-      display: grid; grid-template-columns: 1fr; gap: 5rem; align-items: start;
+      display: grid; grid-template-columns: 1fr; gap: 3.5rem; align-items: start;
     }
-    @media(min-width:900px){ .who-grid{ grid-template-columns: 5fr 7fr; gap: 8rem; } }
+    @media(min-width:900px){ .who-grid{ grid-template-columns: 5fr 7fr; gap: 7rem; } }
 
     .who-photo { position: relative; }
-    .who-photo-img {
-      width: 100%; aspect-ratio: 4/5; object-fit: cover;
-      object-position: center top;
-      border-radius: 1px; display: block;
+    .who-photo img {
+      width: 100%; aspect-ratio: 3/4; object-fit: cover;
+      object-position: center top; border-radius: 1px;
     }
     .who-photo-ph {
-      width: 100%; aspect-ratio: 4/5; border-radius: 1px;
-      background: var(--bg-soft);
+      width: 100%; aspect-ratio: 3/4; background: var(--bg-soft); border-radius: 1px;
       display: none; align-items: center; justify-content: center;
     }
     .who-photo-ph span {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: 6rem; font-weight: 700; color: var(--ink); opacity: .06;
-    }
-    .who-photo-rule {
-      position: absolute; top: -2.5rem; left: -1.5rem;
-      width: 1px; height: calc(100% + 2.5rem);
-      background: linear-gradient(to bottom, transparent 0%, var(--rule-m) 20%, var(--rule-m) 80%, transparent 100%);
-      z-index: -1;
+      font-size: 5rem; font-weight: 700; color: var(--ink); opacity: .06;
     }
 
     .who-heading {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      font-size: clamp(2rem, 3.8vw, 3.2rem);
       font-weight: 600; line-height: 1.06; letter-spacing: -.04em;
-      color: var(--ink); margin: .75rem 0 2.5rem;
+      color: var(--ink); margin: .75rem 0 2.25rem;
     }
     .who-body {
       font-family: 'Inter', sans-serif;
       font-size: .93rem; line-height: 1.9; color: var(--ink-mid);
     }
-    .who-body p + p { margin-top: 1.3rem; }
+    .who-body p + p { margin-top: 1.25rem; }
+    .who-body strong { color: var(--ink); font-weight: 600; }
 
     .who-stats {
       display: grid; grid-template-columns: repeat(3, 1fr);
       gap: 1px; background: var(--rule-m);
-      border: 1px solid var(--rule-m); border-radius: 1px; overflow: hidden;
-      margin-top: 3rem;
+      border: 1px solid var(--rule-m); overflow: hidden;
+      margin-top: 2.75rem; border-radius: 1px;
     }
-    .who-stat {
-      background: var(--white); padding: 1.6rem 1.25rem;
-    }
+    .who-stat { background: var(--white); padding: 1.5rem 1.2rem; }
     .who-stat-num {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: 2rem; font-weight: 700; color: var(--ink);
-      line-height: 1; letter-spacing: -.05em; margin-bottom: .35rem;
+      font-size: 1.9rem; font-weight: 700; color: var(--ink);
+      line-height: 1; letter-spacing: -.05em; margin-bottom: .3rem;
     }
-    .who-stat-num sup {
-      font-size: .75rem; color: var(--ink-dim); font-weight: 500;
-    }
+    .who-stat-num sup { font-size: .72rem; color: var(--ink-dim); }
     .who-stat-label {
       font-family: 'Inter', sans-serif;
-      font-size: .6rem; color: var(--ink-dim); letter-spacing: .1em;
-      text-transform: uppercase; font-weight: 500; line-height: 1.45;
+      font-size: .58rem; color: var(--ink-dim); letter-spacing: .09em;
+      text-transform: uppercase; line-height: 1.45; font-weight: 500;
+    }
+
+    /* ── HOW I HELP ── */
+    .how { padding: 8rem 0; background: var(--dark); }
+    @media(max-width:640px){ .how{ padding: 5rem 0; } }
+    .how-header { margin-bottom: 4rem; }
+    .how-grid {
+      display: grid; grid-template-columns: 1fr;
+      gap: 1px; background: rgba(255,255,255,.07);
+    }
+    @media(min-width:780px){ .how-grid{ grid-template-columns: repeat(3, 1fr); } }
+
+    .how-card {
+      background: var(--dark); padding: 3rem 2.5rem;
+      display: flex; flex-direction: column;
+      transition: background var(--t); position: relative; overflow: hidden;
+    }
+    @media(max-width:640px){ .how-card{ padding: 2.25rem 1.5rem; } }
+    .how-card:hover { background: var(--dark-hi); }
+
+    .how-card-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 5rem; font-weight: 700; letter-spacing: -.06em; line-height: 1;
+      color: rgba(255,255,255,.04);
+      position: absolute; top: 1.5rem; right: 1.5rem;
+      user-select: none;
+    }
+    .how-card-tag {
+      font-family: 'Inter', sans-serif;
+      font-size: .56rem; font-weight: 600; letter-spacing: .25em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 1.5rem;
+    }
+    .how-card-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.25rem; font-weight: 600; color: #fff;
+      letter-spacing: -.025em; line-height: 1.2; margin-bottom: 2rem;
+    }
+    .how-card-block { margin-bottom: 1.5rem; }
+    .how-card-block-label {
+      font-family: 'Inter', sans-serif;
+      font-size: .56rem; font-weight: 600; letter-spacing: .22em; text-transform: uppercase;
+      color: rgba(255,255,255,.28); margin-bottom: .55rem;
+    }
+    .how-card-block-text {
+      font-family: 'Inter', sans-serif;
+      font-size: .82rem; line-height: 1.72; color: rgba(255,255,255,.52);
+    }
+    .how-card-block.solution .how-card-block-text {
+      color: rgba(255,255,255,.72);
+    }
+    .how-divider {
+      width: 28px; height: 1px; background: rgba(255,255,255,.15);
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── FORMATS ── */
+    .formats { padding: 7rem 0; background: var(--bg-soft); }
+    @media(max-width:640px){ .formats{ padding: 4.5rem 0; } }
+    .formats-header { margin-bottom: 3.5rem; }
+    .formats-grid {
+      display: grid; grid-template-columns: 1fr;
+      gap: .75rem;
+    }
+    @media(min-width:540px){ .formats-grid{ grid-template-columns: 1fr 1fr; } }
+    @media(min-width:900px){ .formats-grid{ grid-template-columns: repeat(3, 1fr); } }
+
+    .format-item {
+      background: var(--white); padding: 1.75rem 2rem;
+      display: flex; align-items: flex-start; gap: 1.1rem;
+      border: 1px solid var(--rule); border-radius: 1px;
+      transition: border-color var(--t), transform var(--t);
+    }
+    .format-item:hover { border-color: var(--rule-m); transform: translateY(-2px); }
+    .format-icon {
+      width: 2px; height: 28px; background: var(--ink); border-radius: 1px;
+      flex-shrink: 0; margin-top: .15rem;
+    }
+    .format-text {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: .94rem; font-weight: 600; color: var(--ink);
+      letter-spacing: -.02em; line-height: 1.3;
+    }
+
+    /* ── CREDENTIALS ── */
+    .creds { padding: 8rem 0; background: var(--dark); }
+    @media(max-width:640px){ .creds{ padding: 5rem 0; } }
+    .creds-header { margin-bottom: 4rem; }
+    .creds-grid {
+      display: grid; grid-template-columns: 1fr;
+      gap: 1px; background: rgba(255,255,255,.07);
+    }
+    @media(min-width:640px){ .creds-grid{ grid-template-columns: 1fr 1fr; } }
+    @media(min-width:960px){ .creds-grid{ grid-template-columns: repeat(3, 1fr); } }
+
+    .cred-item {
+      background: var(--dark); padding: 2.5rem 2.25rem;
+      transition: background var(--t);
+    }
+    @media(max-width:640px){ .cred-item{ padding: 2rem 1.5rem; } }
+    .cred-item:hover { background: var(--dark-mid); }
+    .cred-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.8rem; font-weight: 700; color: #fff;
+      line-height: 1; letter-spacing: -.05em; margin-bottom: .6rem;
+    }
+    .cred-num sup { font-size: 1rem; color: rgba(255,255,255,.35); }
+    .cred-label {
+      font-family: 'Inter', sans-serif;
+      font-size: .8rem; line-height: 1.6; color: rgba(255,255,255,.45);
+    }
+    .cred-item-text {
+      background: var(--dark); padding: 2.5rem 2.25rem;
+      display: flex; align-items: center;
+      transition: background var(--t);
+    }
+    @media(max-width:640px){ .cred-item-text{ padding: 2rem 1.5rem; } }
+    .cred-item-text:hover { background: var(--dark-mid); }
+    .cred-item-text p {
+      font-family: 'Inter', sans-serif;
+      font-size: .85rem; line-height: 1.72; color: rgba(255,255,255,.45);
+    }
+    .cred-item-text p strong {
+      color: rgba(255,255,255,.75); font-weight: 500;
     }
 
     /* ── TOPICS ── */
-    .topics { padding: 9rem 0; background: var(--dark); }
-    .topics-header { margin-bottom: 5rem; }
-    .topics-header .label { color: rgba(255,255,255,.28); }
-    .topics-heading {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: clamp(2.2rem, 4vw, 3.4rem);
-      font-weight: 600; line-height: 1.07; letter-spacing: -.045em;
-      color: #fff; margin: .75rem 0 0; max-width: 20ch;
-    }
-
+    .topics { padding: 8rem 0; background: var(--bg); }
+    @media(max-width:640px){ .topics{ padding: 5rem 0; } }
+    .topics-header { margin-bottom: 4rem; }
     .topics-grid {
-      display: grid;
-      grid-template-columns: 1fr;
+      display: grid; grid-template-columns: 1fr;
       gap: 0;
     }
     @media(min-width:680px){ .topics-grid{ grid-template-columns: 1fr 1fr; } }
-    @media(min-width:1020px){ .topics-grid{ grid-template-columns: 1fr 1fr 1fr; } }
+    @media(min-width:1020px){ .topics-grid{ grid-template-columns: repeat(4, 1fr); } }
 
     .topic-card {
-      padding: 3rem 2.5rem;
-      border-top: 1px solid rgba(255,255,255,.06);
-      position: relative;
+      padding: 2.75rem 2.25rem;
+      border: 1px solid var(--rule); margin: -1px 0 0 -1px;
+      position: relative; background: var(--white);
       transition: background var(--t);
     }
-    @media(min-width:680px){
-      .topic-card { border-left: 1px solid rgba(255,255,255,.06); }
-      .topic-card:nth-child(odd) { border-left: none; }
-    }
-    @media(min-width:1020px){
-      .topic-card:nth-child(odd) { border-left: 1px solid rgba(255,255,255,.06); }
-      .topic-card:nth-child(3n+1) { border-left: none; }
-    }
-    .topic-card:hover { background: rgba(255,255,255,.03); }
+    @media(max-width:640px){ .topic-card{ padding: 2rem 1.5rem; } }
+    .topic-card:hover { background: var(--bg-soft); }
 
     .topic-num {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: 3.5rem; font-weight: 700; line-height: 1;
-      letter-spacing: -.05em;
-      color: rgba(255,255,255,.05);
-      position: absolute; top: 2rem; right: 2rem;
+      font-size: 3rem; font-weight: 700; letter-spacing: -.06em; line-height: 1;
+      color: var(--rule-m); position: absolute; top: 1.5rem; right: 1.5rem;
       user-select: none;
     }
-    .topic-icon {
-      width: 32px; height: 2px; background: rgba(255,255,255,.15);
-      margin-bottom: 2rem; border-radius: 1px;
-    }
+    .topic-icon { width: 24px; height: 2px; background: var(--ink); margin-bottom: 1.75rem; border-radius: 1px; opacity: .25; }
     .topic-title {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: 1.05rem; font-weight: 600; color: #fff;
-      margin-bottom: 1.25rem; letter-spacing: -.025em; line-height: 1.25;
+      font-size: .98rem; font-weight: 600; color: var(--ink);
+      margin-bottom: 1.1rem; letter-spacing: -.025em; line-height: 1.3;
     }
-    .topic-items { list-style: none; display: flex; flex-direction: column; gap: .55rem; }
+    .topic-items { list-style: none; display: flex; flex-direction: column; gap: .5rem; }
     .topic-items li {
       font-family: 'Inter', sans-serif;
-      font-size: .78rem; color: rgba(255,255,255,.38); line-height: 1.6;
+      font-size: .78rem; color: var(--ink-mid); line-height: 1.55;
       padding-left: 1rem; position: relative;
     }
     .topic-items li::before {
       content: ''; position: absolute; left: 0; top: .65em;
-      width: 5px; height: 1px; background: rgba(255,255,255,.2);
+      width: 5px; height: 1px; background: var(--ink-dim);
     }
-
     .topic-card-wide {
-      padding: 3rem 2.5rem;
-      border-top: 1px solid rgba(255,255,255,.06);
-      grid-column: 1 / -1;
-      transition: background var(--t);
+      padding: 2.75rem 2.25rem; grid-column: 1 / -1;
+      border: 1px solid var(--rule); margin: -1px 0 0 -1px;
+      background: var(--white); transition: background var(--t);
     }
-    .topic-card-wide:hover { background: rgba(255,255,255,.03); }
+    @media(max-width:640px){ .topic-card-wide{ padding: 2rem 1.5rem; } }
+    .topic-card-wide:hover { background: var(--bg-soft); }
     .topic-card-wide .topic-items {
-      margin-top: 1.25rem;
+      margin-top: 1rem;
       display: grid; grid-template-columns: 1fr;
-      gap: .55rem;
     }
     @media(min-width:540px){ .topic-card-wide .topic-items{ grid-template-columns: 1fr 1fr; } }
     @media(min-width:900px){ .topic-card-wide .topic-items{ grid-template-columns: repeat(3, 1fr); } }
 
-    /* ── COLLABS ── */
-    .collabs { padding: 9rem 0; background: var(--bg); }
-    .collabs-header { margin-bottom: 4rem; }
-    .collabs-heading {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: clamp(1.9rem, 3vw, 2.8rem);
-      font-weight: 600; line-height: 1.08; letter-spacing: -.04em;
-      color: var(--ink); margin: .75rem 0 0;
-    }
+    /* ── ORGS ── */
+    .orgs { padding: 8rem 0; background: var(--bg-soft); }
+    @media(max-width:640px){ .orgs{ padding: 5rem 0; } }
+    .orgs-header { margin-bottom: 4rem; }
 
-    .collabs-grid {
+    .org-category { margin-bottom: 2.5rem; }
+    .org-category:last-child { margin-bottom: 0; }
+    .org-category-label {
+      font-family: 'Inter', sans-serif;
+      font-size: .58rem; font-weight: 600; letter-spacing: .24em; text-transform: uppercase;
+      color: var(--ink-dim); margin-bottom: 1rem;
+      padding-bottom: .75rem; border-bottom: 1px solid var(--rule-m);
+    }
+    .org-row {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 1px;
-      background: var(--rule-m);
-      border: 1px solid var(--rule-m);
+      gap: 1px; background: var(--rule-m);
     }
-    @media(min-width:600px){ .collabs-grid{ grid-template-columns: repeat(3, 1fr); } }
-    @media(min-width:900px){ .collabs-grid{ grid-template-columns: repeat(4, 1fr); } }
+    @media(min-width:540px){ .org-row{ grid-template-columns: repeat(3, 1fr); } }
+    @media(min-width:900px){ .org-row{ grid-template-columns: repeat(4, 1fr); } }
+    @media(min-width:1100px){ .org-row{ grid-template-columns: repeat(5, 1fr); } }
 
-    .collab-cell {
+    .org-cell {
       background: var(--white);
       position: relative; overflow: hidden;
-      min-height: 130px;
+      min-height: 100px;
       display: flex; align-items: center; justify-content: center;
-      padding: 2.25rem 1.75rem;
-      cursor: default;
+      padding: 1.75rem 1.5rem;
       transition: background var(--t);
     }
-    .collab-cell:hover { background: var(--dark); }
+    .org-cell:hover { background: var(--dark); }
 
-    .collab-front {
+    .org-front {
       display: flex; flex-direction: column;
-      align-items: center; justify-content: center; gap: .75rem;
+      align-items: center; justify-content: center; gap: .6rem;
       transition: opacity var(--t), transform var(--t);
       text-align: center;
     }
-    .collab-cell:hover .collab-front { opacity: 0; transform: translateY(-6px); }
+    .org-cell:hover .org-front { opacity: 0; transform: translateY(-5px); }
 
-    .collab-front img {
-      max-height: 32px; max-width: 110px;
-      width: auto; height: auto;
-      object-fit: contain; display: block;
+    .org-front img {
+      max-height: 28px; max-width: 100px;
+      width: auto; height: auto; object-fit: contain;
+      filter: brightness(0); opacity: .65;
+      transition: filter var(--t), opacity var(--t);
     }
-    .collab-front img.logo-light {
-      filter: none;
-    }
-    .collab-front img.logo-dark {
-      filter: brightness(0);
-    }
-    /* Builders Network gets larger treatment */
-    .collab-cell.collab-featured .collab-front img {
-      max-height: 44px; max-width: 140px;
-    }
+    /* Featured org gets larger logo */
+    .org-cell.org-featured .org-front img { max-height: 38px; max-width: 130px; }
 
-    .collab-name-text {
+    .org-name-text {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: .8rem; font-weight: 600; color: var(--ink-mid);
+      font-size: .76rem; font-weight: 600; color: var(--ink-mid);
       letter-spacing: -.01em; line-height: 1.3; text-align: center;
     }
 
-    .collab-hover {
-      position: absolute; inset: 0;
-      background: var(--dark);
+    .org-hover {
+      position: absolute; inset: 0; background: var(--dark);
       display: flex; flex-direction: column; justify-content: center;
-      padding: 1.75rem;
+      padding: 1.5rem;
       opacity: 0; transform: translateY(8px);
       transition: opacity var(--t), transform var(--t);
       pointer-events: none;
     }
-    .collab-cell:hover .collab-hover { opacity: 1; transform: none; pointer-events: auto; }
+    .org-cell:hover .org-hover { opacity: 1; transform: none; pointer-events: auto; }
 
-    .collab-hover-title {
+    .org-hover-name {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: .8rem; font-weight: 600; color: #fff;
-      letter-spacing: -.01em; margin-bottom: .65rem; line-height: 1.3;
+      font-size: .84rem; font-weight: 600; color: #fff;
+      margin-bottom: .5rem; line-height: 1.25; letter-spacing: -.01em;
     }
-    .collab-hover-body {
+    .org-hover-desc {
       font-family: 'Inter', sans-serif;
-      font-size: .72rem; line-height: 1.65; color: rgba(255,255,255,.5);
+      font-size: .72rem; line-height: 1.65; color: rgba(255,255,255,.58);
     }
 
-    /* ── CONTACT ── */
-    .contact { padding: 10rem 0; background: var(--dark); }
-    .contact-inner { max-width: 700px; }
-    .contact-heading {
+    /* ── CTA ── */
+    .cta-section { padding: 9rem 0; background: var(--dark); }
+    @media(max-width:640px){ .cta-section{ padding: 6rem 0; } }
+    .cta-inner { max-width: 680px; }
+    .cta-heading {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: clamp(2.4rem, 5.5vw, 4.5rem);
-      font-weight: 600; line-height: 1.05; letter-spacing: -.05em;
-      color: #fff; margin: .75rem 0 1.75rem;
+      font-size: clamp(2.2rem, 5vw, 4.2rem);
+      font-weight: 600; line-height: 1.06; letter-spacing: -.05em;
+      color: #fff; margin: .75rem 0 1.5rem;
     }
-    .contact-body {
+    .cta-body {
       font-family: 'Inter', sans-serif;
-      font-size: 1rem; line-height: 1.82; color: rgba(255,255,255,.48);
-      margin-bottom: 3rem; max-width: 48ch;
+      font-size: .98rem; line-height: 1.8; color: rgba(255,255,255,.46);
+      margin-bottom: 2.75rem; max-width: 50ch;
     }
-    .contact-email-link {
+    .cta-email {
       font-family: 'Inter', sans-serif;
-      font-size: .82rem; color: rgba(255,255,255,.35);
-      letter-spacing: .03em; display: inline-block; margin-top: 1.75rem;
-      border-bottom: 1px solid rgba(255,255,255,.12); padding-bottom: .18rem;
+      font-size: .8rem; color: rgba(255,255,255,.3);
+      letter-spacing: .03em; display: inline-block; margin-top: 1.5rem;
+      border-bottom: 1px solid rgba(255,255,255,.1); padding-bottom: .18rem;
       transition: color var(--t), border-color var(--t);
     }
-    .contact-email-link:hover { color: rgba(255,255,255,.75); border-color: rgba(255,255,255,.35); }
+    .cta-email:hover { color: rgba(255,255,255,.68); border-color: rgba(255,255,255,.3); }
 
     /* ── FOOTER ── */
-    .footer { background: var(--dark); border-top: 1px solid rgba(255,255,255,.06); padding: 4rem 0 3rem; }
-    .footer-top {
+    .footer { background: var(--dark); border-top: 1px solid rgba(255,255,255,.06); padding: 4.5rem 0 3rem; }
+    .footer-projects {
       display: grid; grid-template-columns: 1fr;
-      gap: 3rem; padding-bottom: 3rem;
-      border-bottom: 1px solid rgba(255,255,255,.06);
+      gap: 3rem; padding-bottom: 3.5rem;
+      border-bottom: 1px solid rgba(255,255,255,.07);
+      margin-bottom: 2rem;
     }
-    @media(min-width:768px){ .footer-top{ grid-template-columns: 2fr 1fr 1fr; gap: 4rem; } }
+    @media(min-width:768px){ .footer-projects{ grid-template-columns: repeat(3, 1fr); gap: 3.5rem; } }
 
-    .footer-logo-name {
+    .fp-title {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: 1.05rem; font-weight: 600; color: #fff; letter-spacing: -.025em;
-      margin-bottom: .6rem;
+      font-size: .88rem; font-weight: 600; color: #fff;
+      letter-spacing: -.02em; margin-bottom: .5rem;
     }
-    .footer-tagline {
+    .fp-desc {
       font-family: 'Inter', sans-serif;
-      font-size: .76rem; color: rgba(255,255,255,.3); line-height: 1.65; max-width: 28ch;
+      font-size: .76rem; line-height: 1.6; color: rgba(255,255,255,.32);
+      margin-bottom: 1.4rem; max-width: 24ch;
     }
-    .footer-col-title {
+    .fp-links { display: flex; flex-direction: column; gap: .55rem; }
+    .fp-link {
       font-family: 'Inter', sans-serif;
-      font-size: .56rem; font-weight: 600; letter-spacing: .26em; text-transform: uppercase;
-      color: rgba(255,255,255,.28); margin-bottom: 1.3rem;
+      font-size: .78rem; color: rgba(255,255,255,.4);
+      display: flex; align-items: center; gap: .6rem;
+      transition: color var(--t);
     }
-    .footer-col-links { display: flex; flex-direction: column; gap: .65rem; }
-    .footer-col-link {
-      font-family: 'Inter', sans-serif;
-      font-size: .79rem; color: rgba(255,255,255,.42);
-      transition: color var(--t); display: flex; align-items: center; gap: .65rem;
-    }
-    .footer-col-link:hover { color: rgba(255,255,255,.82); }
-    .footer-col-link img {
-      width: 15px; height: 15px; object-fit: contain;
+    .fp-link:hover { color: rgba(255,255,255,.8); }
+    .fp-link img {
+      width: 14px; height: 14px; object-fit: contain;
       filter: brightness(0) invert(1); opacity: .38;
       transition: opacity var(--t); flex-shrink: 0;
     }
-    .footer-col-link:hover img { opacity: .75; }
+    .fp-link:hover img { opacity: .72; }
+
     .footer-bottom {
       display: flex; flex-wrap: wrap; align-items: center;
-      justify-content: space-between; gap: 1rem; padding-top: 2rem;
+      justify-content: space-between; gap: 1rem;
     }
     .footer-copy {
       font-family: 'Inter', sans-serif;
-      font-size: .63rem; letter-spacing: .07em; color: rgba(255,255,255,.2);
+      font-size: .62rem; letter-spacing: .07em; color: rgba(255,255,255,.2);
     }
-    .footer-email-sm {
-      font-family: 'Inter', sans-serif;
-      font-size: .68rem; color: rgba(255,255,255,.28); letter-spacing: .04em;
-      transition: color var(--t);
-    }
-    .footer-email-sm:hover { color: rgba(255,255,255,.65); }
 
     /* ── I18N ── */
     [data-lang="en"] { display: none; }
@@ -541,10 +640,12 @@
       <nav class="nav-links">
         <a href="#who"     class="nav-link" data-lang="es">Qui&#233;n soy</a>
         <a href="#who"     class="nav-link" data-lang="en">About</a>
-        <a href="#topics"  class="nav-link" data-lang="es">Temas</a>
-        <a href="#topics"  class="nav-link" data-lang="en">Topics</a>
-        <a href="#collabs" class="nav-link" data-lang="es">Colaboraciones</a>
-        <a href="#collabs" class="nav-link" data-lang="en">Collaborations</a>
+        <a href="#how"     class="nav-link" data-lang="es">C&#243;mo ayudo</a>
+        <a href="#how"     class="nav-link" data-lang="en">How I help</a>
+        <a href="#creds"   class="nav-link" data-lang="es">Experiencia</a>
+        <a href="#creds"   class="nav-link" data-lang="en">Experience</a>
+        <a href="#orgs"    class="nav-link" data-lang="es">Colaboraciones</a>
+        <a href="#orgs"    class="nav-link" data-lang="en">Collaborations</a>
         <a href="#contact" class="nav-link" data-lang="es">Contacto</a>
         <a href="#contact" class="nav-link" data-lang="en">Contact</a>
       </nav>
@@ -575,10 +676,12 @@
     <div class="mob-nav-links">
       <a href="#who"     class="mob-nav-link" data-lang="es">Qui&#233;n soy</a>
       <a href="#who"     class="mob-nav-link" data-lang="en">About</a>
-      <a href="#topics"  class="mob-nav-link" data-lang="es">Temas</a>
-      <a href="#topics"  class="mob-nav-link" data-lang="en">Topics</a>
-      <a href="#collabs" class="mob-nav-link" data-lang="es">Colaboraciones</a>
-      <a href="#collabs" class="mob-nav-link" data-lang="en">Collaborations</a>
+      <a href="#how"     class="mob-nav-link" data-lang="es">C&#243;mo ayudo</a>
+      <a href="#how"     class="mob-nav-link" data-lang="en">How I help</a>
+      <a href="#creds"   class="mob-nav-link" data-lang="es">Experiencia</a>
+      <a href="#creds"   class="mob-nav-link" data-lang="en">Experience</a>
+      <a href="#orgs"    class="mob-nav-link" data-lang="es">Colaboraciones</a>
+      <a href="#orgs"    class="mob-nav-link" data-lang="en">Collaborations</a>
       <a href="#contact" class="mob-nav-link" data-lang="es">Contacto</a>
       <a href="#contact" class="mob-nav-link" data-lang="en">Contact</a>
     </div>
@@ -590,7 +693,7 @@
     </div>
   </div>
 
-  <!-- HERO -->
+  <!-- ── HERO ── -->
   <section class="hero" id="hero">
     <div class="hero-bg">
       <img src="foto-hero.jpg" alt="Carlos González" onerror="this.style.display='none'">
@@ -611,9 +714,21 @@
       <h1 class="hero-name reveal">Carlos Gonz&#225;lez</h1>
 
       <h2 class="hero-tagline reveal">
-        <span data-lang="es">Exploro ecosistemas de innovaci&#243;n y transformo aprendizajes en oportunidades.</span>
-        <span data-lang="en">I explore innovation ecosystems and transform learnings into opportunities.</span>
+        <span data-lang="es">Speaker, docente y emprendedor especializado en innovaci&#243;n, IA y emprendimiento.</span>
+        <span data-lang="en">Speaker, lecturer and entrepreneur specialised in innovation, AI and entrepreneurship.</span>
       </h2>
+
+      <p class="hero-sub reveal">
+        <span data-lang="es">Ayudo a universidades, organizaciones y comunidades a desarrollar talento emprendedor y entender c&#243;mo la innovaci&#243;n, la tecnolog&#237;a y la creatividad est&#225;n transformando la forma de construir negocios y carreras profesionales.</span>
+        <span data-lang="en">I help universities, organizations and communities develop entrepreneurial talent and understand how innovation, technology and creativity are transforming the way businesses and professional careers are built.</span>
+      </p>
+
+      <div class="reveal">
+        <a href="https://calendar.app.google/zpNPySHREwgpucff7" target="_blank" rel="noopener"
+           class="btn btn-white" data-lang="es">Agenda una llamada conmigo</a>
+        <a href="https://calendar.app.google/zpNPySHREwgpucff7" target="_blank" rel="noopener"
+           class="btn btn-white" data-lang="en">Book a call with me</a>
+      </div>
     </div>
 
     <div class="hero-scroll">
@@ -622,62 +737,49 @@
     </div>
   </section>
 
-  <!-- WHO AM I -->
+  <!-- ── QUIÉN SOY ── -->
   <section class="who" id="who">
     <div class="wrap">
       <div class="who-grid">
 
         <div class="who-photo reveal">
-          <img class="who-photo-img" src="quien_soy.jpg" alt="Carlos González"
+          <img src="foto-about.jpg" alt="Carlos González"
                onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
           <div class="who-photo-ph"><span>CG</span></div>
-          <div class="who-photo-rule"></div>
         </div>
 
         <div class="who-content">
-          <p class="label reveal" data-lang="es">Sobre m&#237;</p>
-          <p class="label reveal" data-lang="en">About me</p>
+          <p class="label section-label reveal" data-lang="es">Qui&#233;n soy</p>
+          <p class="label section-label reveal" data-lang="en">About me</p>
 
-          <h2 class="who-heading reveal" data-lang="es">&#191;Qui&#233;n soy?</h2>
-          <h2 class="who-heading reveal" data-lang="en">Who I am</h2>
+          <h2 class="who-heading reveal" data-lang="es">Experiencia que<br>viene de la pr&#225;ctica.</h2>
+          <h2 class="who-heading reveal" data-lang="en">Experience built<br>through practice.</h2>
 
           <div class="who-body reveal">
-            <p data-lang="es">Dedico mi trabajo a conectar personas, ideas y ecosistemas que ayuden a construir proyectos con prop&#243;sito, creatividad y visi&#243;n global.</p>
+            <p data-lang="es">Mi experiencia combina <strong>m&#225;s de 10 a&#241;os en marketing, producto y desarrollo de negocio</strong>, liderazgo de equipos, emprendimiento y exploración de <strong>ecosistemas de innovaci&#243;n en Europa, Latinoam&#233;rica, Estados Unidos e Israel</strong>.</p>
 
-            <p data-lang="es">Exploro c&#243;mo se desarrollan la innovaci&#243;n, el emprendimiento y el talento en distintos lugares del mundo para transformar esos aprendizajes en experiencias, conocimiento y oportunidades, especialmente entre Europa y Latinoam&#233;rica.</p>
+            <p data-lang="es">A lo largo de mi trayectoria he <strong>liderado equipos, lanzado productos, construido comunidades y organizado eventos</strong>. Todo lo que comparto nace de la práctica: <strong>decisiones reales, aprendizajes de campo</strong> y conversaciones con personas que están construyendo el futuro desde distintos sectores y geografías.</p>
 
-            <p data-lang="es">A lo largo de mi trayectoria he trabajado en ventas, marketing, producto, branding y desarrollo de negocio. He liderado equipos, lanzado productos, construido comunidades, organizado eventos y explorado ecosistemas de innovaci&#243;n en pa&#237;ses como Estados Unidos, Israel, Espa&#241;a, Estonia, M&#233;xico, Canad&#225; y Pa&#237;ses Bajos.</p>
+            <p data-lang="en">My experience combines <strong>more than 10 years in marketing, product and business development</strong>, team leadership, entrepreneurship and exploration of <strong>innovation ecosystems across Europe, Latin America, the United States and Israel</strong>.</p>
 
-            <p data-lang="es">Todo lo que comparto nace de la pr&#225;ctica: proyectos propios, aprendizajes reales y conversaciones con personas que est&#225;n construyendo el futuro desde diferentes industrias y geograf&#237;as.</p>
-
-            <p data-lang="es">Actualmente desarrollo mis propios emprendimientos y colaboro con universidades, organizaciones, startups e instituciones interesadas en impulsar talento emprendedor, creatividad e innovaci&#243;n con una perspectiva internacional.</p>
-
-            <p data-lang="en">I dedicate my work to connecting people, ideas and ecosystems that help build projects with purpose, creativity and global vision.</p>
-
-            <p data-lang="en">I explore how innovation, entrepreneurship and talent develop across the world to transform those learnings into experiences, knowledge and opportunities, especially between Europe and Latin America.</p>
-
-            <p data-lang="en">Throughout my career I have worked in sales, marketing, product, branding and business development. I have led teams, launched products, built communities, organized events and explored innovation ecosystems in countries such as the United States, Israel, Spain, Estonia, Mexico, Canada and the Netherlands.</p>
-
-            <p data-lang="en">Everything I share comes from practice: my own projects, real learnings and conversations with people building the future across different industries and geographies.</p>
-
-            <p data-lang="en">I currently develop my own ventures and collaborate with universities, organizations, startups and institutions interested in fostering entrepreneurial talent, creativity and innovation from an international perspective.</p>
+            <p data-lang="en">Throughout my career I have <strong>led teams, launched products, built communities and organised events</strong>. Everything I share comes from practice: <strong>real decisions, field learnings</strong> and conversations with people who are building the future across different sectors and geographies.</p>
           </div>
 
           <div class="who-stats reveal">
+            <div class="who-stat">
+              <div class="who-stat-num">10<sup>+</sup></div>
+              <div class="who-stat-label" data-lang="es">A&#241;os de<br>experiencia</div>
+              <div class="who-stat-label" data-lang="en">Years of<br>experience</div>
+            </div>
             <div class="who-stat">
               <div class="who-stat-num">9</div>
               <div class="who-stat-label" data-lang="es">Pa&#237;ses<br>explorados</div>
               <div class="who-stat-label" data-lang="en">Countries<br>explored</div>
             </div>
             <div class="who-stat">
-              <div class="who-stat-num">2</div>
-              <div class="who-stat-label" data-lang="es">MBAs en<br>tecnolog&#237;a</div>
-              <div class="who-stat-label" data-lang="en">MBAs in<br>technology</div>
-            </div>
-            <div class="who-stat">
-              <div class="who-stat-num">15<sup>+</sup></div>
-              <div class="who-stat-label" data-lang="es">Certificaciones<br>profesionales</div>
-              <div class="who-stat-label" data-lang="en">Professional<br>certifications</div>
+              <div class="who-stat-num">50<sup>+</sup></div>
+              <div class="who-stat-label" data-lang="es">Eventos<br>organizados</div>
+              <div class="who-stat-label" data-lang="en">Events<br>organised</div>
             </div>
           </div>
         </div>
@@ -686,32 +788,199 @@
     </div>
   </section>
 
-  <!-- TOPICS -->
+  <!-- ── CÓMO PUEDO AYUDAR ── -->
+  <section class="how" id="how">
+    <div class="wrap">
+      <div class="how-header reveal">
+        <p class="label label-light" data-lang="es">Servicios</p>
+        <p class="label label-light" data-lang="en">Services</p>
+        <h2 class="section-heading section-heading-light" style="margin-top:.75rem;" data-lang="es">C&#243;mo puedo ayudar</h2>
+        <h2 class="section-heading section-heading-light" style="margin-top:.75rem;" data-lang="en">How I can help</h2>
+        <p class="section-sub section-sub-light" data-lang="es">Colaboro con universidades, empresas, organizaciones y eventos a trav&#233;s de conferencias, workshops, mentor&#237;as y formaci&#243;n pr&#225;ctica.</p>
+        <p class="section-sub section-sub-light" data-lang="en">I collaborate with universities, companies, organizations and events through conferences, workshops, mentoring and hands-on training.</p>
+      </div>
+
+      <div class="how-grid">
+
+        <div class="how-card reveal">
+          <span class="how-card-num" aria-hidden="true">01</span>
+          <div class="how-card-tag" data-lang="es">Universidades</div>
+          <div class="how-card-tag" data-lang="en">Universities</div>
+          <div class="how-card-title" data-lang="es">Formaci&#243;n acad&#233;mica con impacto real</div>
+          <div class="how-card-title" data-lang="en">Academic training with real impact</div>
+          <div class="how-card-block">
+            <div class="how-card-block-label" data-lang="es">El reto</div>
+            <div class="how-card-block-label" data-lang="en">The challenge</div>
+            <div class="how-card-block-text" data-lang="es">Necesitas acercar la realidad empresarial a tus alumnos, contar con docentes con experiencia real y ofrecer sesiones sobre IA, emprendimiento e innovaci&#243;n desde una perspectiva pr&#225;ctica.</div>
+            <div class="how-card-block-text" data-lang="en">You need to bring business reality to your students, have teachers with real experience and offer sessions on AI, entrepreneurship and innovation from a practical perspective.</div>
+          </div>
+          <div class="how-divider"></div>
+          <div class="how-card-block solution">
+            <div class="how-card-block-label" data-lang="es">C&#243;mo colaboro</div>
+            <div class="how-card-block-label" data-lang="en">How I collaborate</div>
+            <div class="how-card-block-text" data-lang="es">Imparto clases, talleres, charlas y mentor&#237;as que conectan la teor&#237;a acad&#233;mica con casos reales, herramientas actuales y aprendizajes del ecosistema emprendedor.</div>
+            <div class="how-card-block-text" data-lang="en">I deliver classes, workshops, talks and mentoring sessions that connect academic theory with real cases, current tools and learnings from the entrepreneurial ecosystem.</div>
+          </div>
+        </div>
+
+        <div class="how-card reveal">
+          <span class="how-card-num" aria-hidden="true">02</span>
+          <div class="how-card-tag" data-lang="es">Empresas y organizaciones</div>
+          <div class="how-card-tag" data-lang="en">Companies &amp; organizations</div>
+          <div class="how-card-title" data-lang="es">Pensamiento innovador para equipos</div>
+          <div class="how-card-title" data-lang="en">Innovative thinking for teams</div>
+          <div class="how-card-block">
+            <div class="how-card-block-label" data-lang="es">El reto</div>
+            <div class="how-card-block-label" data-lang="en">The challenge</div>
+            <div class="how-card-block-text" data-lang="es">Tu equipo necesita entender c&#243;mo la IA, la innovaci&#243;n y las nuevas formas de trabajar est&#225;n transformando el negocio.</div>
+            <div class="how-card-block-text" data-lang="en">Your team needs to understand how AI, innovation and new ways of working are transforming the business.</div>
+          </div>
+          <div class="how-divider"></div>
+          <div class="how-card-block solution">
+            <div class="how-card-block-label" data-lang="es">C&#243;mo colaboro</div>
+            <div class="how-card-block-label" data-lang="en">How I collaborate</div>
+            <div class="how-card-block-text" data-lang="es">Dise&#241;o sesiones formativas, workshops y conferencias para desarrollar pensamiento innovador, criterio estrat&#233;gico y habilidades pr&#225;cticas aplicables al trabajo diario.</div>
+            <div class="how-card-block-text" data-lang="en">I design training sessions, workshops and conferences to develop innovative thinking, strategic judgment and practical skills applicable to day-to-day work.</div>
+          </div>
+        </div>
+
+        <div class="how-card reveal">
+          <span class="how-card-num" aria-hidden="true">03</span>
+          <div class="how-card-tag" data-lang="es">Eventos y comunidades</div>
+          <div class="how-card-tag" data-lang="en">Events &amp; communities</div>
+          <div class="how-card-title" data-lang="es">Contenido que inspira acci&#243;n</div>
+          <div class="how-card-title" data-lang="en">Content that inspires action</div>
+          <div class="how-card-block">
+            <div class="how-card-block-label" data-lang="es">El reto</div>
+            <div class="how-card-block-label" data-lang="en">The challenge</div>
+            <div class="how-card-block-text" data-lang="es">Buscas un speaker con experiencia real, contenido &#250;til y capacidad de conectar con audiencias interesadas en emprendimiento, tecnolog&#237;a e innovaci&#243;n.</div>
+            <div class="how-card-block-text" data-lang="en">You're looking for a speaker with real experience, useful content and the ability to connect with audiences interested in entrepreneurship, technology and innovation.</div>
+          </div>
+          <div class="how-divider"></div>
+          <div class="how-card-block solution">
+            <div class="how-card-block-label" data-lang="es">C&#243;mo colaboro</div>
+            <div class="how-card-block-label" data-lang="en">How I collaborate</div>
+            <div class="how-card-block-text" data-lang="es">Participo como speaker, moderador o mentor en eventos, paneles y programas donde se busca inspirar, provocar reflexi&#243;n y entregar aprendizajes accionables.</div>
+            <div class="how-card-block-text" data-lang="en">I participate as speaker, moderator or mentor in events, panels and programs where the goal is to inspire, provoke reflection and deliver actionable learnings.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FORMATOS ── -->
+  <section class="formats" id="formats">
+    <div class="wrap">
+      <div class="formats-header reveal">
+        <p class="label section-label" data-lang="es">Formatos</p>
+        <p class="label section-label" data-lang="en">Formats</p>
+        <h2 class="section-heading" data-lang="es">Formatos de colaboraci&#243;n</h2>
+        <h2 class="section-heading" data-lang="en">Collaboration formats</h2>
+      </div>
+
+      <div class="formats-grid">
+        <div class="format-item reveal">
+          <div class="format-icon"></div>
+          <div class="format-text" data-lang="es">Conferencias y keynotes</div>
+          <div class="format-text" data-lang="en">Conferences &amp; keynotes</div>
+        </div>
+        <div class="format-item reveal">
+          <div class="format-icon"></div>
+          <div class="format-text" data-lang="es">Workshops pr&#225;cticos</div>
+          <div class="format-text" data-lang="en">Practical workshops</div>
+        </div>
+        <div class="format-item reveal">
+          <div class="format-icon"></div>
+          <div class="format-text" data-lang="es">Clases y formaci&#243;n acad&#233;mica</div>
+          <div class="format-text" data-lang="en">Academic classes &amp; training</div>
+        </div>
+        <div class="format-item reveal">
+          <div class="format-icon"></div>
+          <div class="format-text" data-lang="es">Mentor&#237;as para emprendedores y startups</div>
+          <div class="format-text" data-lang="en">Mentoring for entrepreneurs &amp; startups</div>
+        </div>
+        <div class="format-item reveal">
+          <div class="format-icon"></div>
+          <div class="format-text" data-lang="es">Moderaci&#243;n de paneles</div>
+          <div class="format-text" data-lang="en">Panel moderation</div>
+        </div>
+        <div class="format-item reveal">
+          <div class="format-icon"></div>
+          <div class="format-text" data-lang="es">Dise&#241;o de experiencias de aprendizaje e innovaci&#243;n</div>
+          <div class="format-text" data-lang="en">Learning &amp; innovation experience design</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CREDENCIALES ── -->
+  <section class="creds" id="creds">
+    <div class="wrap">
+      <div class="creds-header reveal">
+        <p class="label label-light" data-lang="es">Trayectoria</p>
+        <p class="label label-light" data-lang="en">Track record</p>
+        <h2 class="section-heading section-heading-light" style="margin-top:.75rem;" data-lang="es">Experiencia destacada</h2>
+        <h2 class="section-heading section-heading-light" style="margin-top:.75rem;" data-lang="en">Featured experience</h2>
+      </div>
+
+      <div class="creds-grid">
+        <div class="cred-item reveal">
+          <div class="cred-num">10<sup>+</sup></div>
+          <div class="cred-label" data-lang="es">A&#241;os de experiencia en marketing, producto y desarrollo de negocio</div>
+          <div class="cred-label" data-lang="en">Years of experience in marketing, product and business development</div>
+        </div>
+        <div class="cred-item reveal">
+          <div class="cred-num">30<sup>+</sup></div>
+          <div class="cred-label" data-lang="es">Conferencias y workshops impartidos</div>
+          <div class="cred-label" data-lang="en">Conferences and workshops delivered</div>
+        </div>
+        <div class="cred-item reveal">
+          <div class="cred-num">50<sup>+</sup></div>
+          <div class="cred-label" data-lang="es">Eventos organizados</div>
+          <div class="cred-label" data-lang="en">Events organised</div>
+        </div>
+        <div class="cred-item-text reveal">
+          <p data-lang="es"><strong>Ecosistemas explorados</strong> en Europa, Latinoam&#233;rica, Estados Unidos e Israel.</p>
+          <p data-lang="en"><strong>Innovation ecosystems explored</strong> across Europe, Latin America, the United States and Israel.</p>
+        </div>
+        <div class="cred-item-text reveal">
+          <p data-lang="es"><strong>Ex CMO y miembro de consejo</strong> en empresa tecnol&#243;gica mexicana.</p>
+          <p data-lang="en"><strong>Former CMO and board member</strong> at a Mexican technology company.</p>
+        </div>
+        <div class="cred-item-text reveal">
+          <p data-lang="es"><strong>Fundador</strong> de Clairo y Studio 779.</p>
+          <p data-lang="en"><strong>Founder</strong> of Clairo and Studio 779.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TEMAS ── -->
   <section class="topics" id="topics">
     <div class="wrap">
       <div class="topics-header reveal">
-        <p class="label" data-lang="es">Temas en los que hablo</p>
-        <p class="label" data-lang="en">Topics I speak about</p>
-        <h2 class="topics-heading" data-lang="es">Ideas que generan acci&#243;n.</h2>
-        <h2 class="topics-heading" data-lang="en">Ideas that generate action.</h2>
+        <p class="label section-label" data-lang="es">Temas en los que hablo</p>
+        <p class="label section-label" data-lang="en">Topics I speak about</p>
+        <h2 class="section-heading" data-lang="es">Ideas que generan acci&#243;n.</h2>
+        <h2 class="section-heading" data-lang="en">Ideas that generate action.</h2>
       </div>
 
       <div class="topics-grid">
-
         <div class="topic-card reveal">
           <span class="topic-num" aria-hidden="true">01</span>
           <div class="topic-icon"></div>
           <div class="topic-title" data-lang="es">Emprendimiento &amp; Startups</div>
           <div class="topic-title" data-lang="en">Entrepreneurship &amp; Startups</div>
           <ul class="topic-items">
-            <li data-lang="es">Construir proyectos con recursos limitados</li>
-            <li data-lang="en">Building projects with limited resources</li>
-            <li data-lang="es">Customer Discovery</li>
-            <li data-lang="en">Customer Discovery</li>
-            <li data-lang="es">MVPs que validan hip&#243;tesis</li>
-            <li data-lang="en">MVPs that validate hypotheses</li>
             <li data-lang="es">Mentalidad de fundador</li>
             <li data-lang="en">Founder mindset</li>
+            <li data-lang="es">Customer Discovery</li>
+            <li data-lang="en">Customer Discovery</li>
+            <li data-lang="es">MVPs y validaci&#243;n</li>
+            <li data-lang="en">MVPs and validation</li>
+            <li data-lang="es">Construir con recursos limitados</li>
+            <li data-lang="en">Building with limited resources</li>
           </ul>
         </div>
 
@@ -721,39 +990,20 @@
           <div class="topic-title" data-lang="es">Creatividad &amp; Innovaci&#243;n</div>
           <div class="topic-title" data-lang="en">Creativity &amp; Innovation</div>
           <ul class="topic-items">
-            <li data-lang="es">La creatividad como ventaja competitiva</li>
-            <li data-lang="en">Creativity as a competitive advantage</li>
+            <li data-lang="es">Creatividad como ventaja competitiva</li>
+            <li data-lang="en">Creativity as competitive advantage</li>
             <li data-lang="es">Innovaci&#243;n m&#225;s all&#225; de los buzzwords</li>
             <li data-lang="en">Innovation beyond buzzwords</li>
             <li data-lang="es">C&#243;mo los ecosistemas crean innovaci&#243;n</li>
             <li data-lang="en">How ecosystems create innovation</li>
-            <li data-lang="es">Construir ideas con significado</li>
-            <li data-lang="en">Building meaningful ideas</li>
           </ul>
         </div>
 
         <div class="topic-card reveal">
           <span class="topic-num" aria-hidden="true">03</span>
           <div class="topic-icon"></div>
-          <div class="topic-title" data-lang="es">Liderazgo &amp; Desarrollo personal</div>
-          <div class="topic-title" data-lang="en">Leadership &amp; Personal Growth</div>
-          <ul class="topic-items">
-            <li data-lang="es">Liderar a trav&#233;s de la inspiraci&#243;n</li>
-            <li data-lang="en">Leading through inspiration</li>
-            <li data-lang="es">Equipos resilientes</li>
-            <li data-lang="en">Building resilient teams</li>
-            <li data-lang="es">Carreras con prop&#243;sito</li>
-            <li data-lang="en">Purpose-driven careers</li>
-            <li data-lang="es">Navegar la incertidumbre</li>
-            <li data-lang="en">Navigating uncertainty</li>
-          </ul>
-        </div>
-
-        <div class="topic-card reveal">
-          <span class="topic-num" aria-hidden="true">04</span>
-          <div class="topic-icon"></div>
           <div class="topic-title" data-lang="es">IA &amp; Futuro del trabajo</div>
-          <div class="topic-title" data-lang="en">AI &amp; The Future of Work</div>
+          <div class="topic-title" data-lang="en">AI &amp; Future of work</div>
           <ul class="topic-items">
             <li data-lang="es">IA pr&#225;ctica para profesionales</li>
             <li data-lang="en">Practical AI for professionals</li>
@@ -761,8 +1011,21 @@
             <li data-lang="en">AI for entrepreneurs</li>
             <li data-lang="es">Habilidades humanas en la era de la IA</li>
             <li data-lang="en">Human skills in the AI era</li>
-            <li data-lang="es">Organizaciones AI-native</li>
-            <li data-lang="en">Building AI-native organizations</li>
+          </ul>
+        </div>
+
+        <div class="topic-card reveal">
+          <span class="topic-num" aria-hidden="true">04</span>
+          <div class="topic-icon"></div>
+          <div class="topic-title" data-lang="es">Liderazgo &amp; Desarrollo personal</div>
+          <div class="topic-title" data-lang="en">Leadership &amp; Personal growth</div>
+          <ul class="topic-items">
+            <li data-lang="es">Carreras con prop&#243;sito</li>
+            <li data-lang="en">Purpose-driven careers</li>
+            <li data-lang="es">Equipos resilientes</li>
+            <li data-lang="en">Resilient teams</li>
+            <li data-lang="es">Navegar la incertidumbre</li>
+            <li data-lang="en">Navigating uncertainty</li>
           </ul>
         </div>
 
@@ -770,194 +1033,321 @@
           <span class="topic-num" aria-hidden="true">05</span>
           <div class="topic-icon"></div>
           <div class="topic-title" data-lang="es">Ecosistemas globales de innovaci&#243;n</div>
-          <div class="topic-title" data-lang="en">Global Innovation Ecosystems</div>
+          <div class="topic-title" data-lang="en">Global innovation ecosystems</div>
           <ul class="topic-items">
             <li data-lang="es">Qu&#233; podemos aprender de Israel, Estonia, Espa&#241;a y EE.UU.</li>
             <li data-lang="en">What we can learn from Israel, Estonia, Spain and the US</li>
             <li data-lang="es">Ecosistemas que est&#225;n moldeando el futuro</li>
-            <li data-lang="en">Startup ecosystems shaping the future</li>
+            <li data-lang="en">Ecosystems shaping the future</li>
             <li data-lang="es">Conectar Europa y Latinoam&#233;rica a trav&#233;s de la innovaci&#243;n</li>
             <li data-lang="en">Connecting Europe and Latin America through innovation</li>
           </ul>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- COLLABORATIONS -->
-  <section class="collabs" id="collabs">
+  <!-- ── ORGANIZACIONES ── -->
+  <section class="orgs" id="orgs">
     <div class="wrap">
-      <div class="collabs-header reveal">
-        <p class="label" data-lang="es">Experiencia</p>
-        <p class="label" data-lang="en">Experience</p>
-        <h2 class="collabs-heading" data-lang="es">Con qui&#233;n he colaborado</h2>
-        <h2 class="collabs-heading" data-lang="en">Who I have worked with</h2>
+      <div class="orgs-header reveal">
+        <p class="label section-label" data-lang="es">Experiencia</p>
+        <p class="label section-label" data-lang="en">Experience</p>
+        <h2 class="section-heading" data-lang="es">Espacios donde he participado<br>como speaker, mentor o docente</h2>
+        <h2 class="section-heading" data-lang="en">Spaces where I have participated<br>as speaker, mentor or lecturer</h2>
       </div>
 
-      <div class="collabs-grid reveal">
-
-        <!-- iLAB / LAB Madrid Innovation -->
-        <div class="collab-cell">
-          <div class="collab-front">
-            <img src="iLAB_Blanco.png" alt="LAB" class="logo-dark">
+      <!-- Centros de emprendimiento -->
+      <div class="org-category reveal">
+        <div class="org-category-label" data-lang="es">Centros de emprendimiento</div>
+        <div class="org-category-label" data-lang="en">Entrepreneurship centres</div>
+        <div class="org-row">
+          <div class="org-cell">
+            <div class="org-front">
+              <img src="iLAB_Blanco.png" alt="LAB Madrid Innovation">
+            </div>
+            <div class="org-hover">
+              <div class="org-hover-name">LAB (Madrid Innovation)</div>
+              <div class="org-hover-desc">Masterclasses, workshops y eventos enfocados en innovaci&#243;n, emprendimiento, inteligencia artificial y eCommerce para emprendedores y profesionales.</div>
+            </div>
           </div>
-          <div class="collab-hover">
-            <div class="collab-hover-title">LAB (Madrid Innovation)</div>
-            <div class="collab-hover-body">Impartici&#243;n de masterclasses, workshops y organizaci&#243;n de eventos enfocados en innovaci&#243;n, emprendimiento, inteligencia artificial y eCommerce para emprendedores y profesionales.</div>
+          <div class="org-cell">
+            <div class="org-front">
+              <img src="MIL_Blanco.png" alt="Madrid International Lab">
+            </div>
+            <div class="org-hover">
+              <div class="org-hover-name">Madrid International Lab (MIL)</div>
+              <div class="org-hover-desc">Ponente y facilitador de sesiones formativas orientadas a emprendimiento, innovaci&#243;n y desarrollo de negocio.</div>
+            </div>
           </div>
-        </div>
-
-        <!-- MIL -->
-        <div class="collab-cell">
-          <div class="collab-front">
-            <img src="MIL_Blanco.png" alt="MIL" class="logo-dark">
+          <div class="org-cell">
+            <div class="org-front">
+              <img src="Logo_Mad_innovation_blanco.png" alt="Madrid Innovation Rosario">
+            </div>
+            <div class="org-hover">
+              <div class="org-hover-name">Madrid Innovation Rosario</div>
+              <div class="org-hover-desc">Charlas y talleres sobre emprendimiento, innovaci&#243;n y nuevas formas de construir negocios.</div>
+            </div>
           </div>
-          <div class="collab-hover">
-            <div class="collab-hover-title">Madrid International Lab (MIL)</div>
-            <div class="collab-hover-body">Participaci&#243;n como ponente y facilitador de sesiones formativas orientadas a emprendimiento, innovaci&#243;n y desarrollo de negocio.</div>
+          <div class="org-cell">
+            <div class="org-front">
+              <span class="org-name-text">Puerta<br>Innovaci&#243;n</span>
+            </div>
+            <div class="org-hover">
+              <div class="org-hover-name">Puerta Innovaci&#243;n</div>
+              <div class="org-hover-desc">Charlas y talleres sobre emprendimiento, innovaci&#243;n y nuevas formas de construir negocios.</div>
+            </div>
           </div>
-        </div>
-
-        <!-- Builders Network — featured, wider -->
-        <div class="collab-cell collab-featured">
-          <div class="collab-front">
-            <img src="Logo_Builders_Network.svg" alt="Builders Network" class="logo-dark">
+          <div class="org-cell">
+            <div class="org-front">
+              <span class="org-name-text">Madrid<br>Emprende</span>
+            </div>
+            <div class="org-hover">
+              <div class="org-hover-name">Madrid Emprende</div>
+              <div class="org-hover-desc">Charlas para emprendedores sobre validaci&#243;n de proyectos, ecosistemas y desarrollo de negocio.</div>
+            </div>
           </div>
-          <div class="collab-hover">
-            <div class="collab-hover-title">Builders Network</div>
-            <div class="collab-hover-body">Fundador de una comunidad que conecta emprendedores, profesionales y creadores que desarrollan proyectos con prop&#243;sito, facilitando conversaciones, aprendizaje y networking de valor.</div>
-          </div>
-        </div>
-
-        <!-- Universidad Nebrija -->
-        <div class="collab-cell">
-          <div class="collab-front">
-            <img src="Logo_Universidad_nebrija.png" alt="Universidad Nebrija" class="logo-dark">
-          </div>
-          <div class="collab-hover">
-            <div class="collab-hover-title">Universidad Nebrija</div>
-            <div class="collab-hover-body">Ponente invitado en programas de emprendimiento, compartiendo experiencias sobre innovaci&#243;n, validaci&#243;n de proyectos, ecosistemas internacionales y construcci&#243;n de startups.</div>
-          </div>
-        </div>
-
-        <!-- IE University -->
-        <div class="collab-cell">
-          <div class="collab-front">
-            <img src="logo-ie.svg" alt="IE University" class="logo-dark">
-          </div>
-          <div class="collab-hover">
-            <div class="collab-hover-title">IE University</div>
-            <div class="collab-hover-body">Mentor en hackatones y programas de emprendimiento, acompa&#241;ando a estudiantes en el desarrollo, validaci&#243;n y presentaci&#243;n de modelos de negocio innovadores.</div>
-          </div>
-        </div>
-
-        <!-- Talent Land -->
-        <div class="collab-cell">
-          <div class="collab-front">
-            <img src="talent-land-logo.png" alt="Talent Land" class="logo-dark">
-          </div>
-          <div class="collab-hover">
-            <div class="collab-hover-title">Talent Land</div>
-            <div class="collab-hover-body">Speaker y facilitador de workshops sobre emprendimiento, eCommerce, innovaci&#243;n e inteligencia artificial aplicada a negocios digitales.</div>
+          <div class="org-cell">
+            <div class="org-front">
+              <img src="Logo-Wayra-blanco.png" alt="Wayra">
+            </div>
+            <div class="org-hover">
+              <div class="org-hover-name">Wayra</div>
+              <div class="org-hover-desc">Participaci&#243;n en actividades y eventos de la aceleradora de Telef&#243;nica, conectando el ecosistema emprendedor con grandes corporaciones.</div>
+            </div>
           </div>
         </div>
-
-        <!-- Universidad Carlos III (UCM logo) -->
-        <div class="collab-cell">
-          <div class="collab-front">
-            <img src="Logo_UCM.png" alt="Universidad Carlos III" class="logo-dark">
-          </div>
-          <div class="collab-hover">
-            <div class="collab-hover-title">Universidad Carlos III de Madrid</div>
-            <div class="collab-hover-body">Mentor en programas de emprendimiento y hackatones, apoyando a estudiantes en procesos de ideaci&#243;n, validaci&#243;n y desarrollo de proyectos.</div>
-          </div>
-        </div>
-
-        <!-- Microsip -->
-        <div class="collab-cell">
-          <div class="collab-front">
-            <img src="logo_microsip.png" alt="Microsip" class="logo-dark">
-          </div>
-          <div class="collab-hover">
-            <div class="collab-hover-title">Microsip Software</div>
-            <div class="collab-hover-body">Ex Chief Marketing Officer (CMO). Lider&#233; estrategias de marketing, branding, producto y comunidad. Organic&#233; congresos, eventos empresariales y programas de formaci&#243;n, participando frecuentemente como speaker y representante de la organizaci&#243;n.</div>
-          </div>
-        </div>
-
       </div>
+
+      <!-- Comunidades -->
+      <div class="org-category reveal">
+        <div class="org-category-label" data-lang="es">Comunidades</div>
+        <div class="org-category-label" data-lang="en">Communities</div>
+        <div class="org-row">
+          <div class="org-cell org-featured">
+            <div class="org-front">
+              <img src="Logo_Builders_Network.svg" alt="Builders Network">
+            </div>
+            <div class="org-hover">
+              <div class="org-hover-name">Builders Network</div>
+              <div class="org-hover-desc">Fundador de esta comunidad que conecta emprendedores, profesionales y creadores que desarrollan proyectos con prop&#243;sito. Facilitando conversaciones, aprendizaje y networking de valor.</div>
+            </div>
+          </div>
+          <div class="org-cell">
+            <div class="org-front">
+              <span class="org-name-text">Super<br>Pioneros</span>
+            </div>
+            <div class="org-hover">
+              <div class="org-hover-name">Super Pioneros</div>
+              <div class="org-hover-desc">Participaci&#243;n como speaker y mentor en una comunidad orientada al emprendimiento y la innovaci&#243;n.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Universidades -->
+      <div class="org-category reveal">
+        <div class="org-category-label" data-lang="es">Universidades</div>
+        <div class="org-category-label" data-lang="en">Universities</div>
+        <div class="org-row">
+          <div class="org-cell">
+            <div class="org-front">
+              <img src="Logo_Universidad_nebrija.png" alt="Universidad Nebrija">
+            </div>
+            <div class="org-hover">
+              <div class="org-hover-name">Universidad Nebrija</div>
+              <div class="org-hover-desc">Ponente invitado en programas de emprendimiento sobre innovaci&#243;n, validaci&#243;n de proyectos, ecosistemas internacionales y construcci&#243;n de startups.</div>
+            </div>
+          </div>
+          <div class="org-cell">
+            <div class="org-front">
+              <img src="logo-ie.svg" alt="IE University">
+            </div>
+            <div class="org-hover">
+              <div class="org-hover-name">IE University</div>
+              <div class="org-hover-desc">Mentor en hackatones y programas de emprendimiento, acompa&#241;ando a estudiantes en el desarrollo, validaci&#243;n y presentaci&#243;n de modelos de negocio.</div>
+            </div>
+          </div>
+          <div class="org-cell">
+            <div class="org-front">
+              <img src="Logo_UCM.png" alt="Universidad Carlos III">
+            </div>
+            <div class="org-hover">
+              <div class="org-hover-name">Universidad Carlos III de Madrid</div>
+              <div class="org-hover-desc">Mentor en programas de emprendimiento y hackatones, apoyando a estudiantes en procesos de ideaci&#243;n, validaci&#243;n y desarrollo de proyectos.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Eventos -->
+      <div class="org-category reveal">
+        <div class="org-category-label" data-lang="es">Eventos</div>
+        <div class="org-category-label" data-lang="en">Events</div>
+        <div class="org-row">
+          <div class="org-cell">
+            <div class="org-front">
+              <img src="talent-land-logo.png" alt="Talent Land">
+            </div>
+            <div class="org-hover">
+              <div class="org-hover-name">Talent Land</div>
+              <div class="org-hover-desc">Speaker y facilitador de workshops sobre emprendimiento, eCommerce, innovaci&#243;n e inteligencia artificial aplicada a negocios digitales.</div>
+            </div>
+          </div>
+          <div class="org-cell">
+            <div class="org-front">
+              <img src="South_Summit_Logo_Blanco.png" alt="South Summit">
+            </div>
+            <div class="org-hover">
+              <div class="org-hover-name">South Summit</div>
+              <div class="org-hover-desc">Participaci&#243;n en uno de los mayores eventos de startups e innovaci&#243;n de Europa, organizado en Madrid.</div>
+            </div>
+          </div>
+          <div class="org-cell">
+            <div class="org-front">
+              <img src="MWC-2023-Logo-White.png" alt="Mobile World Congress">
+            </div>
+            <div class="org-hover">
+              <div class="org-hover-name">Mobile World Congress</div>
+              <div class="org-hover-desc">Asistente y participante en el mayor evento mundial de tecnolog&#237;a m&#243;vil y conectividad, explorandolas tendencias que moldean el futuro digital.</div>
+            </div>
+          </div>
+          <div class="org-cell">
+            <div class="org-front">
+              <img src="4YFN_LOGO_BLANCO.png" alt="4YFN">
+            </div>
+            <div class="org-hover">
+              <div class="org-hover-name">4YFN</div>
+              <div class="org-hover-desc">Participaci&#243;n en el evento de startups y emprendimiento del Mobile World Congress, conectando con el ecosistema de innovaci&#243;n europeo y global.</div>
+            </div>
+          </div>
+          <div class="org-cell">
+            <div class="org-front">
+              <img src="Latitude59_Logo_Blanco.png" alt="Latitude59">
+            </div>
+            <div class="org-hover">
+              <div class="org-hover-name">Latitude59</div>
+              <div class="org-hover-desc">Participaci&#243;n en la conferencia de startups e inversi&#243;n m&#225;s importante del norte de Europa, celebrada en Tallin, Estonia.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Empresas -->
+      <div class="org-category reveal">
+        <div class="org-category-label" data-lang="es">Empresas</div>
+        <div class="org-category-label" data-lang="en">Companies</div>
+        <div class="org-row">
+          <div class="org-cell">
+            <div class="org-front">
+              <img src="logo_microsip.png" alt="Microsip">
+            </div>
+            <div class="org-hover">
+              <div class="org-hover-name">Microsip Software</div>
+              <div class="org-hover-desc">Ex Chief Marketing Officer (CMO). Lider&#233; estrategias de marketing, branding, producto y comunidad. Organiz&#233; congresos, eventos y programas de formaci&#243;n.</div>
+            </div>
+          </div>
+          <div class="org-cell">
+            <div class="org-front">
+              <span class="org-name-text">Lovable</span>
+            </div>
+            <div class="org-hover">
+              <div class="org-hover-name">Lovable</div>
+              <div class="org-hover-desc">Workshops y buildathones enfocados en el desarrollo de productos digitales con IA generativa y herramientas no-code.</div>
+            </div>
+          </div>
+          <div class="org-cell">
+            <div class="org-front">
+              <img src="Logo Clairo Blanco.svg" alt="Clairo">
+            </div>
+            <div class="org-hover">
+              <div class="org-hover-name">Clairo</div>
+              <div class="org-hover-desc">Creaci&#243;n y facilitaci&#243;n de workshops, masterclasses y charlas sobre eCommerce, marketing digital, IA y emprendimiento.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
+  <!-- ── CTA FINAL ── -->
+  <section class="cta-section" id="contact">
     <div class="wrap">
-      <div class="contact-inner">
-        <p class="label reveal" style="color:rgba(255,255,255,.28);" data-lang="es">Contacto</p>
-        <p class="label reveal" style="color:rgba(255,255,255,.28);" data-lang="en">Contact</p>
+      <div class="cta-inner">
+        <p class="label label-light reveal" data-lang="es">Contacto</p>
+        <p class="label label-light reveal" data-lang="en">Contact</p>
 
-        <h2 class="contact-heading reveal" data-lang="es">&#191;Te gustar&#237;a<br>colaborar?</h2>
-        <h2 class="contact-heading reveal" data-lang="en">Would you like<br>to collaborate?</h2>
+        <h2 class="cta-heading reveal" data-lang="es">Las mejores conexiones<br>empiezan con una<br>conversaci&#243;n.</h2>
+        <h2 class="cta-heading reveal" data-lang="en">The best connections<br>start with a<br>conversation.</h2>
 
-        <p class="contact-body reveal" data-lang="es">Si crees que puedo aportar valor a tu universidad, organizaci&#243;n, evento o proyecto, estar&#233; encantado de conversar.</p>
-        <p class="contact-body reveal" data-lang="en">If you think I can add value to your university, organization, event or project, I would be happy to connect.</p>
+        <p class="cta-body reveal" data-lang="es">Si buscas un speaker, docente, mentor o colaborador para tu universidad, organizaci&#243;n, evento o comunidad, hablemos.</p>
+        <p class="cta-body reveal" data-lang="en">If you're looking for a speaker, lecturer, mentor or collaborator for your university, organization, event or community, let's talk.</p>
 
         <div class="reveal">
           <a href="https://calendar.app.google/zpNPySHREwgpucff7" target="_blank" rel="noopener"
-             class="btn btn-dark" style="background:#fff;color:var(--ink);" data-lang="es">Agenda una llamada conmigo</a>
+             class="btn btn-white" data-lang="es">Agenda una llamada</a>
           <a href="https://calendar.app.google/zpNPySHREwgpucff7" target="_blank" rel="noopener"
-             class="btn btn-dark" style="background:#fff;color:var(--ink);" data-lang="en">Book a call with me</a>
+             class="btn btn-white" data-lang="en">Book a call</a>
         </div>
 
-        <a href="mailto:carlos.gonzalez@clairo.es" class="contact-email-link reveal">carlos.gonzalez@clairo.es</a>
+        <a href="mailto:carlos.gonzalez@clairo.es" class="cta-email reveal">carlos.gonzalez@clairo.es</a>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ── FOOTER ── -->
   <footer class="footer">
     <div class="wrap">
-      <div class="footer-top">
+      <div class="footer-projects">
 
+        <!-- Carlos González personal -->
         <div>
-          <div class="footer-logo-name">Carlos Gonz&#225;lez</div>
-          <p class="footer-tagline" data-lang="es">Exploro ecosistemas de innovaci&#243;n y transformo aprendizajes en oportunidades.</p>
-          <p class="footer-tagline" data-lang="en">Exploring innovation ecosystems and transforming learnings into opportunities.</p>
-        </div>
-
-        <div>
-          <p class="footer-col-title" data-lang="es">Proyectos</p>
-          <p class="footer-col-title" data-lang="en">Projects</p>
-          <div class="footer-col-links">
-            <a href="https://www.clairo.es" target="_blank" rel="noopener" class="footer-col-link">
-              <img src="Logo_www.png" alt="">
-              Clairo
-            </a>
-            <a href="https://studio779.design" target="_blank" rel="noopener" class="footer-col-link">
-              <img src="Logo_www.png" alt="">
-              Studio 779
+          <div class="fp-title">Carlos González</div>
+          <p class="fp-desc" data-lang="es">Speaker, docente y emprendedor. Innovaci&#243;n, IA y emprendimiento con perspectiva global.</p>
+          <p class="fp-desc" data-lang="en">Speaker, lecturer and entrepreneur. Innovation, AI and entrepreneurship with a global perspective.</p>
+          <div class="fp-links">
+            <a href="https://www.linkedin.com/in/carlos-glz" target="_blank" rel="noopener" class="fp-link">
+              <img src="Logo_linkedin.png" alt="LinkedIn">
+              LinkedIn
             </a>
           </div>
         </div>
 
+        <!-- Studio 779 -->
         <div>
-          <p class="footer-col-title">Redes</p>
-          <div class="footer-col-links">
-            <a href="https://www.linkedin.com/in/carlos-glz" target="_blank" rel="noopener" class="footer-col-link">
-              <img src="Logo_linkedin.png" alt="LinkedIn">
-              LinkedIn
+          <div class="fp-title">Studio 779</div>
+          <p class="fp-desc" data-lang="es">Estudio de dise&#241;o y comunicaci&#243;n estrat&#233;gica para marcas y proyectos creativos.</p>
+          <p class="fp-desc" data-lang="en">Design and strategic communications studio for brands and creative projects.</p>
+          <div class="fp-links">
+            <a href="https://studio779.design" target="_blank" rel="noopener" class="fp-link">
+              <img src="Logo_www.png" alt="Web">
+              studio779.design
             </a>
-            <a href="https://instagram.com/clairo_ecommerce" target="_blank" rel="noopener" class="footer-col-link">
+            <a href="https://www.instagram.com/studio_779/" target="_blank" rel="noopener" class="fp-link">
               <img src="Logo_instagram.png" alt="Instagram">
-              Instagram &middot; Clairo
+              @studio_779
             </a>
-            <a href="https://www.instagram.com/studio_779/" target="_blank" rel="noopener" class="footer-col-link">
+          </div>
+        </div>
+
+        <!-- Clairo -->
+        <div>
+          <div class="fp-title">Clairo</div>
+          <p class="fp-desc" data-lang="es">eCommerce y estrategia digital para negocios que quieren crecer de forma inteligente.</p>
+          <p class="fp-desc" data-lang="en">eCommerce and digital strategy for businesses that want to grow intelligently.</p>
+          <div class="fp-links">
+            <a href="https://www.clairo.es" target="_blank" rel="noopener" class="fp-link">
+              <img src="Logo_www.png" alt="Web">
+              clairo.es
+            </a>
+            <a href="https://instagram.com/clairo_ecommerce" target="_blank" rel="noopener" class="fp-link">
               <img src="Logo_instagram.png" alt="Instagram">
-              Instagram &middot; Studio 779
+              @clairo_ecommerce
             </a>
-            <a href="https://tiktok.com/@clairo_ecommerce" target="_blank" rel="noopener" class="footer-col-link">
+            <a href="https://tiktok.com/@clairo_ecommerce" target="_blank" rel="noopener" class="fp-link">
               <img src="Logo_Tiktok.png" alt="TikTok">
-              TikTok &middot; Clairo
+              @clairo_ecommerce
             </a>
           </div>
         </div>
@@ -966,7 +1356,12 @@
 
       <div class="footer-bottom">
         <p class="footer-copy">&#169; 2025 &middot; carlosglz.io</p>
-        <a href="mailto:carlos.gonzalez@clairo.es" class="footer-email-sm">carlos.gonzalez@clairo.es</a>
+        <a href="mailto:carlos.gonzalez@clairo.es"
+           style="font-family:'Inter',sans-serif;font-size:.62rem;letter-spacing:.06em;color:rgba(255,255,255,.2);transition:color .22s;"
+           onmouseover="this.style.color='rgba(255,255,255,.55)'"
+           onmouseout="this.style.color='rgba(255,255,255,.2)'">
+          carlos.gonzalez@clairo.es
+        </a>
       </div>
     </div>
   </footer>
@@ -1005,7 +1400,7 @@
         if (!e.isIntersecting) return;
         const siblings = [...e.target.parentElement.querySelectorAll('.reveal:not(.visible)')];
         const idx = siblings.indexOf(e.target);
-        setTimeout(() => e.target.classList.add('visible'), Math.min(idx, 5) * 80);
+        setTimeout(() => e.target.classList.add('visible'), Math.min(idx, 4) * 75);
         io.unobserve(e.target);
       });
     }, { threshold: 0.07 });
