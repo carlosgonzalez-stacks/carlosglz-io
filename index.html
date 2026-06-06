@@ -336,9 +336,11 @@
     .formats { padding: 6rem 0 0; background: var(--bg); }
     @media(max-width:640px){ .formats{ padding: 4rem 0 0; } }
     .formats-header { padding-bottom: 3rem; }
+    .formats-wrap { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+    @media(min-width:640px){ .formats-wrap{ padding: 0 2.5rem; } }
+    @media(min-width:1024px){ .formats-wrap{ padding: 0 3.5rem; } }
     .formats-grid {
       display: grid; grid-template-columns: 1fr; gap: 3px;
-      background: var(--bg);
     }
     @media(min-width:540px){ .formats-grid{ grid-template-columns: repeat(2, 1fr); } }
     @media(min-width:900px){ .formats-grid{ grid-template-columns: repeat(3, 1fr); } }
@@ -800,86 +802,88 @@
 
   <!-- ── FORMATOS ── -->
   <section class="formats" id="formats">
-    <div class="wrap formats-header reveal">
-      <p class="label section-label" data-lang="es">Formatos</p>
-      <p class="label section-label" data-lang="en">Formats</p>
-      <h2 class="section-heading" data-lang="es">Formatos de colaboraci&#243;n</h2>
-      <h2 class="section-heading" data-lang="en">Collaboration formats</h2>
-    </div>
-
-    <div class="formats-grid">
-
-      <div class="format-card reveal">
-        <div class="format-card-bg" style="background-image:url('Sepeaker_keynote.jpg')"></div>
-        <div class="format-card-overlay"></div>
-        <div class="format-card-content">
-          <div class="format-card-icon"></div>
-          <div class="format-card-text" data-lang="es">Conferencias y keynotes</div>
-          <div class="format-card-text" data-lang="en">Conferences &amp; keynotes</div>
-        </div>
+    <div class="formats-wrap">
+      <div class="formats-header reveal">
+        <p class="label section-label" data-lang="es">Formatos</p>
+        <p class="label section-label" data-lang="en">Formats</p>
+        <h2 class="section-heading" data-lang="es">Formatos de colaboraci&#243;n</h2>
+        <h2 class="section-heading" data-lang="en">Collaboration formats</h2>
       </div>
 
-      <div class="format-card reveal">
-        <div class="format-card-bg" style="background-image:url('Workshops.jpg')"></div>
-        <div class="format-card-overlay"></div>
-        <div class="format-card-content">
-          <div class="format-card-icon"></div>
-          <div class="format-card-text" data-lang="es">Workshops pr&#225;cticos</div>
-          <div class="format-card-text" data-lang="en">Practical workshops</div>
-        </div>
-      </div>
+      <div class="formats-grid">
 
-      <div class="format-card reveal">
-        <div class="format-card-bg" style="background-image:url('formaci%C3%B3nacad%C3%A9mica.jpg')"></div>
-        <div class="format-card-overlay"></div>
-        <div class="format-card-content">
-          <div class="format-card-icon"></div>
-          <div class="format-card-text" data-lang="es">Clases y formaci&#243;n acad&#233;mica</div>
-          <div class="format-card-text" data-lang="en">Academic classes &amp; training</div>
+        <div class="format-card reveal">
+          <div class="format-card-bg" style="background-image:url('Sepeaker_keynote.jpg')"></div>
+          <div class="format-card-overlay"></div>
+          <div class="format-card-content">
+            <div class="format-card-icon"></div>
+            <div class="format-card-text" data-lang="es">Conferencias y keynotes</div>
+            <div class="format-card-text" data-lang="en">Conferences &amp; keynotes</div>
+          </div>
         </div>
-      </div>
 
-      <div class="format-card reveal">
-        <div class="format-card-bg" style="background-image:url('Mentor%C3%ADas_emprendedores_startups.jpg')"></div>
-        <div class="format-card-overlay"></div>
-        <div class="format-card-content">
-          <div class="format-card-icon"></div>
-          <div class="format-card-text" data-lang="es">Mentor&#237;as para emprendedores y startups</div>
-          <div class="format-card-text" data-lang="en">Mentoring for entrepreneurs &amp; startups</div>
+        <div class="format-card reveal">
+          <div class="format-card-bg" style="background-image:url('Workshops.jpg')"></div>
+          <div class="format-card-overlay"></div>
+          <div class="format-card-content">
+            <div class="format-card-icon"></div>
+            <div class="format-card-text" data-lang="es">Workshops pr&#225;cticos</div>
+            <div class="format-card-text" data-lang="en">Practical workshops</div>
+          </div>
         </div>
-      </div>
 
-      <div class="format-card reveal">
-        <div class="format-card-bg" style="background-image:url('moderaci%C3%B3n_de_paneles.JPG')"></div>
-        <div class="format-card-overlay"></div>
-        <div class="format-card-content">
-          <div class="format-card-icon"></div>
-          <div class="format-card-text" data-lang="es">Moderaci&#243;n de paneles</div>
-          <div class="format-card-text" data-lang="en">Panel moderation</div>
+        <div class="format-card reveal">
+          <div class="format-card-bg" style="background-image:url('formacion_academica.jpg')"></div>
+          <div class="format-card-overlay"></div>
+          <div class="format-card-content">
+            <div class="format-card-icon"></div>
+            <div class="format-card-text" data-lang="es">Clases y formaci&#243;n acad&#233;mica</div>
+            <div class="format-card-text" data-lang="en">Academic classes &amp; training</div>
+          </div>
         </div>
-      </div>
 
-      <div class="format-card reveal">
-        <div class="format-card-bg" style="background-image:url('Dise%C3%B1o_de_experiencias_aprendizaje.JPG')"></div>
-        <div class="format-card-overlay"></div>
-        <div class="format-card-content">
-          <div class="format-card-icon"></div>
-          <div class="format-card-text" data-lang="es">Dise&#241;o de experiencias de aprendizaje</div>
-          <div class="format-card-text" data-lang="en">Learning experience design</div>
+        <div class="format-card reveal">
+          <div class="format-card-bg" style="background-image:url('mentorias_startups.jpg')"></div>
+          <div class="format-card-overlay"></div>
+          <div class="format-card-content">
+            <div class="format-card-icon"></div>
+            <div class="format-card-text" data-lang="es">Mentor&#237;as para emprendedores y startups</div>
+            <div class="format-card-text" data-lang="en">Mentoring for entrepreneurs &amp; startups</div>
+          </div>
         </div>
-      </div>
 
-      <!-- Full-width featured card -->
-      <div class="format-card reveal">
-        <div class="format-card-bg" style="background-image:url('experiencias_delegaciones.jpg')"></div>
-        <div class="format-card-overlay"></div>
-        <div class="format-card-content">
-          <div class="format-card-icon"></div>
-          <div class="format-card-text" data-lang="es">Experiencias de innovaci&#243;n y delegaciones globales</div>
-          <div class="format-card-text" data-lang="en">Global innovation experiences &amp; delegations</div>
+        <div class="format-card reveal">
+          <div class="format-card-bg" style="background-image:url('moderacion_paneles.jpg')"></div>
+          <div class="format-card-overlay"></div>
+          <div class="format-card-content">
+            <div class="format-card-icon"></div>
+            <div class="format-card-text" data-lang="es">Moderaci&#243;n de paneles</div>
+            <div class="format-card-text" data-lang="en">Panel moderation</div>
+          </div>
         </div>
-      </div>
 
+        <div class="format-card reveal">
+          <div class="format-card-bg" style="background-image:url('diseno_experiencias.jpg')"></div>
+          <div class="format-card-overlay"></div>
+          <div class="format-card-content">
+            <div class="format-card-icon"></div>
+            <div class="format-card-text" data-lang="es">Dise&#241;o de experiencias de aprendizaje</div>
+            <div class="format-card-text" data-lang="en">Learning experience design</div>
+          </div>
+        </div>
+
+        <!-- Full-width featured card -->
+        <div class="format-card reveal">
+          <div class="format-card-bg" style="background-image:url('experiencias_delegaciones.jpg')"></div>
+          <div class="format-card-overlay"></div>
+          <div class="format-card-content">
+            <div class="format-card-icon"></div>
+            <div class="format-card-text" data-lang="es">Experiencias de innovaci&#243;n y delegaciones globales</div>
+            <div class="format-card-text" data-lang="en">Global innovation experiences &amp; delegations</div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
