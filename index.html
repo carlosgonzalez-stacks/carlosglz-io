@@ -222,7 +222,12 @@
       font-family: 'Space Grotesk', sans-serif;
       font-size: clamp(1.75rem, 3.8vw, 3.1rem);
       font-weight: 600; line-height: 1.1; letter-spacing: -.04em;
-      color: #fff; margin-bottom: 2.5rem; max-width: 16ch;
+      color: #fff; margin-bottom: 1.25rem; max-width: 20ch;
+    }
+    .hero-sub {
+      font-family: 'Inter', sans-serif; font-size: clamp(.95rem, 1.3vw, 1.1rem);
+      font-weight: 400; line-height: 1.6; color: rgba(255,255,255,.78);
+      max-width: 52ch; margin-bottom: 2.5rem;
     }
 
     .hero-scroll {
@@ -566,6 +571,8 @@
     [data-lang="en"] { display: none; }
     .lang-en [data-lang="es"] { display: none; }
     .lang-en [data-lang="en"] { display: revert; }
+    .lang-en .nav-cta[data-lang="en"] { display: none; }
+    @media(min-width:640px){ .lang-en .nav-cta[data-lang="en"] { display: inline-flex; } }
   </style>
 </head>
 <body class="lang-es">
@@ -649,9 +656,14 @@
         <p class="hero-name reveal">Carlos Gonz&#225;lez</p>
 
         <h1 class="hero-tagline reveal">
-          <span data-lang="es">Speaker, docente y emprendedor especializado en innovaci&#243;n, IA y emprendimiento global</span>
-          <span data-lang="en">Speaker, lecturer and entrepreneur specialised in innovation, AI and global entrepreneurship</span>
+          <span data-lang="es">Construyo negocios, conecto ecosistemas e impulso la innovaci&#243;n.</span>
+          <span data-lang="en">I build businesses, connect ecosystems and drive innovation.</span>
         </h1>
+
+        <p class="hero-sub reveal">
+          <span data-lang="es">Emprendedor, conferencista, docente y asesor estrat&#233;gico. Colaboro con personas y organizaciones que buscan transformar ideas en nuevas oportunidades.</span>
+          <span data-lang="en">Entrepreneur, speaker, lecturer and strategic advisor. I work with people and organizations looking to turn ideas into new opportunities.</span>
+        </p>
 
         <div class="reveal">
           <a href="https://calendar.app.google/zpNPySHREwgpucff7" target="_blank" rel="noopener"
@@ -1282,4 +1294,4 @@
     document.querySelectorAll('.reveal').forEach(r => io.observe(r));
   </script>
 </body>
-</html>
+      </html>
